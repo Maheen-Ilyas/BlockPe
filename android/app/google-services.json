@@ -1,0 +1,37 @@
+{
+  "project_info": {
+    "project_number": "190508155590",
+    "project_id": "blockpe",
+    "storage_bucket": "blockpe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190508155590:android:42b12ca6bc8be2d6780dc7",
+        "android_client_info": {
+          "package_name": "com.example.blockpe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3twtTxM_K_8XVLp2kRQ1_siZzTo65k-I"
+        }
+      ],
+      "firebase_app_check": [
+        {
+          "app_id": "1:190508155590:android:42b12ca6bc8be2d6780dc7",
+          "android_client_info": {
+            "package_name": "com.example.blockpe"
+          }
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
