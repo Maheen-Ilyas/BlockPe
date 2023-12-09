@@ -36,15 +36,14 @@ class _OTPInputState extends State<OTPInput> {
     super.dispose();
   }
 
-  Future<bool> _verifyOTP() async {
+  Future<void> _verifyOTP() async {
     String otp = _otpController.map((controller) => controller.text).join();
-    var credentials = await FirebaseAuth.instance.signInWithCredential(
+    await FirebaseAuth.instance.signInWithCredential(
       PhoneAuthProvider.credential(
         verificationId: widget.verificationID,
         smsCode: otp,
       ),
     );
-    return credentials.user != null ? true : false;
   }
 
   @override
