@@ -108,7 +108,7 @@ final darkTheme = ThemeData(
       color: DarkTheme.onSecondaryContainer,
       fontFamily: "Lato",
       fontSize: 22,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
     ),
   ),
   inputDecorationTheme: const InputDecorationTheme(

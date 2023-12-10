@@ -47,8 +47,8 @@ class _HomePageState extends State<HomePage> {
                 label: 'B',
               ),
               NavigationDestination(
-                icon: Icon(Icons.bookmark_outlined),
-                selectedIcon: Icon(Icons.bookmark),
+                icon: Icon(Icons.outlined_flag),
+                selectedIcon: Icon(Icons.flag),
                 label: 'C',
               ),
               NavigationDestination(

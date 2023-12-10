@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 class OTPInput extends StatefulWidget {
   final String verificationID;
+
   const OTPInput({
     super.key,
     required this.verificationID,
@@ -68,6 +69,8 @@ class _OTPInputState extends State<OTPInput> {
         ],
       ),
       body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.all(16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

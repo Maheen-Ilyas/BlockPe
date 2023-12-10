@@ -33,100 +33,6 @@ class _SignUpState extends State<SignUp> {
     super.dispose();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Sign up"),
-        flexibleSpace: Container(
-          padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {
-              Provider.of<ThemeProvider>(context, listen: false).toggle();
-            },
-            icon: Icon(
-              Provider.of<ThemeProvider>(context).isDark
-                  ? Icons.toggle_on
-                  : Icons.toggle_off,
-            ),
-          ),
-        ],
-      ),
-      body: Container(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            TextField(
-              controller: _username,
-              keyboardType: TextInputType.text,
-              decoration: const InputDecoration(
-                icon: Icon(
-                  Icons.person,
-                  size: 26,
-                ),
-                label: Text("Username"),
-              ),
-            ),
-            const SizedBox(height: 15),
-            TextField(
-              controller: _email,
-              keyboardType: TextInputType.emailAddress,
-              decoration: const InputDecoration(
-                icon: Icon(
-                  Icons.alternate_email,
-                  size: 26,
-                ),
-                label: Text("Email"),
-              ),
-            ),
-            const SizedBox(height: 15),
-            TextField(
-              controller: _password,
-              keyboardType: TextInputType.text,
-              obscureText: true,
-              enableSuggestions: false,
-              decoration: const InputDecoration(
-                icon: Icon(
-                  Icons.lock,
-                  size: 26,
-                ),
-                label: Text("Password"),
-              ),
-            ),
-            const SizedBox(height: 15),
-            SizedBox(
-              height: 50,
-              width: double.infinity,
-              child: FilledButton(
-                onPressed: () async {
-                  await _signup();
-                },
-                child: const Text("Sign up"),
-              ),
-            ),
-            SizedBox(
-              height: 50,
-              width: double.infinity,
-              child: TextButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/signin',
-                    (route) => false,
-                  );
-                },
-                child: const Text("Already have an account? Login here!"),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
   Future<void> _signup() async {
     try {
       UserCredential userCred =
@@ -184,4 +90,102 @@ class _SignUpState extends State<SignUp> {
       );
     }
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Sign up"),
+        flexibleSpace: Container(
+          padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Provider.of<ThemeProvider>(context, listen: false).toggle();
+            },
+            icon: Icon(
+              Provider.of<ThemeProvider>(context).isDark
+                  ? Icons.toggle_on
+                  : Icons.toggle_off,
+            ),
+          ),
+        ],
+      ),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            TextField(
+              controller: _username,
+              keyboardType: TextInputType.text,
+              decoration: const InputDecoration(
+                icon: Icon(
+                  Icons.person,
+                  size: 26,
+                ),
+                label: Text("Username"),
+              ),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              controller: _email,
+              keyboardType: TextInputType.emailAddress,
+              decoration: const InputDecoration(
+                icon: Icon(
+                  Icons.alternate_email,
+                  size: 26,
+                ),
+                label: Text("Email"),
+              ),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              controller: _password,
+              keyboardType: TextInputType.text,
+              obscureText: true,
+              enableSuggestions: false,
+              decoration: const InputDecoration(
+                icon: Icon(
+                  Icons.lock,
+                  size: 26,
+                ),
+                label: Text("Password"),
+              ),
+            ),
+            const SizedBox(height: 10),
+            SizedBox(
+              height: 50,
+              width: double.infinity,
+              child: FilledButton(
+                onPressed: () async {
+                  await _signup();
+                },
+                child: const Text("Sign up"),
+              ),
+            ),
+            SizedBox(
+              height: 50,
+              width: double.infinity,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamedAndRemoveUntil(
+                    '/signin',
+                    (route) => false,
+                  );
+                },
+                child: const Text("Already have an account? Login here!"),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
+
+

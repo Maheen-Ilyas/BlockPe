@@ -29,88 +29,6 @@ class _SignInState extends State<SignIn> {
     super.dispose();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Sign in"),
-        flexibleSpace: Container(
-          padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {
-              Provider.of<ThemeProvider>(context, listen: false).toggle();
-            },
-            icon: Icon(
-              Provider.of<ThemeProvider>(context).isDark
-                  ? Icons.toggle_on
-                  : Icons.toggle_off,
-            ),
-          ),
-        ],
-      ),
-      body: Container(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            TextField(
-              controller: _email,
-              keyboardType: TextInputType.emailAddress,
-              decoration: const InputDecoration(
-                icon: Icon(
-                  Icons.alternate_email,
-                  size: 26,
-                ),
-                label: Text("Email"),
-              ),
-            ),
-            const SizedBox(height: 15),
-            TextField(
-              controller: _password,
-              keyboardType: TextInputType.text,
-              obscureText: true,
-              enableSuggestions: false,
-              decoration: const InputDecoration(
-                icon: Icon(
-                  Icons.lock,
-                  size: 26,
-                ),
-                label: Text("Password"),
-              ),
-            ),
-            const SizedBox(height: 15),
-            SizedBox(
-              height: 50,
-              width: double.infinity,
-              child: FilledButton(
-                onPressed: () async {
-                  await _signin();
-                },
-                child: const Text("Sign in"),
-              ),
-            ),
-            SizedBox(
-              height: 50,
-              width: double.infinity,
-              child: TextButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/signup',
-                    (route) => false,
-                  );
-                },
-                child: const Text("Don't have an account? Signup here!"),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
   Future<void> _signin() async {
     try {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
@@ -150,5 +68,89 @@ class _SignInState extends State<SignIn> {
         "Try signing in again",
       );
     }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Sign in"),
+        flexibleSpace: Container(
+          padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Provider.of<ThemeProvider>(context, listen: false).toggle();
+            },
+            icon: Icon(
+              Provider.of<ThemeProvider>(context).isDark
+                  ? Icons.toggle_on
+                  : Icons.toggle_off,
+            ),
+          ),
+        ],
+      ),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            TextField(
+              controller: _email,
+              keyboardType: TextInputType.emailAddress,
+              decoration: const InputDecoration(
+                icon: Icon(
+                  Icons.alternate_email,
+                  size: 26,
+                ),
+                label: Text("Email"),
+              ),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              controller: _password,
+              keyboardType: TextInputType.text,
+              obscureText: true,
+              enableSuggestions: false,
+              decoration: const InputDecoration(
+                icon: Icon(
+                  Icons.lock,
+                  size: 26,
+                ),
+                label: Text("Password"),
+              ),
+            ),
+            const SizedBox(height: 10),
+            SizedBox(
+              height: 50,
+              width: double.infinity,
+              child: FilledButton(
+                onPressed: () async {
+                  await _signin();
+                },
+                child: const Text("Sign in"),
+              ),
+            ),
+            SizedBox(
+              height: 50,
+              width: double.infinity,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamedAndRemoveUntil(
+                    '/signup',
+                    (route) => false,
+                  );
+                },
+                child: const Text("Don't have an account? Signup here!"),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

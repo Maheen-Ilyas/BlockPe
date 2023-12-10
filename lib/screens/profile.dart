@@ -83,7 +83,9 @@ class _ProfileState extends State<Profile> {
           ),
         ),
       ),
-      body: Padding(
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.all(16),
         child: Center(
           child: Column(
@@ -93,9 +95,7 @@ class _ProfileState extends State<Profile> {
                 children: [
                   CircleAvatar(
                     radius: 80,
-                    backgroundImage: _image != null
-                        ? FileImage(_image!)
-                        : AssetImage(defaultImage) as ImageProvider<Object>,
+                    backgroundImage: _image != null ? FileImage(_image!) : null,
                   ),
                   Positioned(
                     bottom: 1,

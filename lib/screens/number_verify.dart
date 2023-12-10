@@ -99,6 +99,8 @@ class _NumberInputState extends State<NumberInput> {
         ],
       ),
       body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
@@ -135,7 +137,8 @@ class _NumberInputState extends State<NumberInput> {
               child: FilledButton(
                 onPressed: () async {
                   _phoneAuth(
-                      "+${_selectedCountry.phoneCode}${_phoneNumber.text}");
+                    "+${_selectedCountry.phoneCode}${_phoneNumber.text}",
+                  );
                   await FirebaseFirestore.instance
                       .collection('numbers')
                       .doc(FirebaseAuth.instance.currentUser?.uid)

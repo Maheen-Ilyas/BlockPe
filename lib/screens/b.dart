@@ -7,7 +7,7 @@ class B extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("A"),
+        title: const Text("B"),
         flexibleSpace: Container(
           padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
         ),
