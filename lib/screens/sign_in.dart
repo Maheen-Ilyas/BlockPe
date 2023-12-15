@@ -99,34 +99,40 @@ class _SignInState extends State<SignIn> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            TextField(
-              controller: _email,
-              keyboardType: TextInputType.emailAddress,
-              decoration: const InputDecoration(
-                icon: Icon(
-                  Icons.alternate_email,
-                  size: 26,
+            SizedBox(
+              height: 56,
+              child: TextField(
+                controller: _email,
+                keyboardType: TextInputType.emailAddress,
+                decoration: const InputDecoration(
+                  icon: Icon(
+                    Icons.alternate_email,
+                    size: 26,
+                  ),
+                  label: Text("Email"),
                 ),
-                label: Text("Email"),
-              ),
-            ),
-            const SizedBox(height: 10),
-            TextField(
-              controller: _password,
-              keyboardType: TextInputType.text,
-              obscureText: true,
-              enableSuggestions: false,
-              decoration: const InputDecoration(
-                icon: Icon(
-                  Icons.lock,
-                  size: 26,
-                ),
-                label: Text("Password"),
               ),
             ),
             const SizedBox(height: 10),
             SizedBox(
-              height: 50,
+              height: 56,
+              child: TextField(
+                controller: _password,
+                keyboardType: TextInputType.text,
+                obscureText: true,
+                enableSuggestions: false,
+                decoration: const InputDecoration(
+                  icon: Icon(
+                    Icons.lock,
+                    size: 26,
+                  ),
+                  label: Text("Password"),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            SizedBox(
+              height: 60,
               width: double.infinity,
               child: FilledButton(
                 onPressed: () async {
@@ -136,7 +142,7 @@ class _SignInState extends State<SignIn> {
               ),
             ),
             SizedBox(
-              height: 50,
+              height: 60,
               width: double.infinity,
               child: TextButton(
                 onPressed: () {

@@ -6,20 +6,31 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class SignUp extends StatefulWidget {
-  const SignUp({super.key});
+  final Map<String, String> userData;
+  const SignUp({
+    super.key,
+    required this.userData,
+  });
 
   @override
   State<SignUp> createState() => _SignUpState();
 }
 
 class _SignUpState extends State<SignUp> {
-  late final TextEditingController _username;
+  late final TextEditingController _name;
+  late final TextEditingController _aadharNumber;
+  late final TextEditingController _gender;
+  late final TextEditingController _dob;
   late final TextEditingController _email;
   late final TextEditingController _password;
 
   @override
   void initState() {
-    _username = TextEditingController();
+    _name = TextEditingController(text: widget.userData['Name']);
+    _aadharNumber =
+        TextEditingController(text: widget.userData['Aadhar Number']);
+    _gender = TextEditingController(text: widget.userData['Gender']);
+    _dob = TextEditingController(text: widget.userData['DOB']);
     _email = TextEditingController();
     _password = TextEditingController();
     super.initState();
@@ -27,7 +38,10 @@ class _SignUpState extends State<SignUp> {
 
   @override
   void dispose() {
-    _username.dispose();
+    _name.dispose();
+    _aadharNumber.dispose();
+    _gender.dispose();
+    _dob.dispose();
     _email.dispose();
     _password.dispose();
     super.dispose();
@@ -45,7 +59,10 @@ class _SignUpState extends State<SignUp> {
           .doc(userCred.user?.uid)
           .set(
         {
-          'username': _username.text,
+          'name': _name.text,
+          'aadharNumber': _aadharNumber.text,
+          'gender': _gender.text,
+          'dob': _dob.text,
           'email': _email.text,
         },
       );
@@ -116,76 +133,129 @@ class _SignUpState extends State<SignUp> {
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            TextField(
-              controller: _username,
-              keyboardType: TextInputType.text,
-              decoration: const InputDecoration(
-                icon: Icon(
-                  Icons.person,
-                  size: 26,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 56,
+                child: TextField(
+                  controller: _name,
+                  readOnly: true,
+                  keyboardType: TextInputType.text,
+                  decoration: const InputDecoration(
+                    icon: Icon(
+                      Icons.person,
+                    ),
+                    label: Text("Name"),
+                  ),
                 ),
-                label: Text("Username"),
               ),
-            ),
-            const SizedBox(height: 10),
-            TextField(
-              controller: _email,
-              keyboardType: TextInputType.emailAddress,
-              decoration: const InputDecoration(
-                icon: Icon(
-                  Icons.alternate_email,
-                  size: 26,
+              const SizedBox(height: 15),
+              SizedBox(
+                height: 56,
+                child: TextField(
+                  controller: _aadharNumber,
+                  readOnly: true,
+                  keyboardType: TextInputType.text,
+                  decoration: const InputDecoration(
+                    icon: Icon(
+                      Icons.numbers,
+                    ),
+                    label: Text("Aadhar Number"),
+                  ),
                 ),
-                label: Text("Email"),
               ),
-            ),
-            const SizedBox(height: 10),
-            TextField(
-              controller: _password,
-              keyboardType: TextInputType.text,
-              obscureText: true,
-              enableSuggestions: false,
-              decoration: const InputDecoration(
-                icon: Icon(
-                  Icons.lock,
-                  size: 26,
+              const SizedBox(height: 15),
+              SizedBox(
+                height: 56,
+                child: TextField(
+                  controller: _gender,
+                  readOnly: true,
+                  keyboardType: TextInputType.text,
+                  decoration: InputDecoration(
+                    icon: _gender.text == 'F'
+                        ? const Icon(Icons.female)
+                        : const Icon(Icons.male),
+                    label: const Text("Gender"),
+                  ),
                 ),
-                label: Text("Password"),
               ),
-            ),
-            const SizedBox(height: 10),
-            SizedBox(
-              height: 50,
-              width: double.infinity,
-              child: FilledButton(
-                onPressed: () async {
-                  await _signup();
-                },
-                child: const Text("Sign up"),
+              const SizedBox(height: 15),
+              SizedBox(
+                height: 56,
+                child: TextField(
+                  controller: _dob,
+                  readOnly: true,
+                  keyboardType: TextInputType.text,
+                  decoration: const InputDecoration(
+                    icon: Icon(
+                      Icons.calendar_today,
+                    ),
+                    label: Text("DOB"),
+                  ),
+                ),
               ),
-            ),
-            SizedBox(
-              height: 50,
-              width: double.infinity,
-              child: TextButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/signin',
-                    (route) => false,
-                  );
-                },
-                child: const Text("Already have an account? Login here!"),
+              const SizedBox(height: 15),
+              SizedBox(
+                height: 56,
+                child: TextField(
+                  controller: _email,
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: const InputDecoration(
+                    icon: Icon(
+                      Icons.alternate_email,
+                    ),
+                    label: Text("Email"),
+                  ),
+                ),
               ),
-            ),
-          ],
+              const SizedBox(height: 15),
+              SizedBox(
+                height: 56,
+                child: TextField(
+                  controller: _password,
+                  keyboardType: TextInputType.text,
+                  obscureText: true,
+                  enableSuggestions: false,
+                  decoration: const InputDecoration(
+                    icon: Icon(
+                      Icons.lock,
+                    ),
+                    label: Text("Password"),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 15),
+              SizedBox(
+                height: 60,
+                width: double.infinity,
+                child: FilledButton(
+                  onPressed: () async {
+                    await _signup();
+                  },
+                  child: const Text("Sign up"),
+                ),
+              ),
+              SizedBox(
+                height: 60,
+                width: double.infinity,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                      '/signin',
+                      (route) => false,
+                    );
+                  },
+                  child: const Text("Already have an account? Login here!"),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 }
-
-

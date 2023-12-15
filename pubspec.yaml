@@ -43,6 +43,10 @@ dependencies:
   cloud_firestore: ^4.13.5
   image_picker: ^1.0.4
   get: ^4.6.6
+  barcode_scan2: ^4.3.0
+  xml: ^6.5.0
+  uuid: ^4.2.2
+
 
 dev_dependencies:
   flutter_test:

@@ -36,7 +36,7 @@ class _NumberInputState extends State<NumberInput> {
     showCountryPicker(
       context: context,
       showPhoneCode: true,
-      countryListTheme: const CountryListThemeData(
+      countryListTheme: CountryListThemeData(
         bottomSheetHeight: 500,
       ),
       onSelect: (Country country) {
@@ -132,7 +132,7 @@ class _NumberInputState extends State<NumberInput> {
             ),
             const SizedBox(height: 20),
             SizedBox(
-              height: 50,
+              height: 60,
               width: double.infinity,
               child: FilledButton(
                 onPressed: () async {

@@ -1,6 +1,5 @@
-import 'package:blockpe/screens/a.dart';
-import 'package:blockpe/screens/b.dart';
-import 'package:blockpe/screens/c.dart';
+import 'package:blockpe/screens/home.dart';
+import 'package:blockpe/screens/initiate_payment.dart';
 import 'package:blockpe/screens/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -14,16 +13,17 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
-    const A(),
-    const B(),
-    const C(),
+    const Home(),
+    const InitiatePayment(),
     const Profile(),
   ];
 
   void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
+    setState(
+      () {
+        _selectedIndex = index;
+      },
+    );
   }
 
   @override
@@ -37,24 +37,19 @@ class _HomePageState extends State<HomePage> {
             onDestinationSelected: _onItemTapped,
             destinations: const [
               NavigationDestination(
-                icon: Icon(Icons.book_outlined),
-                selectedIcon: Icon(Icons.book),
-                label: 'A',
+                icon: Icon(Icons.home_outlined),
+                selectedIcon: Icon(Icons.home),
+                label: 'Home',
               ),
               NavigationDestination(
-                icon: Icon(Icons.comment_bank_outlined),
-                selectedIcon: Icon(Icons.comment_bank),
-                label: 'B',
-              ),
-              NavigationDestination(
-                icon: Icon(Icons.outlined_flag),
-                selectedIcon: Icon(Icons.flag),
-                label: 'C',
+                icon: Icon(Icons.account_balance_outlined),
+                selectedIcon: Icon(Icons.account_balance),
+                label: 'Payment',
               ),
               NavigationDestination(
                 icon: Icon(Icons.person_2_outlined),
                 selectedIcon: Icon(Icons.person_2),
-                label: 'D',
+                label: 'Profile',
               ),
             ],
           );

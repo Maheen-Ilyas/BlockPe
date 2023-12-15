@@ -1,7 +1,8 @@
 import 'package:blockpe/firebase_options.dart';
 import 'package:blockpe/providers/theme_provider.dart';
 import 'package:blockpe/screens/home_page.dart';
-import 'package:blockpe/screens/number_verify.dart';
+import 'package:blockpe/screens/number_input.dart';
+import 'package:blockpe/screens/payment_success.dart';
 import 'package:blockpe/screens/sign_in.dart';
 import 'package:blockpe/screens/sign_up.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
@@ -15,9 +16,8 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   await FirebaseAppCheck.instance.activate(
-    androidProvider: AndroidProvider.debug,
+    androidProvider: AndroidProvider.playIntegrity,
   );
-  await FirebaseAppCheck.instance.getToken(true);
   runApp(
     ChangeNotifierProvider(
       create: (context) => ThemeProvider(),
@@ -36,11 +36,12 @@ class MyApp extends StatelessWidget {
       theme: Provider.of<ThemeProvider>(context).theme,
       routes: {
         '/homepage': (context) => const HomePage(),
-        '/signup': (context) => const SignUp(),
         '/signin': (context) => const SignIn(),
         '/numberinput': (context) => const NumberInput(),
+        '/signup': (context) => const SignUp(userData: {}),
+        '/paymentsuccess': (context) => const PaymentSuccess(),
       },
-      home: const SignUp(),
+      home: const HomePage(),
     );
   }
 }

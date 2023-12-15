@@ -8,7 +8,7 @@ Future<void> showLogOutDialog(BuildContext context) async {
       return AlertDialog(
         title: const Text('Are you sure?'),
         content: const Text(
-            "Are you sure you want to log out? Logging out will require you to sign in again to access your account."),
+            "Are you sure you want to log out? Logging out will require you to sign in again."),
         icon: const Center(
           child: Icon(Icons.info),
         ),

@@ -90,36 +90,39 @@ class _OTPInputState extends State<OTPInput> {
                 (index) => SizedBox(
                   height: 80,
                   width: 45,
-                  child: TextField(
-                    controller: _otpController[index],
-                    focusNode: _focusNodes[index],
-                    keyboardType: TextInputType.number,
-                    maxLength: 1,
-                    textAlign: TextAlign.center,
-                    decoration: const InputDecoration(
-                      counterText: '',
-                      border: OutlineInputBorder(),
-                    ),
-                    onChanged: (value) {
-                      if (value.isNotEmpty) {
-                        if (index < 5) {
-                          _focusNodes[index + 1].requestFocus();
+                  child: SizedBox(
+                    height: 56,
+                    child: TextField(
+                      controller: _otpController[index],
+                      focusNode: _focusNodes[index],
+                      keyboardType: TextInputType.number,
+                      maxLength: 1,
+                      textAlign: TextAlign.center,
+                      decoration: const InputDecoration(
+                        counterText: '',
+                        border: OutlineInputBorder(),
+                      ),
+                      onChanged: (value) {
+                        if (value.isNotEmpty) {
+                          if (index < 5) {
+                            _focusNodes[index + 1].requestFocus();
+                          }
                         }
-                      }
-                    },
+                      },
+                    ),
                   ),
                 ),
               ),
             ),
             const SizedBox(height: 10),
             SizedBox(
-              height: 50,
+              height: 60,
               width: double.infinity,
               child: FilledButton(
                 onPressed: () {
                   _verifyOTP();
                   Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/signin',
+                    '/homepage',
                     (route) => false,
                   );
                 },

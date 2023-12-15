@@ -2,33 +2,43 @@ import 'package:flutter/material.dart';
 
 class LightTheme {
   static const brightness = Brightness.light;
-  static const primary = Color(0xFF6d4ea1);
-  static const onPrimary = Color(0xFFffffff);
-  static const primaryContainer = Color(0xFFecdcff);
-  static const onPrimaryContainer = Color(0xFF270057);
-  static const secondary = Color(0xFF645b70);
-  static const onSecondary = Color(0xFFffffff);
-  static const secondaryContainer = Color(0xFFeadef7);
-  static const onSecondaryContainer = Color(0xFF1f182a);
-  static const tertiary = Color(0xFF7f525c);
-  static const onTertiary = Color(0xFFffffff);
-  static const tertiaryContainer = Color(0xFFffd9e0);
-  static const onTertiaryContainer = Color(0xFF32101a);
-  static const error = Color(0xFFba1a1a);
-  static const onError = Color(0xFFffffff);
-  static const errorContainer = Color(0xFFffdad6);
+  static const primary = Color(0xFFAB3600);
+  static const onPrimary = Color(0xFFFFFFFF);
+  static const primaryContainer = Color(0xFFFFDBCF);
+  static const onPrimaryContainer = Color(0xFF390C00);
+  static const secondary = Color(0xFF77574C);
+  static const onSecondary = Color(0xFFFFFFFF);
+  static const secondaryContainer = Color(0xFFFFDBCF);
+  static const onSecondaryContainer = Color(0xFF2C160E);
+  static const tertiary = Color(0xFF6A5E2F);
+  static const onTertiary = Color(0xFFFFFFFF);
+  static const tertiaryContainer = Color(0xFFF3E2A7);
+  static const onTertiaryContainer = Color(0xFF221B00);
+  static const error = Color(0xFFBA1A1A);
+  static const errorContainer = Color(0xFFFFDAD6);
+  static const onError = Color(0xFFFFFFFF);
   static const onErrorContainer = Color(0xFF410002);
-  static const background = Color(0xFFfffbff);
-  static const onBackground = Color(0xFF1d1b1e);
-  static const surface = Color(0xFFfffbff);
-  static const onSurface = Color(0xFF1d1b1e);
-  static const outline = Color(0xFF7b757f);
-  static const surfaceVariant = Color(0xFFe8e0eb);
-  static const onSurfaceVariant = Color(0xFF49454e);
+  static const background = Color(0xFFFFFBFF);
+  static const onBackground = Color(0xFF201A18);
+  static const surface = Color(0xFFFFFBFF);
+  static const onSurface = Color(0xFF201A18);
+  static const surfaceVariant = Color(0xFFF5DED7);
+  static const onSurfaceVariant = Color(0xFF53433F);
+  static const outline = Color(0xFF85736E);
+  static const onInverseSurface = Color(0xFFFBEEEA);
+  static const inverseSurface = Color(0xFF362F2D);
+  static const inversePrimary = Color(0xFFFFB59C);
+  static const shadow = Color(0xFF000000);
+  static const surfaceTint = Color(0xFFAB3600);
+  static const outlineVariant = Color(0xFFD8C2BB);
+  static const scrim = Color(0xFF000000);
 }
 
 final lightTheme = ThemeData(
   brightness: LightTheme.brightness,
+  canvasColor: LightTheme.tertiary,
+  primaryColor: LightTheme.primary,
+  cardColor: LightTheme.secondaryContainer,
   textTheme: const TextTheme(
     titleMedium: TextStyle(
       fontFamily: "Lato",
@@ -48,33 +58,42 @@ final lightTheme = ThemeData(
       color: LightTheme.onSecondaryContainer,
       fontSize: 22,
     ),
+    labelSmall: TextStyle(
+      fontFamily: "Lato",
+      fontWeight: FontWeight.w400,
+      color: LightTheme.onSecondaryContainer,
+      fontSize: 18,
+    ),
   ),
-  navigationBarTheme: const NavigationBarThemeData(
+  navigationBarTheme: NavigationBarThemeData(
     backgroundColor: LightTheme.background,
     height: 80,
     elevation: 2,
-    surfaceTintColor: LightTheme.primary,
-    shadowColor: LightTheme.onBackground,
-    labelTextStyle: MaterialStatePropertyAll(
+    surfaceTintColor: LightTheme.surfaceTint,
+    shadowColor: LightTheme.shadow,
+    labelTextStyle: const MaterialStatePropertyAll(
       TextStyle(
         fontFamily: "Lato",
         fontSize: 12,
-        fontWeight: FontWeight.w700,
+        fontWeight: FontWeight.bold,
         letterSpacing: 0.5,
-        color: LightTheme.onBackground,
+        color: LightTheme.onSurface,
       ),
     ),
-    iconTheme: MaterialStatePropertyAll(
+    iconTheme: const MaterialStatePropertyAll(
       IconThemeData(
         size: 26,
         color: LightTheme.onSecondaryContainer,
       ),
     ),
     indicatorColor: LightTheme.secondaryContainer,
-    indicatorShape: RoundedRectangleBorder(
+    indicatorShape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.all(
         Radius.circular(10),
       ),
+    ),
+    overlayColor: MaterialStatePropertyAll(
+      LightTheme.onSurface.withOpacity(0.1),
     ),
     labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
   ),
@@ -82,6 +101,7 @@ final lightTheme = ThemeData(
     color: LightTheme.surface,
     toolbarHeight: 152,
     elevation: 0,
+    shadowColor: LightTheme.shadow,
     surfaceTintColor: LightTheme.primary,
     titleTextStyle: TextStyle(
       fontFamily: 'Lato',
@@ -90,20 +110,23 @@ final lightTheme = ThemeData(
       color: LightTheme.onSurface,
     ),
     actionsIconTheme: IconThemeData(
-      size: 44,
+      size: 38,
       color: LightTheme.onSurfaceVariant,
     ),
   ),
   drawerTheme: const DrawerThemeData(
     backgroundColor: LightTheme.surface,
     surfaceTintColor: LightTheme.primary,
+    shadowColor: LightTheme.shadow,
     elevation: 1,
-    scrimColor: LightTheme.surfaceVariant,
+    scrimColor: LightTheme.scrim,
   ),
   dividerTheme: const DividerThemeData(
-    color: LightTheme.outline,
+    color: LightTheme.outlineVariant,
+    thickness: 1,
   ),
   listTileTheme: const ListTileThemeData(
+    style: ListTileStyle.drawer,
     titleTextStyle: TextStyle(
       color: LightTheme.onSecondaryContainer,
       fontFamily: "Lato",
@@ -114,51 +137,60 @@ final lightTheme = ThemeData(
   inputDecorationTheme: const InputDecorationTheme(
     helperStyle: TextStyle(
       color: LightTheme.onSurfaceVariant,
+      fontFamily: "Lato",
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
     ),
     labelStyle: TextStyle(
-      color: LightTheme.primary,
+      color: LightTheme.onSurfaceVariant,
       fontFamily: "Lato",
       fontSize: 18,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
     ),
-    errorStyle: TextStyle(
-      color: LightTheme.error,
+    outlineBorder: BorderSide(
+      color: LightTheme.outline,
+      width: 1,
+      style: BorderStyle.solid,
     ),
-    iconColor: LightTheme.onSurfaceVariant,
-    focusColor: LightTheme.onPrimary,
     errorBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        width: 2,
+        width: 1,
         color: LightTheme.error,
         style: BorderStyle.solid,
       ),
     ),
+    errorStyle: TextStyle(
+      color: LightTheme.onSurfaceVariant,
+    ),
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        width: 2,
+        width: 1,
         color: LightTheme.primary,
         style: BorderStyle.solid,
       ),
     ),
     enabledBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        width: 2,
+        width: 1,
         color: LightTheme.onPrimaryContainer,
         style: BorderStyle.solid,
       ),
     ),
     border: OutlineInputBorder(
       borderSide: BorderSide(
-        width: 2,
+        width: 1,
         color: LightTheme.onPrimaryContainer,
+        style: BorderStyle.solid,
       ),
     ),
     activeIndicatorBorder: BorderSide(
-      width: 2,
+      width: 1,
       color: LightTheme.onSecondaryContainer,
       style: BorderStyle.solid,
     ),
-    suffixIconColor: LightTheme.onPrimaryContainer,
+    iconColor: LightTheme.onSurfaceVariant,
+    focusColor: LightTheme.primary,
+    hoverColor: LightTheme.onSurface,
   ),
   filledButtonTheme: FilledButtonThemeData(
     style: ButtonStyle(
@@ -171,18 +203,30 @@ final lightTheme = ThemeData(
           0.5,
         ),
       ),
+      shadowColor: const MaterialStatePropertyAll(
+        LightTheme.shadow,
+      ),
+      surfaceTintColor: const MaterialStatePropertyAll(
+        LightTheme.surfaceTint,
+      ),
       textStyle: const MaterialStatePropertyAll(
         TextStyle(
           fontFamily: "Lato",
-          fontSize: 18,
+          fontSize: 16,
           fontWeight: FontWeight.w500,
           color: LightTheme.onPrimary,
         ),
       ),
+      overlayColor: MaterialStatePropertyAll(
+        LightTheme.onPrimary.withOpacity(0.08),
+      ),
       backgroundColor: const MaterialStatePropertyAll(
         LightTheme.primary,
       ),
-      elevation: const MaterialStatePropertyAll(0),
+      mouseCursor: const MaterialStatePropertyAll(
+        MouseCursor.uncontrolled,
+      ),
+      elevation: const MaterialStatePropertyAll(1),
     ),
   ),
   textButtonTheme: TextButtonThemeData(
@@ -195,6 +239,18 @@ final lightTheme = ThemeData(
           const CircleBorder(),
           0.5,
         ),
+      ),
+      shadowColor: const MaterialStatePropertyAll(
+        LightTheme.shadow,
+      ),
+      surfaceTintColor: const MaterialStatePropertyAll(
+        LightTheme.surfaceTint,
+      ),
+      overlayColor: MaterialStatePropertyAll(
+        LightTheme.primary.withOpacity(0.08),
+      ),
+      mouseCursor: const MaterialStatePropertyAll(
+        MouseCursor.uncontrolled,
       ),
       elevation: const MaterialStatePropertyAll(0),
       textStyle: const MaterialStatePropertyAll(
@@ -225,5 +281,14 @@ final lightTheme = ThemeData(
     ),
     iconColor: LightTheme.secondary,
     alignment: Alignment.center,
+  ),
+  bottomSheetTheme: BottomSheetThemeData(
+    backgroundColor: LightTheme.surface,
+    surfaceTintColor: LightTheme.surfaceTint,
+    elevation: 1,
+    modalElevation: 1,
+    dragHandleColor:LightTheme.onSurfaceVariant.withOpacity(0.4),
+    dragHandleSize: const Size(32, 4),
+    showDragHandle: true,
   ),
 );
