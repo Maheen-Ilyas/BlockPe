@@ -3,7 +3,7 @@
 //  source: cosmos/gov/v1beta1/query.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, unnecessary_import
 
 import 'dart:core' as $core;
 
@@ -13,7 +13,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import 'gov.pb.dart' as $6;
 import '../../base/query/v1beta1/pagination.pb.dart' as $8;
 
-// import 'gov.pbenum.dart' as $6;
+import 'gov.pbenum.dart' as $6;
 
 class QueryProposalRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'QueryProposalRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cosmos.gov.v1beta1'), createEmptyInstance: create)

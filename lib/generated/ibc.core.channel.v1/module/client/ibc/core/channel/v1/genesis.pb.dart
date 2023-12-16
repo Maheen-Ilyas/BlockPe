@@ -3,7 +3,7 @@
 //  source: ibc/core/channel/v1/genesis.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, no_leading_underscores_for_local_identifiers
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -36,32 +36,32 @@ class GenesisState extends $pb.GeneratedMessage {
     $core.Iterable<PacketSequence>? ackSequences,
     $fixnum.Int64? nextChannelSequence,
   }) {
-    final _result = create();
+    final result = create();
     if (channels != null) {
-      _result.channels.addAll(channels);
+      result.channels.addAll(channels);
     }
     if (acknowledgements != null) {
-      _result.acknowledgements.addAll(acknowledgements);
+      result.acknowledgements.addAll(acknowledgements);
     }
     if (commitments != null) {
-      _result.commitments.addAll(commitments);
+      result.commitments.addAll(commitments);
     }
     if (receipts != null) {
-      _result.receipts.addAll(receipts);
+      result.receipts.addAll(receipts);
     }
     if (sendSequences != null) {
-      _result.sendSequences.addAll(sendSequences);
+      result.sendSequences.addAll(sendSequences);
     }
     if (recvSequences != null) {
-      _result.recvSequences.addAll(recvSequences);
+      result.recvSequences.addAll(recvSequences);
     }
     if (ackSequences != null) {
-      _result.ackSequences.addAll(ackSequences);
+      result.ackSequences.addAll(ackSequences);
     }
     if (nextChannelSequence != null) {
-      _result.nextChannelSequence = nextChannelSequence;
+      result.nextChannelSequence = nextChannelSequence;
     }
-    return _result;
+    return result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -129,17 +129,17 @@ class PacketSequence extends $pb.GeneratedMessage {
     $core.String? channelId,
     $fixnum.Int64? sequence,
   }) {
-    final _result = create();
+    final result = create();
     if (portId != null) {
-      _result.portId = portId;
+      result.portId = portId;
     }
     if (channelId != null) {
-      _result.channelId = channelId;
+      result.channelId = channelId;
     }
     if (sequence != null) {
-      _result.sequence = sequence;
+      result.sequence = sequence;
     }
-    return _result;
+    return result;
   }
   factory PacketSequence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory PacketSequence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

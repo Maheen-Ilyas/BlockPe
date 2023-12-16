@@ -155,3 +155,93 @@ class MsgSaveVpaResponse extends $pb.GeneratedMessage {
   static MsgSaveVpaResponse? _defaultInstance;
 }
 
+class MsgTransferTokens extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MsgTransferTokens', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'dpi.dpi'), createEmptyInstance: create)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'creator')
+    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'amount')
+    ..hasRequiredFields = false
+  ;
+
+  MsgTransferTokens._() : super();
+  factory MsgTransferTokens({
+    $core.String? creator,
+    $core.String? amount,
+  }) {
+    final result = create();
+    if (creator != null) {
+      result.creator = creator;
+    }
+    if (amount != null) {
+      result.amount = amount;
+    }
+    return result;
+  }
+  factory MsgTransferTokens.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MsgTransferTokens.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MsgTransferTokens clone() => MsgTransferTokens()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MsgTransferTokens copyWith(void Function(MsgTransferTokens) updates) => super.copyWith((message) => updates(message as MsgTransferTokens)) as MsgTransferTokens; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static MsgTransferTokens create() => MsgTransferTokens._();
+  MsgTransferTokens createEmptyInstance() => create();
+  static $pb.PbList<MsgTransferTokens> createRepeated() => $pb.PbList<MsgTransferTokens>();
+  @$core.pragma('dart2js:noInline')
+  static MsgTransferTokens getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MsgTransferTokens>(create);
+  static MsgTransferTokens? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get creator => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set creator($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasCreator() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearCreator() => clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.String get amount => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set amount($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasAmount() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearAmount() => clearField(2);
+}
+
+class MsgTransferTokensResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MsgTransferTokensResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'dpi.dpi'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  MsgTransferTokensResponse._() : super();
+  factory MsgTransferTokensResponse() => create();
+  factory MsgTransferTokensResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MsgTransferTokensResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MsgTransferTokensResponse clone() => MsgTransferTokensResponse()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MsgTransferTokensResponse copyWith(void Function(MsgTransferTokensResponse) updates) => super.copyWith((message) => updates(message as MsgTransferTokensResponse)) as MsgTransferTokensResponse; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static MsgTransferTokensResponse create() => MsgTransferTokensResponse._();
+  MsgTransferTokensResponse createEmptyInstance() => create();
+  static $pb.PbList<MsgTransferTokensResponse> createRepeated() => $pb.PbList<MsgTransferTokensResponse>();
+  @$core.pragma('dart2js:noInline')
+  static MsgTransferTokensResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MsgTransferTokensResponse>(create);
+  static MsgTransferTokensResponse? _defaultInstance;
+}
+

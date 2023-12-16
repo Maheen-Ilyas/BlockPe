@@ -1,8 +1,8 @@
-import 'package:blockpe/providers/account_provider.dart';
+// import 'package:blockpe/providers/account_provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';
 
 class ImportWallet extends StatefulWidget {
   const ImportWallet({super.key});
@@ -92,11 +92,11 @@ class _ImportWalletState extends State<ImportWallet> {
                     },
                   );
                   if (!context.mounted) return;
-                  Provider.of<AccountProvider>(context, listen: false)
-                      .importWallet(
-                    _accountName.text,
-                    _seedPhrase.text,
-                  );
+                  // Provider.of<AccountProvider>(context, listen: false)
+                  //     .importWallet(
+                  //   _accountName.text,
+                  //   _seedPhrase.text,
+                  // );
                 },
                 child: const Text("Import"),
               ),

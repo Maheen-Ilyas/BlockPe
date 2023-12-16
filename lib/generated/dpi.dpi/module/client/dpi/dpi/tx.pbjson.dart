@@ -30,3 +30,21 @@ const MsgSaveVpaResponse$json = const {
 
 /// Descriptor for `MsgSaveVpaResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List msgSaveVpaResponseDescriptor = $convert.base64Decode('ChJNc2dTYXZlVnBhUmVzcG9uc2U=');
+@$core.Deprecated('Use msgTransferTokensDescriptor instead')
+const MsgTransferTokens$json = const {
+  '1': 'MsgTransferTokens',
+  '2': const [
+    const {'1': 'creator', '3': 1, '4': 1, '5': 9, '10': 'creator'},
+    const {'1': 'amount', '3': 2, '4': 1, '5': 9, '10': 'amount'},
+  ],
+};
+
+/// Descriptor for `MsgTransferTokens`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List msgTransferTokensDescriptor = $convert.base64Decode('ChFNc2dUcmFuc2ZlclRva2VucxIYCgdjcmVhdG9yGAEgASgJUgdjcmVhdG9yEhYKBmFtb3VudBgCIAEoCVIGYW1vdW50');
+@$core.Deprecated('Use msgTransferTokensResponseDescriptor instead')
+const MsgTransferTokensResponse$json = const {
+  '1': 'MsgTransferTokensResponse',
+};
+
+/// Descriptor for `MsgTransferTokensResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List msgTransferTokensResponseDescriptor = $convert.base64Decode('ChlNc2dUcmFuc2ZlclRva2Vuc1Jlc3BvbnNl');
