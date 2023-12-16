@@ -53,7 +53,7 @@ class _OTPInputState extends State<OTPInput> {
       appBar: AppBar(
         title: const Text("OTP"),
         flexibleSpace: Container(
-          padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         ),
         actions: [
           IconButton(
@@ -71,7 +71,7 @@ class _OTPInputState extends State<OTPInput> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [

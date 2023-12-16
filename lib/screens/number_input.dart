@@ -36,7 +36,7 @@ class _NumberInputState extends State<NumberInput> {
     showCountryPicker(
       context: context,
       showPhoneCode: true,
-      countryListTheme: CountryListThemeData(
+      countryListTheme: const CountryListThemeData(
         bottomSheetHeight: 500,
       ),
       onSelect: (Country country) {
@@ -83,7 +83,7 @@ class _NumberInputState extends State<NumberInput> {
       appBar: AppBar(
         title: const Text("Phone Number Verification"),
         flexibleSpace: Container(
-          padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         ),
         actions: [
           IconButton(
@@ -101,7 +101,7 @@ class _NumberInputState extends State<NumberInput> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         child: Column(
           children: [
             TextField(

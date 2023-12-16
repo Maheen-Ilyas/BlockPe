@@ -1,0 +1,181 @@
+///
+//  Generated code. Do not modify.
+//  source: cosmos/upgrade/v1beta1/tx.proto
+//
+// @dart = 2.12
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
+
+import 'dart:core' as $core;
+
+import 'package:protobuf/protobuf.dart' as $pb;
+
+import 'upgrade.pb.dart' as $5;
+
+class MsgSoftwareUpgrade extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MsgSoftwareUpgrade', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cosmos.upgrade.v1beta1'), createEmptyInstance: create)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'authority')
+    ..aOM<$5.Plan>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'plan', subBuilder: $5.Plan.create)
+    ..hasRequiredFields = false
+  ;
+
+  MsgSoftwareUpgrade._() : super();
+  factory MsgSoftwareUpgrade({
+    $core.String? authority,
+    $5.Plan? plan,
+  }) {
+    final result = create();
+    if (authority != null) {
+      result.authority = authority;
+    }
+    if (plan != null) {
+      result.plan = plan;
+    }
+    return result;
+  }
+  factory MsgSoftwareUpgrade.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MsgSoftwareUpgrade.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MsgSoftwareUpgrade clone() => MsgSoftwareUpgrade()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MsgSoftwareUpgrade copyWith(void Function(MsgSoftwareUpgrade) updates) => super.copyWith((message) => updates(message as MsgSoftwareUpgrade)) as MsgSoftwareUpgrade; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static MsgSoftwareUpgrade create() => MsgSoftwareUpgrade._();
+  MsgSoftwareUpgrade createEmptyInstance() => create();
+  static $pb.PbList<MsgSoftwareUpgrade> createRepeated() => $pb.PbList<MsgSoftwareUpgrade>();
+  @$core.pragma('dart2js:noInline')
+  static MsgSoftwareUpgrade getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MsgSoftwareUpgrade>(create);
+  static MsgSoftwareUpgrade? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get authority => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set authority($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasAuthority() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearAuthority() => clearField(1);
+
+  @$pb.TagNumber(2)
+  $5.Plan get plan => $_getN(1);
+  @$pb.TagNumber(2)
+  set plan($5.Plan v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasPlan() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearPlan() => clearField(2);
+  @$pb.TagNumber(2)
+  $5.Plan ensurePlan() => $_ensure(1);
+}
+
+class MsgSoftwareUpgradeResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MsgSoftwareUpgradeResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cosmos.upgrade.v1beta1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  MsgSoftwareUpgradeResponse._() : super();
+  factory MsgSoftwareUpgradeResponse() => create();
+  factory MsgSoftwareUpgradeResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MsgSoftwareUpgradeResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MsgSoftwareUpgradeResponse clone() => MsgSoftwareUpgradeResponse()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MsgSoftwareUpgradeResponse copyWith(void Function(MsgSoftwareUpgradeResponse) updates) => super.copyWith((message) => updates(message as MsgSoftwareUpgradeResponse)) as MsgSoftwareUpgradeResponse; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static MsgSoftwareUpgradeResponse create() => MsgSoftwareUpgradeResponse._();
+  MsgSoftwareUpgradeResponse createEmptyInstance() => create();
+  static $pb.PbList<MsgSoftwareUpgradeResponse> createRepeated() => $pb.PbList<MsgSoftwareUpgradeResponse>();
+  @$core.pragma('dart2js:noInline')
+  static MsgSoftwareUpgradeResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MsgSoftwareUpgradeResponse>(create);
+  static MsgSoftwareUpgradeResponse? _defaultInstance;
+}
+
+class MsgCancelUpgrade extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MsgCancelUpgrade', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cosmos.upgrade.v1beta1'), createEmptyInstance: create)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'authority')
+    ..hasRequiredFields = false
+  ;
+
+  MsgCancelUpgrade._() : super();
+  factory MsgCancelUpgrade({
+    $core.String? authority,
+  }) {
+    final result = create();
+    if (authority != null) {
+      result.authority = authority;
+    }
+    return result;
+  }
+  factory MsgCancelUpgrade.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MsgCancelUpgrade.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MsgCancelUpgrade clone() => MsgCancelUpgrade()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MsgCancelUpgrade copyWith(void Function(MsgCancelUpgrade) updates) => super.copyWith((message) => updates(message as MsgCancelUpgrade)) as MsgCancelUpgrade; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static MsgCancelUpgrade create() => MsgCancelUpgrade._();
+  MsgCancelUpgrade createEmptyInstance() => create();
+  static $pb.PbList<MsgCancelUpgrade> createRepeated() => $pb.PbList<MsgCancelUpgrade>();
+  @$core.pragma('dart2js:noInline')
+  static MsgCancelUpgrade getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MsgCancelUpgrade>(create);
+  static MsgCancelUpgrade? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get authority => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set authority($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasAuthority() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearAuthority() => clearField(1);
+}
+
+class MsgCancelUpgradeResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MsgCancelUpgradeResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cosmos.upgrade.v1beta1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  MsgCancelUpgradeResponse._() : super();
+  factory MsgCancelUpgradeResponse() => create();
+  factory MsgCancelUpgradeResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MsgCancelUpgradeResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MsgCancelUpgradeResponse clone() => MsgCancelUpgradeResponse()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MsgCancelUpgradeResponse copyWith(void Function(MsgCancelUpgradeResponse) updates) => super.copyWith((message) => updates(message as MsgCancelUpgradeResponse)) as MsgCancelUpgradeResponse; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static MsgCancelUpgradeResponse create() => MsgCancelUpgradeResponse._();
+  MsgCancelUpgradeResponse createEmptyInstance() => create();
+  static $pb.PbList<MsgCancelUpgradeResponse> createRepeated() => $pb.PbList<MsgCancelUpgradeResponse>();
+  @$core.pragma('dart2js:noInline')
+  static MsgCancelUpgradeResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MsgCancelUpgradeResponse>(create);
+  static MsgCancelUpgradeResponse? _defaultInstance;
+}
+

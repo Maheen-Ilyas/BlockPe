@@ -2,35 +2,35 @@ import 'package:flutter/material.dart';
 
 class LightTheme {
   static const brightness = Brightness.light;
-  static const primary = Color(0xFFAB3600);
-  static const onPrimary = Color(0xFFFFFFFF);
-  static const primaryContainer = Color(0xFFFFDBCF);
-  static const onPrimaryContainer = Color(0xFF390C00);
-  static const secondary = Color(0xFF77574C);
-  static const onSecondary = Color(0xFFFFFFFF);
-  static const secondaryContainer = Color(0xFFFFDBCF);
-  static const onSecondaryContainer = Color(0xFF2C160E);
-  static const tertiary = Color(0xFF6A5E2F);
-  static const onTertiary = Color(0xFFFFFFFF);
-  static const tertiaryContainer = Color(0xFFF3E2A7);
-  static const onTertiaryContainer = Color(0xFF221B00);
-  static const error = Color(0xFFBA1A1A);
-  static const errorContainer = Color(0xFFFFDAD6);
-  static const onError = Color(0xFFFFFFFF);
-  static const onErrorContainer = Color(0xFF410002);
-  static const background = Color(0xFFFFFBFF);
-  static const onBackground = Color(0xFF201A18);
-  static const surface = Color(0xFFFFFBFF);
-  static const onSurface = Color(0xFF201A18);
-  static const surfaceVariant = Color(0xFFF5DED7);
-  static const onSurfaceVariant = Color(0xFF53433F);
-  static const outline = Color(0xFF85736E);
-  static const onInverseSurface = Color(0xFFFBEEEA);
-  static const inverseSurface = Color(0xFF362F2D);
-  static const inversePrimary = Color(0xFFFFB59C);
-  static const shadow = Color(0xFF000000);
-  static const surfaceTint = Color(0xFFAB3600);
-  static const outlineVariant = Color(0xFFD8C2BB);
+  static const primary = Color(0xff0061A4);
+  static const onPrimary = Color(0xffFFFFFF);
+  static const primaryContainer = Color(0xffD1E4FF);
+  static const onPrimaryContainer = Color(0xff001D36);
+  static const secondary = Color(0xff535F70);
+  static const onSecondary = Color(0xffFFFFFF);
+  static const secondaryContainer = Color(0xffD7E3F7);
+  static const onSecondaryContainer = Color(0xff101C2B);
+  static const tertiary = Color(0xff6B5778);
+  static const onTertiary = Color(0xffFFFFFF);
+  static const tertiaryContainer = Color(0xffF2DAFF);
+  static const onTertiaryContainer = Color(0xff251431);
+  static const error = Color(0xffBA1A1A);
+  static const onError = Color(0xffFFFFFF);
+  static const errorContainer = Color(0xffFFDAD6);
+  static const onErrorContainer = Color(0xff410002);
+  static const background = Color(0xffFDFCFF);
+  static const onBackground = Color(0xff1A1C1E);
+  static const surface = Color(0xffFDFCFF);
+  static const onSurface = Color(0xff1A1C1E);
+  static const surfaceVariant = Color(0xffDFE2EB);
+  static const onSurfaceVariant = Color(0xff43474E);
+  static const outline = Color(0xff73777F);
+  static const onInverseSurface = Color(0xffF1F0F4);
+  static const inverseSurface = Color(0xff2F3033);
+  static const inversePrimary = Color(0xff9ECAFF);
+  static const shadow = Color(0xff000000);
+  static const surfaceTint = Color(0xFF0061A4);
+  static const outlineVariant = Color(0xFFC3C7CF);
   static const scrim = Color(0xFF000000);
 }
 
@@ -38,7 +38,6 @@ final lightTheme = ThemeData(
   brightness: LightTheme.brightness,
   canvasColor: LightTheme.tertiary,
   primaryColor: LightTheme.primary,
-  cardColor: LightTheme.secondaryContainer,
   textTheme: const TextTheme(
     titleMedium: TextStyle(
       fontFamily: "Lato",
@@ -98,7 +97,6 @@ final lightTheme = ThemeData(
     labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
   ),
   appBarTheme: const AppBarTheme(
-    color: LightTheme.surface,
     toolbarHeight: 152,
     elevation: 0,
     shadowColor: LightTheme.shadow,
@@ -287,8 +285,17 @@ final lightTheme = ThemeData(
     surfaceTintColor: LightTheme.surfaceTint,
     elevation: 1,
     modalElevation: 1,
-    dragHandleColor:LightTheme.onSurfaceVariant.withOpacity(0.4),
+    dragHandleColor: LightTheme.onSurfaceVariant.withOpacity(0.4),
     dragHandleSize: const Size(32, 4),
     showDragHandle: true,
+  ),
+  cardTheme: CardTheme(
+    color: LightTheme.secondaryContainer,
+    shadowColor: LightTheme.shadow,
+    surfaceTintColor: LightTheme.surfaceTint,
+    elevation: 5,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(15),
+    ),
   ),
 );

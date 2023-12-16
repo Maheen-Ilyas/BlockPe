@@ -76,7 +76,7 @@ class _SignInState extends State<SignIn> {
       appBar: AppBar(
         title: const Text("Sign in"),
         flexibleSpace: Container(
-          padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         ),
         actions: [
           IconButton(
@@ -94,7 +94,7 @@ class _SignInState extends State<SignIn> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,

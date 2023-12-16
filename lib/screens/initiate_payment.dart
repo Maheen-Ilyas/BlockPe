@@ -13,6 +13,14 @@ class _InitiatePaymentState extends State<InitiatePayment> {
   late final TextEditingController _upi;
   late final TextEditingController _amount;
   late final TextEditingController _typeOfCurrency;
+  String selectedCurrency = "Ethereum";
+
+  List<String> currencyOptions = [
+    "Ethereum",
+    "Bitcoin",
+    "Atom",
+    "Polygon",
+  ];
 
   @override
   void initState() {
@@ -75,15 +83,23 @@ class _InitiatePaymentState extends State<InitiatePayment> {
             const SizedBox(height: 15),
             SizedBox(
               height: 56,
-              child: TextField(
-                controller: _typeOfCurrency,
-                keyboardType: TextInputType.text,
-                decoration: const InputDecoration(
-                  icon: Icon(
-                    Icons.person,
-                  ),
-                  label: Text("Type of Currency"),
-                ),
+              child: DropdownButton<String>(
+                value: selectedCurrency,
+                onChanged: (value) {
+                  setState(
+                    () {
+                      selectedCurrency = value!;
+                    },
+                  );
+                },
+                items: currencyOptions.map(
+                  (String currency) {
+                    return DropdownMenuItem<String>(
+                      value: currency,
+                      child: Text(currency),
+                    );
+                  },
+                ).toList(),
               ),
             ),
             const SizedBox(height: 15),

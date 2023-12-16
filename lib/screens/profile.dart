@@ -93,7 +93,7 @@ class _ProfileState extends State<Profile> {
       appBar: AppBar(
         title: const Text("Profile"),
         flexibleSpace: Container(
-          padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         ),
         actions: [
           IconButton(
@@ -145,7 +145,7 @@ class _ProfileState extends State<Profile> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,

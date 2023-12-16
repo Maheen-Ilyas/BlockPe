@@ -11,13 +11,13 @@ class PaymentSuccess extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Payment Success"),
         flexibleSpace: Container(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         ),
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+        padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         child: Column(
           children: [
             Center(

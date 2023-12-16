@@ -114,7 +114,7 @@ class _SignUpState extends State<SignUp> {
       appBar: AppBar(
         title: const Text("Sign up"),
         flexibleSpace: Container(
-          padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         ),
         actions: [
           IconButton(
@@ -132,7 +132,7 @@ class _SignUpState extends State<SignUp> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
