@@ -41,9 +41,9 @@ final lightTheme = ThemeData(
   textTheme: const TextTheme(
     titleMedium: TextStyle(
       fontFamily: "Lato",
-      fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.w500,
       color: LightTheme.onSecondaryContainer,
-      fontSize: 28,
+      fontSize: 24,
     ),
     bodyMedium: TextStyle(
       fontFamily: "Lato",
@@ -255,8 +255,9 @@ final lightTheme = ThemeData(
         TextStyle(
           fontFamily: "Lato",
           fontSize: 16,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w400,
           color: LightTheme.primary,
+          decoration: TextDecoration.none,
         ),
       ),
     ),

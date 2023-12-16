@@ -13,6 +13,18 @@ class PaymentSuccess extends StatelessWidget {
         flexibleSpace: Container(
           padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Provider.of<ThemeProvider>(context, listen: false).toggle();
+            },
+            icon: Icon(
+              Provider.of<ThemeProvider>(context).isDark
+                  ? Icons.toggle_on
+                  : Icons.toggle_off,
+            ),
+          ),
+        ],
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,

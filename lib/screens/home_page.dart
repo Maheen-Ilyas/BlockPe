@@ -44,8 +44,8 @@ class _HomePageState extends State<HomePage> {
                 label: 'Home',
               ),
               NavigationDestination(
-                icon: Icon(Icons.account_balance_outlined),
-                selectedIcon: Icon(Icons.account_balance),
+                icon: Icon(Icons.wallet_outlined),
+                selectedIcon: Icon(Icons.wallet),
                 label: 'Import Wallet',
               ),
               NavigationDestination(

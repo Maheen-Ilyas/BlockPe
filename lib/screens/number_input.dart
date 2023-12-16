@@ -81,7 +81,7 @@ class _NumberInputState extends State<NumberInput> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Phone Number Verification"),
+        title: const Text("Number Verification"),
         flexibleSpace: Container(
           padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         ),
@@ -104,6 +104,7 @@ class _NumberInputState extends State<NumberInput> {
         padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
         child: Column(
           children: [
+            const SizedBox(height: 15),
             TextField(
               controller: _phoneNumber,
               keyboardType: TextInputType.number,
@@ -132,7 +133,7 @@ class _NumberInputState extends State<NumberInput> {
             ),
             const SizedBox(height: 20),
             SizedBox(
-              height: 60,
+              height: 50,
               width: double.infinity,
               child: FilledButton(
                 onPressed: () async {

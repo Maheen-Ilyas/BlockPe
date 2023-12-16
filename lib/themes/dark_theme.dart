@@ -41,9 +41,9 @@ final darkTheme = ThemeData(
   textTheme: const TextTheme(
     titleMedium: TextStyle(
       fontFamily: "Lato",
-      fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.w500,
       color: DarkTheme.onSecondaryContainer,
-      fontSize: 28,
+      fontSize: 24,
     ),
     bodyMedium: TextStyle(
       fontFamily: "Lato",
@@ -129,7 +129,7 @@ final darkTheme = ThemeData(
       color: DarkTheme.onSecondaryContainer,
       fontFamily: "Lato",
       fontSize: 22,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
     ),
   ),
   inputDecorationTheme: const InputDecorationTheme(
@@ -255,8 +255,9 @@ final darkTheme = ThemeData(
         TextStyle(
           fontFamily: "Lato",
           fontSize: 16,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w400,
           color: DarkTheme.primary,
+          decoration: TextDecoration.none,
         ),
       ),
     ),
