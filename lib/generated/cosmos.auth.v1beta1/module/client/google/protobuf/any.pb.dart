@@ -3,7 +3,7 @@
 //  source: google/protobuf/any.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, implementation_imports
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -23,14 +23,14 @@ class Any extends $pb.GeneratedMessage with $mixin.AnyMixin {
     $core.String? typeUrl,
     $core.List<$core.int>? value,
   }) {
-    final result = create();
+    final _result = create();
     if (typeUrl != null) {
-      result.typeUrl = typeUrl;
+      _result.typeUrl = typeUrl;
     }
     if (value != null) {
-      result.value = value;
+      _result.value = value;
     }
-    return result;
+    return _result;
   }
   factory Any.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Any.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

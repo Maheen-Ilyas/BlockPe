@@ -36,32 +36,32 @@ class GenesisState extends $pb.GeneratedMessage {
     $core.Iterable<$5.Proposal>? proposals,
     $core.Iterable<$5.Vote>? votes,
   }) {
-    final result = create();
+    final _result = create();
     if (groupSeq != null) {
-      result.groupSeq = groupSeq;
+      _result.groupSeq = groupSeq;
     }
     if (groups != null) {
-      result.groups.addAll(groups);
+      _result.groups.addAll(groups);
     }
     if (groupMembers != null) {
-      result.groupMembers.addAll(groupMembers);
+      _result.groupMembers.addAll(groupMembers);
     }
     if (groupPolicySeq != null) {
-      result.groupPolicySeq = groupPolicySeq;
+      _result.groupPolicySeq = groupPolicySeq;
     }
     if (groupPolicies != null) {
-      result.groupPolicies.addAll(groupPolicies);
+      _result.groupPolicies.addAll(groupPolicies);
     }
     if (proposalSeq != null) {
-      result.proposalSeq = proposalSeq;
+      _result.proposalSeq = proposalSeq;
     }
     if (proposals != null) {
-      result.proposals.addAll(proposals);
+      _result.proposals.addAll(proposals);
     }
     if (votes != null) {
-      result.votes.addAll(votes);
+      _result.votes.addAll(votes);
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

@@ -36,32 +36,32 @@ class GenesisState extends $pb.GeneratedMessage {
     $core.Iterable<PacketSequence>? ackSequences,
     $fixnum.Int64? nextChannelSequence,
   }) {
-    final result = create();
+    final _result = create();
     if (channels != null) {
-      result.channels.addAll(channels);
+      _result.channels.addAll(channels);
     }
     if (acknowledgements != null) {
-      result.acknowledgements.addAll(acknowledgements);
+      _result.acknowledgements.addAll(acknowledgements);
     }
     if (commitments != null) {
-      result.commitments.addAll(commitments);
+      _result.commitments.addAll(commitments);
     }
     if (receipts != null) {
-      result.receipts.addAll(receipts);
+      _result.receipts.addAll(receipts);
     }
     if (sendSequences != null) {
-      result.sendSequences.addAll(sendSequences);
+      _result.sendSequences.addAll(sendSequences);
     }
     if (recvSequences != null) {
-      result.recvSequences.addAll(recvSequences);
+      _result.recvSequences.addAll(recvSequences);
     }
     if (ackSequences != null) {
-      result.ackSequences.addAll(ackSequences);
+      _result.ackSequences.addAll(ackSequences);
     }
     if (nextChannelSequence != null) {
-      result.nextChannelSequence = nextChannelSequence;
+      _result.nextChannelSequence = nextChannelSequence;
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -129,17 +129,17 @@ class PacketSequence extends $pb.GeneratedMessage {
     $core.String? channelId,
     $fixnum.Int64? sequence,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
-    return result;
+    return _result;
   }
   factory PacketSequence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory PacketSequence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

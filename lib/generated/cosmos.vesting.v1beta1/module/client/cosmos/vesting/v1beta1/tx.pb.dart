@@ -31,23 +31,23 @@ class MsgCreateVestingAccount extends $pb.GeneratedMessage {
     $fixnum.Int64? endTime,
     $core.bool? delayed,
   }) {
-    final result = create();
+    final _result = create();
     if (fromAddress != null) {
-      result.fromAddress = fromAddress;
+      _result.fromAddress = fromAddress;
     }
     if (toAddress != null) {
-      result.toAddress = toAddress;
+      _result.toAddress = toAddress;
     }
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
     if (endTime != null) {
-      result.endTime = endTime;
+      _result.endTime = endTime;
     }
     if (delayed != null) {
-      result.delayed = delayed;
+      _result.delayed = delayed;
     }
-    return result;
+    return _result;
   }
   factory MsgCreateVestingAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreateVestingAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -153,17 +153,17 @@ class MsgCreatePermanentLockedAccount extends $pb.GeneratedMessage {
     $core.String? toAddress,
     $core.Iterable<$3.Coin>? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (fromAddress != null) {
-      result.fromAddress = fromAddress;
+      _result.fromAddress = fromAddress;
     }
     if (toAddress != null) {
-      result.toAddress = toAddress;
+      _result.toAddress = toAddress;
     }
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
-    return result;
+    return _result;
   }
   factory MsgCreatePermanentLockedAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreatePermanentLockedAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -253,20 +253,20 @@ class MsgCreatePeriodicVestingAccount extends $pb.GeneratedMessage {
     $fixnum.Int64? startTime,
     $core.Iterable<$4.Period>? vestingPeriods,
   }) {
-    final result = create();
+    final _result = create();
     if (fromAddress != null) {
-      result.fromAddress = fromAddress;
+      _result.fromAddress = fromAddress;
     }
     if (toAddress != null) {
-      result.toAddress = toAddress;
+      _result.toAddress = toAddress;
     }
     if (startTime != null) {
-      result.startTime = startTime;
+      _result.startTime = startTime;
     }
     if (vestingPeriods != null) {
-      result.vestingPeriods.addAll(vestingPeriods);
+      _result.vestingPeriods.addAll(vestingPeriods);
     }
-    return result;
+    return _result;
   }
   factory MsgCreatePeriodicVestingAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreatePeriodicVestingAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

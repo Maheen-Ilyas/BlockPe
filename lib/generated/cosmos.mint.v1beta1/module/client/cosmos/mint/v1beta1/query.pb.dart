@@ -50,11 +50,11 @@ class QueryParamsResponse extends $pb.GeneratedMessage {
   factory QueryParamsResponse({
     $1.Params? params,
   }) {
-    final result = create();
+    final _result = create();
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
-    return result;
+    return _result;
   }
   factory QueryParamsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryParamsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -128,11 +128,11 @@ class QueryInflationResponse extends $pb.GeneratedMessage {
   factory QueryInflationResponse({
     $core.List<$core.int>? inflation,
   }) {
-    final result = create();
+    final _result = create();
     if (inflation != null) {
-      result.inflation = inflation;
+      _result.inflation = inflation;
     }
-    return result;
+    return _result;
   }
   factory QueryInflationResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryInflationResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -204,11 +204,11 @@ class QueryAnnualProvisionsResponse extends $pb.GeneratedMessage {
   factory QueryAnnualProvisionsResponse({
     $core.List<$core.int>? annualProvisions,
   }) {
-    final result = create();
+    final _result = create();
     if (annualProvisions != null) {
-      result.annualProvisions = annualProvisions;
+      _result.annualProvisions = annualProvisions;
     }
-    return result;
+    return _result;
   }
   factory QueryAnnualProvisionsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAnnualProvisionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

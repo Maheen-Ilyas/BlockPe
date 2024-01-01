@@ -28,20 +28,20 @@ class Block extends $pb.GeneratedMessage {
     $15.EvidenceList? evidence,
     $9.Commit? lastCommit,
   }) {
-    final result = create();
+    final _result = create();
     if (header != null) {
-      result.header = header;
+      _result.header = header;
     }
     if (data != null) {
-      result.data = data;
+      _result.data = data;
     }
     if (evidence != null) {
-      result.evidence = evidence;
+      _result.evidence = evidence;
     }
     if (lastCommit != null) {
-      result.lastCommit = lastCommit;
+      _result.lastCommit = lastCommit;
     }
-    return result;
+    return _result;
   }
   factory Block.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Block.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

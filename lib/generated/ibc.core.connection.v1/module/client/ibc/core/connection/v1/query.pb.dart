@@ -25,11 +25,11 @@ class QueryConnectionRequest extends $pb.GeneratedMessage {
   factory QueryConnectionRequest({
     $core.String? connectionId,
   }) {
-    final result = create();
+    final _result = create();
     if (connectionId != null) {
-      result.connectionId = connectionId;
+      _result.connectionId = connectionId;
     }
-    return result;
+    return _result;
   }
   factory QueryConnectionRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryConnectionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -76,17 +76,17 @@ class QueryConnectionResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $9.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (connection != null) {
-      result.connection = connection;
+      _result.connection = connection;
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryConnectionResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryConnectionResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -151,11 +151,11 @@ class QueryConnectionsRequest extends $pb.GeneratedMessage {
   factory QueryConnectionsRequest({
     $10.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryConnectionsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryConnectionsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -204,17 +204,17 @@ class QueryConnectionsResponse extends $pb.GeneratedMessage {
     $10.PageResponse? pagination,
     $9.Height? height,
   }) {
-    final result = create();
+    final _result = create();
     if (connections != null) {
-      result.connections.addAll(connections);
+      _result.connections.addAll(connections);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
-    return result;
+    return _result;
   }
   factory QueryConnectionsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryConnectionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -273,11 +273,11 @@ class QueryClientConnectionsRequest extends $pb.GeneratedMessage {
   factory QueryClientConnectionsRequest({
     $core.String? clientId,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
-    return result;
+    return _result;
   }
   factory QueryClientConnectionsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryClientConnectionsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -324,17 +324,17 @@ class QueryClientConnectionsResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $9.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (connectionPaths != null) {
-      result.connectionPaths.addAll(connectionPaths);
+      _result.connectionPaths.addAll(connectionPaths);
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryClientConnectionsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryClientConnectionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -391,11 +391,11 @@ class QueryConnectionClientStateRequest extends $pb.GeneratedMessage {
   factory QueryConnectionClientStateRequest({
     $core.String? connectionId,
   }) {
-    final result = create();
+    final _result = create();
     if (connectionId != null) {
-      result.connectionId = connectionId;
+      _result.connectionId = connectionId;
     }
-    return result;
+    return _result;
   }
   factory QueryConnectionClientStateRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryConnectionClientStateRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -442,17 +442,17 @@ class QueryConnectionClientStateResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $9.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (identifiedClientState != null) {
-      result.identifiedClientState = identifiedClientState;
+      _result.identifiedClientState = identifiedClientState;
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryConnectionClientStateResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryConnectionClientStateResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -521,17 +521,17 @@ class QueryConnectionConsensusStateRequest extends $pb.GeneratedMessage {
     $fixnum.Int64? revisionNumber,
     $fixnum.Int64? revisionHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (connectionId != null) {
-      result.connectionId = connectionId;
+      _result.connectionId = connectionId;
     }
     if (revisionNumber != null) {
-      result.revisionNumber = revisionNumber;
+      _result.revisionNumber = revisionNumber;
     }
     if (revisionHeight != null) {
-      result.revisionHeight = revisionHeight;
+      _result.revisionHeight = revisionHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryConnectionConsensusStateRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryConnectionConsensusStateRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -598,20 +598,20 @@ class QueryConnectionConsensusStateResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $9.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (consensusState != null) {
-      result.consensusState = consensusState;
+      _result.consensusState = consensusState;
     }
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryConnectionConsensusStateResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryConnectionConsensusStateResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

@@ -28,20 +28,20 @@ class GenesisState extends $pb.GeneratedMessage {
     $core.Iterable<$2.Coin>? supply,
     $core.Iterable<$3.Metadata>? denomMetadata,
   }) {
-    final result = create();
+    final _result = create();
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
     if (balances != null) {
-      result.balances.addAll(balances);
+      _result.balances.addAll(balances);
     }
     if (supply != null) {
-      result.supply.addAll(supply);
+      _result.supply.addAll(supply);
     }
     if (denomMetadata != null) {
-      result.denomMetadata.addAll(denomMetadata);
+      _result.denomMetadata.addAll(denomMetadata);
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -97,14 +97,14 @@ class Balance extends $pb.GeneratedMessage {
     $core.String? address,
     $core.Iterable<$2.Coin>? coins,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (coins != null) {
-      result.coins.addAll(coins);
+      _result.coins.addAll(coins);
     }
-    return result;
+    return _result;
   }
   factory Balance.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Balance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

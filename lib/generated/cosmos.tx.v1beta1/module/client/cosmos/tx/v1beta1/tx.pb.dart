@@ -3,7 +3,7 @@
 //  source: cosmos/tx/v1beta1/tx.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, constant_identifier_names
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -30,17 +30,17 @@ class Tx extends $pb.GeneratedMessage {
     AuthInfo? authInfo,
     $core.Iterable<$core.List<$core.int>>? signatures,
   }) {
-    final result = create();
+    final _result = create();
     if (body != null) {
-      result.body = body;
+      _result.body = body;
     }
     if (authInfo != null) {
-      result.authInfo = authInfo;
+      _result.authInfo = authInfo;
     }
     if (signatures != null) {
-      result.signatures.addAll(signatures);
+      _result.signatures.addAll(signatures);
     }
-    return result;
+    return _result;
   }
   factory Tx.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Tx.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -103,17 +103,17 @@ class TxRaw extends $pb.GeneratedMessage {
     $core.List<$core.int>? authInfoBytes,
     $core.Iterable<$core.List<$core.int>>? signatures,
   }) {
-    final result = create();
+    final _result = create();
     if (bodyBytes != null) {
-      result.bodyBytes = bodyBytes;
+      _result.bodyBytes = bodyBytes;
     }
     if (authInfoBytes != null) {
-      result.authInfoBytes = authInfoBytes;
+      _result.authInfoBytes = authInfoBytes;
     }
     if (signatures != null) {
-      result.signatures.addAll(signatures);
+      _result.signatures.addAll(signatures);
     }
-    return result;
+    return _result;
   }
   factory TxRaw.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory TxRaw.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -174,20 +174,20 @@ class SignDoc extends $pb.GeneratedMessage {
     $core.String? chainId,
     $fixnum.Int64? accountNumber,
   }) {
-    final result = create();
+    final _result = create();
     if (bodyBytes != null) {
-      result.bodyBytes = bodyBytes;
+      _result.bodyBytes = bodyBytes;
     }
     if (authInfoBytes != null) {
-      result.authInfoBytes = authInfoBytes;
+      _result.authInfoBytes = authInfoBytes;
     }
     if (chainId != null) {
-      result.chainId = chainId;
+      _result.chainId = chainId;
     }
     if (accountNumber != null) {
-      result.accountNumber = accountNumber;
+      _result.accountNumber = accountNumber;
     }
-    return result;
+    return _result;
   }
   factory SignDoc.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SignDoc.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -267,26 +267,26 @@ class SignDocDirectAux extends $pb.GeneratedMessage {
     $fixnum.Int64? sequence,
     Tip? tip,
   }) {
-    final result = create();
+    final _result = create();
     if (bodyBytes != null) {
-      result.bodyBytes = bodyBytes;
+      _result.bodyBytes = bodyBytes;
     }
     if (publicKey != null) {
-      result.publicKey = publicKey;
+      _result.publicKey = publicKey;
     }
     if (chainId != null) {
-      result.chainId = chainId;
+      _result.chainId = chainId;
     }
     if (accountNumber != null) {
-      result.accountNumber = accountNumber;
+      _result.accountNumber = accountNumber;
     }
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
     if (tip != null) {
-      result.tip = tip;
+      _result.tip = tip;
     }
-    return result;
+    return _result;
   }
   factory SignDocDirectAux.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SignDocDirectAux.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -386,23 +386,23 @@ class TxBody extends $pb.GeneratedMessage {
     $core.Iterable<$11.Any>? extensionOptions,
     $core.Iterable<$11.Any>? nonCriticalExtensionOptions,
   }) {
-    final result = create();
+    final _result = create();
     if (messages != null) {
-      result.messages.addAll(messages);
+      _result.messages.addAll(messages);
     }
     if (memo != null) {
-      result.memo = memo;
+      _result.memo = memo;
     }
     if (timeoutHeight != null) {
-      result.timeoutHeight = timeoutHeight;
+      _result.timeoutHeight = timeoutHeight;
     }
     if (extensionOptions != null) {
-      result.extensionOptions.addAll(extensionOptions);
+      _result.extensionOptions.addAll(extensionOptions);
     }
     if (nonCriticalExtensionOptions != null) {
-      result.nonCriticalExtensionOptions.addAll(nonCriticalExtensionOptions);
+      _result.nonCriticalExtensionOptions.addAll(nonCriticalExtensionOptions);
     }
-    return result;
+    return _result;
   }
   factory TxBody.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory TxBody.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -467,17 +467,17 @@ class AuthInfo extends $pb.GeneratedMessage {
     Fee? fee,
     Tip? tip,
   }) {
-    final result = create();
+    final _result = create();
     if (signerInfos != null) {
-      result.signerInfos.addAll(signerInfos);
+      _result.signerInfos.addAll(signerInfos);
     }
     if (fee != null) {
-      result.fee = fee;
+      _result.fee = fee;
     }
     if (tip != null) {
-      result.tip = tip;
+      _result.tip = tip;
     }
-    return result;
+    return _result;
   }
   factory AuthInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory AuthInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -540,17 +540,17 @@ class SignerInfo extends $pb.GeneratedMessage {
     ModeInfo? modeInfo,
     $fixnum.Int64? sequence,
   }) {
-    final result = create();
+    final _result = create();
     if (publicKey != null) {
-      result.publicKey = publicKey;
+      _result.publicKey = publicKey;
     }
     if (modeInfo != null) {
-      result.modeInfo = modeInfo;
+      _result.modeInfo = modeInfo;
     }
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
-    return result;
+    return _result;
   }
   factory SignerInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SignerInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -615,11 +615,11 @@ class ModeInfo_Single extends $pb.GeneratedMessage {
   factory ModeInfo_Single({
     $14.SignMode? mode,
   }) {
-    final result = create();
+    final _result = create();
     if (mode != null) {
-      result.mode = mode;
+      _result.mode = mode;
     }
-    return result;
+    return _result;
   }
   factory ModeInfo_Single.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ModeInfo_Single.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -664,14 +664,14 @@ class ModeInfo_Multi extends $pb.GeneratedMessage {
     $12.CompactBitArray? bitarray,
     $core.Iterable<ModeInfo>? modeInfos,
   }) {
-    final result = create();
+    final _result = create();
     if (bitarray != null) {
-      result.bitarray = bitarray;
+      _result.bitarray = bitarray;
     }
     if (modeInfos != null) {
-      result.modeInfos.addAll(modeInfos);
+      _result.modeInfos.addAll(modeInfos);
     }
-    return result;
+    return _result;
   }
   factory ModeInfo_Multi.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ModeInfo_Multi.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -733,14 +733,14 @@ class ModeInfo extends $pb.GeneratedMessage {
     ModeInfo_Single? single,
     ModeInfo_Multi? multi,
   }) {
-    final result = create();
+    final _result = create();
     if (single != null) {
-      result.single = single;
+      _result.single = single;
     }
     if (multi != null) {
-      result.multi = multi;
+      _result.multi = multi;
     }
-    return result;
+    return _result;
   }
   factory ModeInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ModeInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -805,20 +805,20 @@ class Fee extends $pb.GeneratedMessage {
     $core.String? payer,
     $core.String? granter,
   }) {
-    final result = create();
+    final _result = create();
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
     if (gasLimit != null) {
-      result.gasLimit = gasLimit;
+      _result.gasLimit = gasLimit;
     }
     if (payer != null) {
-      result.payer = payer;
+      _result.payer = payer;
     }
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
-    return result;
+    return _result;
   }
   factory Fee.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Fee.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -884,14 +884,14 @@ class Tip extends $pb.GeneratedMessage {
     $core.Iterable<$13.Coin>? amount,
     $core.String? tipper,
   }) {
-    final result = create();
+    final _result = create();
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
     if (tipper != null) {
-      result.tipper = tipper;
+      _result.tipper = tipper;
     }
-    return result;
+    return _result;
   }
   factory Tip.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Tip.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -943,20 +943,20 @@ class AuxSignerData extends $pb.GeneratedMessage {
     $14.SignMode? mode,
     $core.List<$core.int>? sig,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (signDoc != null) {
-      result.signDoc = signDoc;
+      _result.signDoc = signDoc;
     }
     if (mode != null) {
-      result.mode = mode;
+      _result.mode = mode;
     }
     if (sig != null) {
-      result.sig = sig;
+      _result.sig = sig;
     }
-    return result;
+    return _result;
   }
   factory AuxSignerData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory AuxSignerData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

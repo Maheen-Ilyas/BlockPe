@@ -3,7 +3,7 @@
 //  source: cosmos/group/v1/events.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, unnecessary_null_comparison
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -22,11 +22,11 @@ class EventCreateGroup extends $pb.GeneratedMessage {
   factory EventCreateGroup({
     $fixnum.Int64? groupId,
   }) {
-    final result = create();
+    final _result = create();
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
-    return result;
+    return _result;
   }
   factory EventCreateGroup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventCreateGroup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -69,11 +69,11 @@ class EventUpdateGroup extends $pb.GeneratedMessage {
   factory EventUpdateGroup({
     $fixnum.Int64? groupId,
   }) {
-    final result = create();
+    final _result = create();
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
-    return result;
+    return _result;
   }
   factory EventUpdateGroup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventUpdateGroup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -116,11 +116,11 @@ class EventCreateGroupPolicy extends $pb.GeneratedMessage {
   factory EventCreateGroupPolicy({
     $core.String? address,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
-    return result;
+    return _result;
   }
   factory EventCreateGroupPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventCreateGroupPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -163,11 +163,11 @@ class EventUpdateGroupPolicy extends $pb.GeneratedMessage {
   factory EventUpdateGroupPolicy({
     $core.String? address,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
-    return result;
+    return _result;
   }
   factory EventUpdateGroupPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventUpdateGroupPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -210,11 +210,11 @@ class EventSubmitProposal extends $pb.GeneratedMessage {
   factory EventSubmitProposal({
     $fixnum.Int64? proposalId,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
-    return result;
+    return _result;
   }
   factory EventSubmitProposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventSubmitProposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -257,11 +257,11 @@ class EventWithdrawProposal extends $pb.GeneratedMessage {
   factory EventWithdrawProposal({
     $fixnum.Int64? proposalId,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
-    return result;
+    return _result;
   }
   factory EventWithdrawProposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventWithdrawProposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -304,11 +304,11 @@ class EventVote extends $pb.GeneratedMessage {
   factory EventVote({
     $fixnum.Int64? proposalId,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
-    return result;
+    return _result;
   }
   factory EventVote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventVote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -355,17 +355,17 @@ class EventExec extends $pb.GeneratedMessage {
     $5.ProposalExecutorResult? result,
     $core.String? logs,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (result != null) {
-      result.result = result;
+      _result.result = result;
     }
     if (logs != null) {
-      result.logs = logs;
+      _result.logs = logs;
     }
-    return result;
+    return _result;
   }
   factory EventExec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventExec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -428,14 +428,14 @@ class EventLeaveGroup extends $pb.GeneratedMessage {
     $fixnum.Int64? groupId,
     $core.String? address,
   }) {
-    final result = create();
+    final _result = create();
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
-    return result;
+    return _result;
   }
   factory EventLeaveGroup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventLeaveGroup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

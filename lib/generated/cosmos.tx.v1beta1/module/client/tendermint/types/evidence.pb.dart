@@ -3,7 +3,7 @@
 //  source: tendermint/types/evidence.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, constant_identifier_names
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -38,14 +38,14 @@ class Evidence extends $pb.GeneratedMessage {
     DuplicateVoteEvidence? duplicateVoteEvidence,
     LightClientAttackEvidence? lightClientAttackEvidence,
   }) {
-    final result = create();
+    final _result = create();
     if (duplicateVoteEvidence != null) {
-      result.duplicateVoteEvidence = duplicateVoteEvidence;
+      _result.duplicateVoteEvidence = duplicateVoteEvidence;
     }
     if (lightClientAttackEvidence != null) {
-      result.lightClientAttackEvidence = lightClientAttackEvidence;
+      _result.lightClientAttackEvidence = lightClientAttackEvidence;
     }
-    return result;
+    return _result;
   }
   factory Evidence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Evidence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -112,23 +112,23 @@ class DuplicateVoteEvidence extends $pb.GeneratedMessage {
     $fixnum.Int64? validatorPower,
     $6.Timestamp? timestamp,
   }) {
-    final result = create();
+    final _result = create();
     if (voteA != null) {
-      result.voteA = voteA;
+      _result.voteA = voteA;
     }
     if (voteB != null) {
-      result.voteB = voteB;
+      _result.voteB = voteB;
     }
     if (totalVotingPower != null) {
-      result.totalVotingPower = totalVotingPower;
+      _result.totalVotingPower = totalVotingPower;
     }
     if (validatorPower != null) {
-      result.validatorPower = validatorPower;
+      _result.validatorPower = validatorPower;
     }
     if (timestamp != null) {
-      result.timestamp = timestamp;
+      _result.timestamp = timestamp;
     }
-    return result;
+    return _result;
   }
   factory DuplicateVoteEvidence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DuplicateVoteEvidence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -221,23 +221,23 @@ class LightClientAttackEvidence extends $pb.GeneratedMessage {
     $fixnum.Int64? totalVotingPower,
     $6.Timestamp? timestamp,
   }) {
-    final result = create();
+    final _result = create();
     if (conflictingBlock != null) {
-      result.conflictingBlock = conflictingBlock;
+      _result.conflictingBlock = conflictingBlock;
     }
     if (commonHeight != null) {
-      result.commonHeight = commonHeight;
+      _result.commonHeight = commonHeight;
     }
     if (byzantineValidators != null) {
-      result.byzantineValidators.addAll(byzantineValidators);
+      _result.byzantineValidators.addAll(byzantineValidators);
     }
     if (totalVotingPower != null) {
-      result.totalVotingPower = totalVotingPower;
+      _result.totalVotingPower = totalVotingPower;
     }
     if (timestamp != null) {
-      result.timestamp = timestamp;
+      _result.timestamp = timestamp;
     }
-    return result;
+    return _result;
   }
   factory LightClientAttackEvidence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory LightClientAttackEvidence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -314,11 +314,11 @@ class EvidenceList extends $pb.GeneratedMessage {
   factory EvidenceList({
     $core.Iterable<Evidence>? evidence,
   }) {
-    final result = create();
+    final _result = create();
     if (evidence != null) {
-      result.evidence.addAll(evidence);
+      _result.evidence.addAll(evidence);
     }
-    return result;
+    return _result;
   }
   factory EvidenceList.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EvidenceList.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

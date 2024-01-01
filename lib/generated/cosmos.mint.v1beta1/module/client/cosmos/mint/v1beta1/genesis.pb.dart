@@ -23,14 +23,14 @@ class GenesisState extends $pb.GeneratedMessage {
     $1.Minter? minter,
     $1.Params? params,
   }) {
-    final result = create();
+    final _result = create();
     if (minter != null) {
-      result.minter = minter;
+      _result.minter = minter;
     }
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

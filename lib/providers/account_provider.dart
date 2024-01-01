@@ -16,6 +16,7 @@ class AccountProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  // On import wallet screen
   void importWallet(String mnemonic, String accountName) async {
     walletInUse = Wallet.derive(
       mnemonic.split(" "),
@@ -33,6 +34,7 @@ class AccountProvider extends ChangeNotifier {
     prefs.setBool('isFirstTime', false);
     prefs.setString('walletInUse', walletInUse.bech32Address);
     prefs.reload();
+    updateWalletInUse(1);
     notifyListeners();
   }
 
@@ -44,6 +46,7 @@ class AccountProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  // Displays Balance. Check the localhost for transactions
   Future getBalance() async {
     final bankClient = bank.QueryClient(networkInfo.gRPCChannel);
     final balance = await bankClient.allBalances(
@@ -52,6 +55,7 @@ class AccountProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  // When pay is pressed
   Future fetchVpaDetails(String vpaId) async {
     final credimintClient = dpi.QueryClient(networkInfo.gRPCChannel);
     final res = await credimintClient.vpa(dpi.QueryGetVpaRequest(index: vpaId));
@@ -59,22 +63,24 @@ class AccountProvider extends ChangeNotifier {
     return res.vpa;
   }
 
-  Future<TxResponse> transferToken({required String amount}) async {
-    final message = dpi.MsgTransferTokens(
-      amount: '${amount}rupee',
-      creator: walletInUse.bech32Address,
-    );
-    final signer = TxSigner.fromNetworkInfo(networkInfo);
-    final signedTx = await signer.createAndSign(
-      walletInUse,
-      [message],
-    );
-    final sender = TxSender.fromNetworkInfo(networkInfo);
-    final result = await sender.broadcastTx(signedTx);
-    notifyListeners();
-    return result;
-  }
+  // Display a screen and the call getBalance to show the updated balance
+  // Future<TxResponse> transferToken({required String amount}) async {
+  //   final message = dpi.MsgTransferTokens(
+  //     amount: '${amount}rupee',
+  //     creator: walletInUse!.bech32Address,
+  //   );
+  //   final signer = TxSigner.fromNetworkInfo(networkInfo);
+  //   final signedTx = await signer.createAndSign(
+  //     walletInUse!,
+  //     [message],
+  //   );
+  //   final sender = TxSender.fromNetworkInfo(networkInfo);
+  //   final result = await sender.broadcastTx(signedTx);
+  //   notifyListeners();
+  //   return result;
+  // }
 
+  // Screen to save ID and other Addr
   Future<TxResponse> saveVpa({
     required String vpaId,
     required String btcAddr,

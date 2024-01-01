@@ -23,14 +23,14 @@ class MsgSoftwareUpgrade extends $pb.GeneratedMessage {
     $core.String? authority,
     $5.Plan? plan,
   }) {
-    final result = create();
+    final _result = create();
     if (authority != null) {
-      result.authority = authority;
+      _result.authority = authority;
     }
     if (plan != null) {
-      result.plan = plan;
+      _result.plan = plan;
     }
-    return result;
+    return _result;
   }
   factory MsgSoftwareUpgrade.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgSoftwareUpgrade.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -113,11 +113,11 @@ class MsgCancelUpgrade extends $pb.GeneratedMessage {
   factory MsgCancelUpgrade({
     $core.String? authority,
   }) {
-    final result = create();
+    final _result = create();
     if (authority != null) {
-      result.authority = authority;
+      _result.authority = authority;
     }
-    return result;
+    return _result;
   }
   factory MsgCancelUpgrade.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCancelUpgrade.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

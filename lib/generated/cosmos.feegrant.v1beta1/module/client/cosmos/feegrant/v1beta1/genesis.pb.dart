@@ -21,11 +21,11 @@ class GenesisState extends $pb.GeneratedMessage {
   factory GenesisState({
     $core.Iterable<$6.Grant>? allowances,
   }) {
-    final result = create();
+    final _result = create();
     if (allowances != null) {
-      result.allowances.addAll(allowances);
+      _result.allowances.addAll(allowances);
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

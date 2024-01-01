@@ -26,17 +26,17 @@ class MsgGrant extends $pb.GeneratedMessage {
     $core.String? grantee,
     $4.Grant? grant,
   }) {
-    final result = create();
+    final _result = create();
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
     if (grant != null) {
-      result.grant = grant;
+      _result.grant = grant;
     }
-    return result;
+    return _result;
   }
   factory MsgGrant.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgGrant.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -99,11 +99,11 @@ class MsgExecResponse extends $pb.GeneratedMessage {
   factory MsgExecResponse({
     $core.Iterable<$core.List<$core.int>>? results,
   }) {
-    final result = create();
+    final _result = create();
     if (results != null) {
-      result.results.addAll(results);
+      _result.results.addAll(results);
     }
-    return result;
+    return _result;
   }
   factory MsgExecResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgExecResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -142,14 +142,14 @@ class MsgExec extends $pb.GeneratedMessage {
     $core.String? grantee,
     $core.Iterable<$2.Any>? msgs,
   }) {
-    final result = create();
+    final _result = create();
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
     if (msgs != null) {
-      result.msgs.addAll(msgs);
+      _result.msgs.addAll(msgs);
     }
-    return result;
+    return _result;
   }
   factory MsgExec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgExec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -228,17 +228,17 @@ class MsgRevoke extends $pb.GeneratedMessage {
     $core.String? grantee,
     $core.String? msgTypeUrl,
   }) {
-    final result = create();
+    final _result = create();
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
     if (msgTypeUrl != null) {
-      result.msgTypeUrl = msgTypeUrl;
+      _result.msgTypeUrl = msgTypeUrl;
     }
-    return result;
+    return _result;
   }
   factory MsgRevoke.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgRevoke.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

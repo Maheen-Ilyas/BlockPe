@@ -41,11 +41,10 @@ dependencies:
   firebase_app_check: ^0.2.1+8
   firebase_auth: ^4.15.2
   cloud_firestore: ^4.13.5
-  image_picker: ^1.0.4
+  image_picker: ^0.8.5+3
   get: ^4.6.6
   barcode_scan2: ^4.2.4
   xml: ^6.5.0
-  uuid: ^4.2.2
   alan: ^0.41.4+1
   protobuf: ^2.1.0
   fixnum: ^1.1.0
@@ -77,8 +76,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - assets/
+  assets:
+    - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -23,14 +23,14 @@ class MsgSetWithdrawAddress extends $pb.GeneratedMessage {
     $core.String? delegatorAddress,
     $core.String? withdrawAddress,
   }) {
-    final result = create();
+    final _result = create();
     if (delegatorAddress != null) {
-      result.delegatorAddress = delegatorAddress;
+      _result.delegatorAddress = delegatorAddress;
     }
     if (withdrawAddress != null) {
-      result.withdrawAddress = withdrawAddress;
+      _result.withdrawAddress = withdrawAddress;
     }
-    return result;
+    return _result;
   }
   factory MsgSetWithdrawAddress.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgSetWithdrawAddress.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -113,14 +113,14 @@ class MsgWithdrawDelegatorReward extends $pb.GeneratedMessage {
     $core.String? delegatorAddress,
     $core.String? validatorAddress,
   }) {
-    final result = create();
+    final _result = create();
     if (delegatorAddress != null) {
-      result.delegatorAddress = delegatorAddress;
+      _result.delegatorAddress = delegatorAddress;
     }
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
-    return result;
+    return _result;
   }
   factory MsgWithdrawDelegatorReward.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgWithdrawDelegatorReward.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -172,11 +172,11 @@ class MsgWithdrawDelegatorRewardResponse extends $pb.GeneratedMessage {
   factory MsgWithdrawDelegatorRewardResponse({
     $core.Iterable<$2.Coin>? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
-    return result;
+    return _result;
   }
   factory MsgWithdrawDelegatorRewardResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgWithdrawDelegatorRewardResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -213,11 +213,11 @@ class MsgWithdrawValidatorCommission extends $pb.GeneratedMessage {
   factory MsgWithdrawValidatorCommission({
     $core.String? validatorAddress,
   }) {
-    final result = create();
+    final _result = create();
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
-    return result;
+    return _result;
   }
   factory MsgWithdrawValidatorCommission.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgWithdrawValidatorCommission.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -260,11 +260,11 @@ class MsgWithdrawValidatorCommissionResponse extends $pb.GeneratedMessage {
   factory MsgWithdrawValidatorCommissionResponse({
     $core.Iterable<$2.Coin>? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
-    return result;
+    return _result;
   }
   factory MsgWithdrawValidatorCommissionResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgWithdrawValidatorCommissionResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -303,14 +303,14 @@ class MsgFundCommunityPool extends $pb.GeneratedMessage {
     $core.Iterable<$2.Coin>? amount,
     $core.String? depositor,
   }) {
-    final result = create();
+    final _result = create();
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
     if (depositor != null) {
-      result.depositor = depositor;
+      _result.depositor = depositor;
     }
-    return result;
+    return _result;
   }
   factory MsgFundCommunityPool.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgFundCommunityPool.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

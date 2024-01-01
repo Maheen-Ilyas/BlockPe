@@ -23,17 +23,17 @@ class EventGrant extends $pb.GeneratedMessage {
     $core.String? granter,
     $core.String? grantee,
   }) {
-    final result = create();
+    final _result = create();
     if (msgTypeUrl != null) {
-      result.msgTypeUrl = msgTypeUrl;
+      _result.msgTypeUrl = msgTypeUrl;
     }
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
-    return result;
+    return _result;
   }
   factory EventGrant.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventGrant.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -98,17 +98,17 @@ class EventRevoke extends $pb.GeneratedMessage {
     $core.String? granter,
     $core.String? grantee,
   }) {
-    final result = create();
+    final _result = create();
     if (msgTypeUrl != null) {
-      result.msgTypeUrl = msgTypeUrl;
+      _result.msgTypeUrl = msgTypeUrl;
     }
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
-    return result;
+    return _result;
   }
   factory EventRevoke.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EventRevoke.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

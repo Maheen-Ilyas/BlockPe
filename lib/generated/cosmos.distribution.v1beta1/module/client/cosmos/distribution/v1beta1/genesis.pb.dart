@@ -25,14 +25,14 @@ class DelegatorWithdrawInfo extends $pb.GeneratedMessage {
     $core.String? delegatorAddress,
     $core.String? withdrawAddress,
   }) {
-    final result = create();
+    final _result = create();
     if (delegatorAddress != null) {
-      result.delegatorAddress = delegatorAddress;
+      _result.delegatorAddress = delegatorAddress;
     }
     if (withdrawAddress != null) {
-      result.withdrawAddress = withdrawAddress;
+      _result.withdrawAddress = withdrawAddress;
     }
-    return result;
+    return _result;
   }
   factory DelegatorWithdrawInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DelegatorWithdrawInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -86,14 +86,14 @@ class ValidatorOutstandingRewardsRecord extends $pb.GeneratedMessage {
     $core.String? validatorAddress,
     $core.Iterable<$2.DecCoin>? outstandingRewards,
   }) {
-    final result = create();
+    final _result = create();
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (outstandingRewards != null) {
-      result.outstandingRewards.addAll(outstandingRewards);
+      _result.outstandingRewards.addAll(outstandingRewards);
     }
-    return result;
+    return _result;
   }
   factory ValidatorOutstandingRewardsRecord.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorOutstandingRewardsRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -141,14 +141,14 @@ class ValidatorAccumulatedCommissionRecord extends $pb.GeneratedMessage {
     $core.String? validatorAddress,
     $3.ValidatorAccumulatedCommission? accumulated,
   }) {
-    final result = create();
+    final _result = create();
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (accumulated != null) {
-      result.accumulated = accumulated;
+      _result.accumulated = accumulated;
     }
-    return result;
+    return _result;
   }
   factory ValidatorAccumulatedCommissionRecord.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorAccumulatedCommissionRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -206,17 +206,17 @@ class ValidatorHistoricalRewardsRecord extends $pb.GeneratedMessage {
     $fixnum.Int64? period,
     $3.ValidatorHistoricalRewards? rewards,
   }) {
-    final result = create();
+    final _result = create();
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (period != null) {
-      result.period = period;
+      _result.period = period;
     }
     if (rewards != null) {
-      result.rewards = rewards;
+      _result.rewards = rewards;
     }
-    return result;
+    return _result;
   }
   factory ValidatorHistoricalRewardsRecord.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorHistoricalRewardsRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -281,14 +281,14 @@ class ValidatorCurrentRewardsRecord extends $pb.GeneratedMessage {
     $core.String? validatorAddress,
     $3.ValidatorCurrentRewards? rewards,
   }) {
-    final result = create();
+    final _result = create();
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (rewards != null) {
-      result.rewards = rewards;
+      _result.rewards = rewards;
     }
-    return result;
+    return _result;
   }
   factory ValidatorCurrentRewardsRecord.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorCurrentRewardsRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -346,17 +346,17 @@ class DelegatorStartingInfoRecord extends $pb.GeneratedMessage {
     $core.String? validatorAddress,
     $3.DelegatorStartingInfo? startingInfo,
   }) {
-    final result = create();
+    final _result = create();
     if (delegatorAddress != null) {
-      result.delegatorAddress = delegatorAddress;
+      _result.delegatorAddress = delegatorAddress;
     }
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (startingInfo != null) {
-      result.startingInfo = startingInfo;
+      _result.startingInfo = startingInfo;
     }
-    return result;
+    return _result;
   }
   factory DelegatorStartingInfoRecord.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DelegatorStartingInfoRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -425,20 +425,20 @@ class ValidatorSlashEventRecord extends $pb.GeneratedMessage {
     $fixnum.Int64? period,
     $3.ValidatorSlashEvent? validatorSlashEvent,
   }) {
-    final result = create();
+    final _result = create();
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
     if (period != null) {
-      result.period = period;
+      _result.period = period;
     }
     if (validatorSlashEvent != null) {
-      result.validatorSlashEvent = validatorSlashEvent;
+      _result.validatorSlashEvent = validatorSlashEvent;
     }
-    return result;
+    return _result;
   }
   factory ValidatorSlashEventRecord.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorSlashEventRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -528,38 +528,38 @@ class GenesisState extends $pb.GeneratedMessage {
     $core.Iterable<DelegatorStartingInfoRecord>? delegatorStartingInfos,
     $core.Iterable<ValidatorSlashEventRecord>? validatorSlashEvents,
   }) {
-    final result = create();
+    final _result = create();
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
     if (feePool != null) {
-      result.feePool = feePool;
+      _result.feePool = feePool;
     }
     if (delegatorWithdrawInfos != null) {
-      result.delegatorWithdrawInfos.addAll(delegatorWithdrawInfos);
+      _result.delegatorWithdrawInfos.addAll(delegatorWithdrawInfos);
     }
     if (previousProposer != null) {
-      result.previousProposer = previousProposer;
+      _result.previousProposer = previousProposer;
     }
     if (outstandingRewards != null) {
-      result.outstandingRewards.addAll(outstandingRewards);
+      _result.outstandingRewards.addAll(outstandingRewards);
     }
     if (validatorAccumulatedCommissions != null) {
-      result.validatorAccumulatedCommissions.addAll(validatorAccumulatedCommissions);
+      _result.validatorAccumulatedCommissions.addAll(validatorAccumulatedCommissions);
     }
     if (validatorHistoricalRewards != null) {
-      result.validatorHistoricalRewards.addAll(validatorHistoricalRewards);
+      _result.validatorHistoricalRewards.addAll(validatorHistoricalRewards);
     }
     if (validatorCurrentRewards != null) {
-      result.validatorCurrentRewards.addAll(validatorCurrentRewards);
+      _result.validatorCurrentRewards.addAll(validatorCurrentRewards);
     }
     if (delegatorStartingInfos != null) {
-      result.delegatorStartingInfos.addAll(delegatorStartingInfos);
+      _result.delegatorStartingInfos.addAll(delegatorStartingInfos);
     }
     if (validatorSlashEvents != null) {
-      result.validatorSlashEvents.addAll(validatorSlashEvents);
+      _result.validatorSlashEvents.addAll(validatorSlashEvents);
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

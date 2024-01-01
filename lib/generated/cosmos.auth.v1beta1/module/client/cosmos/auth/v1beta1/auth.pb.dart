@@ -28,20 +28,20 @@ class BaseAccount extends $pb.GeneratedMessage {
     $fixnum.Int64? accountNumber,
     $fixnum.Int64? sequence,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (pubKey != null) {
-      result.pubKey = pubKey;
+      _result.pubKey = pubKey;
     }
     if (accountNumber != null) {
-      result.accountNumber = accountNumber;
+      _result.accountNumber = accountNumber;
     }
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
-    return result;
+    return _result;
   }
   factory BaseAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory BaseAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -117,17 +117,17 @@ class ModuleAccount extends $pb.GeneratedMessage {
     $core.String? name,
     $core.Iterable<$core.String>? permissions,
   }) {
-    final result = create();
+    final _result = create();
     if (baseAccount != null) {
-      result.baseAccount = baseAccount;
+      _result.baseAccount = baseAccount;
     }
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (permissions != null) {
-      result.permissions.addAll(permissions);
+      _result.permissions.addAll(permissions);
     }
-    return result;
+    return _result;
   }
   factory ModuleAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ModuleAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -192,23 +192,23 @@ class Params extends $pb.GeneratedMessage {
     $fixnum.Int64? sigVerifyCostEd25519,
     $fixnum.Int64? sigVerifyCostSecp256k1,
   }) {
-    final result = create();
+    final _result = create();
     if (maxMemoCharacters != null) {
-      result.maxMemoCharacters = maxMemoCharacters;
+      _result.maxMemoCharacters = maxMemoCharacters;
     }
     if (txSigLimit != null) {
-      result.txSigLimit = txSigLimit;
+      _result.txSigLimit = txSigLimit;
     }
     if (txSizeCostPerByte != null) {
-      result.txSizeCostPerByte = txSizeCostPerByte;
+      _result.txSizeCostPerByte = txSizeCostPerByte;
     }
     if (sigVerifyCostEd25519 != null) {
-      result.sigVerifyCostEd25519 = sigVerifyCostEd25519;
+      _result.sigVerifyCostEd25519 = sigVerifyCostEd25519;
     }
     if (sigVerifyCostSecp256k1 != null) {
-      result.sigVerifyCostSecp256k1 = sigVerifyCostSecp256k1;
+      _result.sigVerifyCostSecp256k1 = sigVerifyCostSecp256k1;
     }
-    return result;
+    return _result;
   }
   factory Params.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Params.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

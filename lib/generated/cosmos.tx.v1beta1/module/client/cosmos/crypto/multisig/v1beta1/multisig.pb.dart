@@ -19,11 +19,11 @@ class MultiSignature extends $pb.GeneratedMessage {
   factory MultiSignature({
     $core.Iterable<$core.List<$core.int>>? signatures,
   }) {
-    final result = create();
+    final _result = create();
     if (signatures != null) {
-      result.signatures.addAll(signatures);
+      _result.signatures.addAll(signatures);
     }
-    return result;
+    return _result;
   }
   factory MultiSignature.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MultiSignature.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -62,14 +62,14 @@ class CompactBitArray extends $pb.GeneratedMessage {
     $core.int? extraBitsStored,
     $core.List<$core.int>? elems,
   }) {
-    final result = create();
+    final _result = create();
     if (extraBitsStored != null) {
-      result.extraBitsStored = extraBitsStored;
+      _result.extraBitsStored = extraBitsStored;
     }
     if (elems != null) {
-      result.elems = elems;
+      _result.elems = elems;
     }
-    return result;
+    return _result;
   }
   factory CompactBitArray.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CompactBitArray.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

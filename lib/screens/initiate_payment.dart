@@ -1,3 +1,4 @@
+import 'package:blockpe/providers/account_provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -10,21 +11,21 @@ class InitiatePayment extends StatefulWidget {
 }
 
 class _InitiatePaymentState extends State<InitiatePayment> {
-  late final TextEditingController _upi;
+  late final TextEditingController _vpa;
   late final TextEditingController _amount;
   late final TextEditingController _typeOfCurrency;
   String selectedCurrency = "Ethereum";
+  String vpa = "";
 
   List<String> currencyOptions = [
     "Ethereum",
     "Bitcoin",
     "Atom",
-    "Polygon",
   ];
 
   @override
   void initState() {
-    _upi = TextEditingController();
+    _vpa = TextEditingController();
     _amount = TextEditingController();
     _typeOfCurrency = TextEditingController();
     super.initState();
@@ -32,7 +33,7 @@ class _InitiatePaymentState extends State<InitiatePayment> {
 
   @override
   void dispose() {
-    _upi.dispose();
+    _vpa.dispose();
     _amount.dispose();
     _typeOfCurrency.dispose();
     super.dispose();
@@ -57,13 +58,13 @@ class _InitiatePaymentState extends State<InitiatePayment> {
             SizedBox(
               height: 56,
               child: TextField(
-                controller: _upi,
+                controller: _vpa,
                 keyboardType: TextInputType.text,
                 decoration: const InputDecoration(
                   icon: Icon(
                     Icons.person,
                   ),
-                  label: Text("UPI ID"),
+                  label: Text("VPA ID"),
                 ),
               ),
             ),
@@ -82,25 +83,35 @@ class _InitiatePaymentState extends State<InitiatePayment> {
               ),
             ),
             const SizedBox(height: 15),
-            SizedBox(
-              height: 56,
-              child: DropdownButton<String>(
-                value: selectedCurrency,
-                onChanged: (value) {
-                  setState(
-                    () {
-                      selectedCurrency = value!;
-                    },
-                  );
-                },
-                items: currencyOptions.map(
-                  (String currency) {
-                    return DropdownMenuItem<String>(
-                      value: currency,
-                      child: Text(currency),
-                    );
+            TextField(
+              controller: _typeOfCurrency,
+              decoration: const InputDecoration(
+                icon: Icon(
+                  Icons.currency_bitcoin,
+                ),
+                label: Text("Select the currency"),
+              ),
+            ),
+            const SizedBox(height: 15),
+            DropdownButtonFormField<String>(
+              value: selectedCurrency,
+              onChanged: (value) {
+                setState(
+                  () {
+                    selectedCurrency = value!;
+                    _typeOfCurrency.text = value;
                   },
-                ).toList(),
+                );
+              },
+              items: ['Ethereum', 'Bitcoin', 'Atom']
+                  .map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              }).toList(),
+              decoration: const InputDecoration(
+                label: Text('Select an option'),
               ),
             ),
             const SizedBox(height: 15),
@@ -109,12 +120,13 @@ class _InitiatePaymentState extends State<InitiatePayment> {
               width: double.infinity,
               child: FilledButton(
                 onPressed: () async {
+                  AccountProvider().fetchVpaDetails(_vpa.text);
                   await FirebaseFirestore.instance
                       .collection('transactions')
                       .doc(FirebaseAuth.instance.currentUser?.uid)
                       .set(
                     {
-                      "upiID": _upi.text,
+                      "vpaID": _vpa.text,
                       "amount": _amount.text,
                       "typeOfCurrency": _typeOfCurrency.text,
                     },

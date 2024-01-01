@@ -3,7 +3,7 @@
 //  source: ibc/core/channel/v1/tx.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, unnecessary_null_comparison
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -31,17 +31,17 @@ class MsgChannelOpenInit extends $pb.GeneratedMessage {
     $6.Channel? channel,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channel != null) {
-      result.channel = channel;
+      _result.channel = channel;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgChannelOpenInit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgChannelOpenInit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -106,14 +106,14 @@ class MsgChannelOpenInitResponse extends $pb.GeneratedMessage {
     $core.String? channelId,
     $core.String? version,
   }) {
-    final result = create();
+    final _result = create();
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (version != null) {
-      result.version = version;
+      _result.version = version;
     }
-    return result;
+    return _result;
   }
   factory MsgChannelOpenInitResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgChannelOpenInitResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -178,30 +178,30 @@ class MsgChannelOpenTry extends $pb.GeneratedMessage {
     $5.Height? proofHeight,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (previousChannelId != null) {
       // ignore: deprecated_member_use_from_same_package
-      result.previousChannelId = previousChannelId;
+      _result.previousChannelId = previousChannelId;
     }
     if (channel != null) {
-      result.channel = channel;
+      _result.channel = channel;
     }
     if (counterpartyVersion != null) {
-      result.counterpartyVersion = counterpartyVersion;
+      _result.counterpartyVersion = counterpartyVersion;
     }
     if (proofInit != null) {
-      result.proofInit = proofInit;
+      _result.proofInit = proofInit;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgChannelOpenTry.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgChannelOpenTry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -306,11 +306,11 @@ class MsgChannelOpenTryResponse extends $pb.GeneratedMessage {
   factory MsgChannelOpenTryResponse({
     $core.String? version,
   }) {
-    final result = create();
+    final _result = create();
     if (version != null) {
-      result.version = version;
+      _result.version = version;
     }
-    return result;
+    return _result;
   }
   factory MsgChannelOpenTryResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgChannelOpenTryResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -365,29 +365,29 @@ class MsgChannelOpenAck extends $pb.GeneratedMessage {
     $5.Height? proofHeight,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (counterpartyChannelId != null) {
-      result.counterpartyChannelId = counterpartyChannelId;
+      _result.counterpartyChannelId = counterpartyChannelId;
     }
     if (counterpartyVersion != null) {
-      result.counterpartyVersion = counterpartyVersion;
+      _result.counterpartyVersion = counterpartyVersion;
     }
     if (proofTry != null) {
-      result.proofTry = proofTry;
+      _result.proofTry = proofTry;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgChannelOpenAck.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgChannelOpenAck.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -523,23 +523,23 @@ class MsgChannelOpenConfirm extends $pb.GeneratedMessage {
     $5.Height? proofHeight,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (proofAck != null) {
-      result.proofAck = proofAck;
+      _result.proofAck = proofAck;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgChannelOpenConfirm.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgChannelOpenConfirm.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -653,17 +653,17 @@ class MsgChannelCloseInit extends $pb.GeneratedMessage {
     $core.String? channelId,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgChannelCloseInit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgChannelCloseInit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -761,23 +761,23 @@ class MsgChannelCloseConfirm extends $pb.GeneratedMessage {
     $5.Height? proofHeight,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (proofInit != null) {
-      result.proofInit = proofInit;
+      _result.proofInit = proofInit;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgChannelCloseConfirm.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgChannelCloseConfirm.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -893,20 +893,20 @@ class MsgRecvPacket extends $pb.GeneratedMessage {
     $5.Height? proofHeight,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (packet != null) {
-      result.packet = packet;
+      _result.packet = packet;
     }
     if (proofCommitment != null) {
-      result.proofCommitment = proofCommitment;
+      _result.proofCommitment = proofCommitment;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgRecvPacket.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgRecvPacket.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -980,11 +980,11 @@ class MsgRecvPacketResponse extends $pb.GeneratedMessage {
   factory MsgRecvPacketResponse({
     ResponseResultType? result,
   }) {
-    final result = create();
+    final _result = create();
     if (result != null) {
-      result.result = result;
+      _result.result = result;
     }
-    return result;
+    return _result;
   }
   factory MsgRecvPacketResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgRecvPacketResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1035,23 +1035,23 @@ class MsgTimeout extends $pb.GeneratedMessage {
     $fixnum.Int64? nextSequenceRecv,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (packet != null) {
-      result.packet = packet;
+      _result.packet = packet;
     }
     if (proofUnreceived != null) {
-      result.proofUnreceived = proofUnreceived;
+      _result.proofUnreceived = proofUnreceived;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (nextSequenceRecv != null) {
-      result.nextSequenceRecv = nextSequenceRecv;
+      _result.nextSequenceRecv = nextSequenceRecv;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgTimeout.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgTimeout.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1134,11 +1134,11 @@ class MsgTimeoutResponse extends $pb.GeneratedMessage {
   factory MsgTimeoutResponse({
     ResponseResultType? result,
   }) {
-    final result = create();
+    final _result = create();
     if (result != null) {
-      result.result = result;
+      _result.result = result;
     }
-    return result;
+    return _result;
   }
   factory MsgTimeoutResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgTimeoutResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1191,26 +1191,26 @@ class MsgTimeoutOnClose extends $pb.GeneratedMessage {
     $fixnum.Int64? nextSequenceRecv,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (packet != null) {
-      result.packet = packet;
+      _result.packet = packet;
     }
     if (proofUnreceived != null) {
-      result.proofUnreceived = proofUnreceived;
+      _result.proofUnreceived = proofUnreceived;
     }
     if (proofClose != null) {
-      result.proofClose = proofClose;
+      _result.proofClose = proofClose;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (nextSequenceRecv != null) {
-      result.nextSequenceRecv = nextSequenceRecv;
+      _result.nextSequenceRecv = nextSequenceRecv;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgTimeoutOnClose.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgTimeoutOnClose.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1302,11 +1302,11 @@ class MsgTimeoutOnCloseResponse extends $pb.GeneratedMessage {
   factory MsgTimeoutOnCloseResponse({
     ResponseResultType? result,
   }) {
-    final result = create();
+    final _result = create();
     if (result != null) {
-      result.result = result;
+      _result.result = result;
     }
-    return result;
+    return _result;
   }
   factory MsgTimeoutOnCloseResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgTimeoutOnCloseResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1357,23 +1357,23 @@ class MsgAcknowledgement extends $pb.GeneratedMessage {
     $5.Height? proofHeight,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (packet != null) {
-      result.packet = packet;
+      _result.packet = packet;
     }
     if (acknowledgement != null) {
-      result.acknowledgement = acknowledgement;
+      _result.acknowledgement = acknowledgement;
     }
     if (proofAcked != null) {
-      result.proofAcked = proofAcked;
+      _result.proofAcked = proofAcked;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgAcknowledgement.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgAcknowledgement.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1456,11 +1456,11 @@ class MsgAcknowledgementResponse extends $pb.GeneratedMessage {
   factory MsgAcknowledgementResponse({
     ResponseResultType? result,
   }) {
-    final result = create();
+    final _result = create();
     if (result != null) {
-      result.result = result;
+      _result.result = result;
     }
-    return result;
+    return _result;
   }
   factory MsgAcknowledgementResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgAcknowledgementResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

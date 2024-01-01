@@ -37,16 +37,6 @@ class _OTPInputState extends State<OTPInput> {
     super.dispose();
   }
 
-  Future<void> _verifyOTP() async {
-    String otp = _otpController.map((controller) => controller.text).join();
-    await FirebaseAuth.instance.signInWithCredential(
-      PhoneAuthProvider.credential(
-        verificationId: widget.verificationID,
-        smsCode: otp,
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -122,15 +112,38 @@ class _OTPInputState extends State<OTPInput> {
                 onPressed: () {
                   _verifyOTP();
                   Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/homepage',
+                    '/importwallet',
                     (route) => false,
                   );
                 },
                 child: const Text("Verify"),
               ),
             ),
+            SizedBox(
+              height: 60,
+              width: double.infinity,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamedAndRemoveUntil(
+                    '/numberinput',
+                    (route) => false,
+                  );
+                },
+                child: const Text("Didn't recieve OTP? Tap here to resend"),
+              ),
+            ),
           ],
         ),
+      ),
+    );
+  }
+
+  Future<void> _verifyOTP() async {
+    String otp = _otpController.map((controller) => controller.text).join();
+    await FirebaseAuth.instance.signInWithCredential(
+      PhoneAuthProvider.credential(
+        verificationId: widget.verificationID,
+        smsCode: otp,
       ),
     );
   }

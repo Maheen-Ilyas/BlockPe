@@ -25,14 +25,14 @@ class QueryBalanceRequest extends $pb.GeneratedMessage {
     $core.String? address,
     $core.String? denom,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (denom != null) {
-      result.denom = denom;
+      _result.denom = denom;
     }
-    return result;
+    return _result;
   }
   factory QueryBalanceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryBalanceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -84,11 +84,11 @@ class QueryBalanceResponse extends $pb.GeneratedMessage {
   factory QueryBalanceResponse({
     $2.Coin? balance,
   }) {
-    final result = create();
+    final _result = create();
     if (balance != null) {
-      result.balance = balance;
+      _result.balance = balance;
     }
-    return result;
+    return _result;
   }
   factory QueryBalanceResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryBalanceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -135,14 +135,14 @@ class QueryAllBalancesRequest extends $pb.GeneratedMessage {
     $core.String? address,
     $5.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryAllBalancesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllBalancesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -198,14 +198,14 @@ class QueryAllBalancesResponse extends $pb.GeneratedMessage {
     $core.Iterable<$2.Coin>? balances,
     $5.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (balances != null) {
-      result.balances.addAll(balances);
+      _result.balances.addAll(balances);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryAllBalancesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllBalancesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -255,14 +255,14 @@ class QuerySpendableBalancesRequest extends $pb.GeneratedMessage {
     $core.String? address,
     $5.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QuerySpendableBalancesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QuerySpendableBalancesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -318,14 +318,14 @@ class QuerySpendableBalancesResponse extends $pb.GeneratedMessage {
     $core.Iterable<$2.Coin>? balances,
     $5.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (balances != null) {
-      result.balances.addAll(balances);
+      _result.balances.addAll(balances);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QuerySpendableBalancesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QuerySpendableBalancesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -373,11 +373,11 @@ class QueryTotalSupplyRequest extends $pb.GeneratedMessage {
   factory QueryTotalSupplyRequest({
     $5.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryTotalSupplyRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryTotalSupplyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -424,14 +424,14 @@ class QueryTotalSupplyResponse extends $pb.GeneratedMessage {
     $core.Iterable<$2.Coin>? supply,
     $5.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (supply != null) {
-      result.supply.addAll(supply);
+      _result.supply.addAll(supply);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryTotalSupplyResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryTotalSupplyResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -479,11 +479,11 @@ class QuerySupplyOfRequest extends $pb.GeneratedMessage {
   factory QuerySupplyOfRequest({
     $core.String? denom,
   }) {
-    final result = create();
+    final _result = create();
     if (denom != null) {
-      result.denom = denom;
+      _result.denom = denom;
     }
-    return result;
+    return _result;
   }
   factory QuerySupplyOfRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QuerySupplyOfRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -526,11 +526,11 @@ class QuerySupplyOfResponse extends $pb.GeneratedMessage {
   factory QuerySupplyOfResponse({
     $2.Coin? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (amount != null) {
-      result.amount = amount;
+      _result.amount = amount;
     }
-    return result;
+    return _result;
   }
   factory QuerySupplyOfResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QuerySupplyOfResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -604,11 +604,11 @@ class QueryParamsResponse extends $pb.GeneratedMessage {
   factory QueryParamsResponse({
     $3.Params? params,
   }) {
-    final result = create();
+    final _result = create();
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
-    return result;
+    return _result;
   }
   factory QueryParamsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryParamsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -653,11 +653,11 @@ class QueryDenomsMetadataRequest extends $pb.GeneratedMessage {
   factory QueryDenomsMetadataRequest({
     $5.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomsMetadataRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomsMetadataRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -704,14 +704,14 @@ class QueryDenomsMetadataResponse extends $pb.GeneratedMessage {
     $core.Iterable<$3.Metadata>? metadatas,
     $5.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (metadatas != null) {
-      result.metadatas.addAll(metadatas);
+      _result.metadatas.addAll(metadatas);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomsMetadataResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomsMetadataResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -759,11 +759,11 @@ class QueryDenomMetadataRequest extends $pb.GeneratedMessage {
   factory QueryDenomMetadataRequest({
     $core.String? denom,
   }) {
-    final result = create();
+    final _result = create();
     if (denom != null) {
-      result.denom = denom;
+      _result.denom = denom;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomMetadataRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomMetadataRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -806,11 +806,11 @@ class QueryDenomMetadataResponse extends $pb.GeneratedMessage {
   factory QueryDenomMetadataResponse({
     $3.Metadata? metadata,
   }) {
-    final result = create();
+    final _result = create();
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomMetadataResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomMetadataResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -857,14 +857,14 @@ class QueryDenomOwnersRequest extends $pb.GeneratedMessage {
     $core.String? denom,
     $5.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (denom != null) {
-      result.denom = denom;
+      _result.denom = denom;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomOwnersRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomOwnersRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -920,14 +920,14 @@ class DenomOwner extends $pb.GeneratedMessage {
     $core.String? address,
     $2.Coin? balance,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (balance != null) {
-      result.balance = balance;
+      _result.balance = balance;
     }
-    return result;
+    return _result;
   }
   factory DenomOwner.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DenomOwner.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -983,14 +983,14 @@ class QueryDenomOwnersResponse extends $pb.GeneratedMessage {
     $core.Iterable<DenomOwner>? denomOwners,
     $5.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (denomOwners != null) {
-      result.denomOwners.addAll(denomOwners);
+      _result.denomOwners.addAll(denomOwners);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomOwnersResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomOwnersResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

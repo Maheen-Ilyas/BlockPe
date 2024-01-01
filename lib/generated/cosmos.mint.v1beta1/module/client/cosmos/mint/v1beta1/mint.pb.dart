@@ -22,14 +22,14 @@ class Minter extends $pb.GeneratedMessage {
     $core.String? inflation,
     $core.String? annualProvisions,
   }) {
-    final result = create();
+    final _result = create();
     if (inflation != null) {
-      result.inflation = inflation;
+      _result.inflation = inflation;
     }
     if (annualProvisions != null) {
-      result.annualProvisions = annualProvisions;
+      _result.annualProvisions = annualProvisions;
     }
-    return result;
+    return _result;
   }
   factory Minter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Minter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -91,26 +91,26 @@ class Params extends $pb.GeneratedMessage {
     $core.String? goalBonded,
     $fixnum.Int64? blocksPerYear,
   }) {
-    final result = create();
+    final _result = create();
     if (mintDenom != null) {
-      result.mintDenom = mintDenom;
+      _result.mintDenom = mintDenom;
     }
     if (inflationRateChange != null) {
-      result.inflationRateChange = inflationRateChange;
+      _result.inflationRateChange = inflationRateChange;
     }
     if (inflationMax != null) {
-      result.inflationMax = inflationMax;
+      _result.inflationMax = inflationMax;
     }
     if (inflationMin != null) {
-      result.inflationMin = inflationMin;
+      _result.inflationMin = inflationMin;
     }
     if (goalBonded != null) {
-      result.goalBonded = goalBonded;
+      _result.goalBonded = goalBonded;
     }
     if (blocksPerYear != null) {
-      result.blocksPerYear = blocksPerYear;
+      _result.blocksPerYear = blocksPerYear;
     }
-    return result;
+    return _result;
   }
   factory Params.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Params.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

@@ -1,3 +1,4 @@
+import 'package:blockpe/providers/account_provider.dart';
 import 'package:blockpe/providers/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -57,11 +58,16 @@ class _HomeState extends State<Home> {
                             ),
                             const SizedBox(height: 5),
                             Text(
-                              showBalance ? "20,000" : '',
+                              showBalance
+                                  ? AccountProvider().getBalance().toString()
+                                  : '',
                               style: Provider.of<ThemeProvider>(context)
                                   .theme
                                   .textTheme
-                                  .bodyMedium,
+                                  .labelSmall!
+                                  .copyWith(
+                                    fontSize: 10,
+                                  ),
                             ),
                           ],
                         ),
@@ -89,35 +95,9 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
-            const SizedBox(height: 30),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  height: 100,
-                  width: 180,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Provider.of<ThemeProvider>(context).theme.cardColor,
-                  ),
-                ),
-                const SizedBox(width: 10),
-                Container(
-                  height: 100,
-                  width: 180,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Provider.of<ThemeProvider>(context).theme.cardColor,
-                  ),
-                ),
-              ],
-            ),
             const SizedBox(height: 20),
             const Text("Transaction history"),
             const SizedBox(height: 15),
-            Container(),
-            const SizedBox(height: 10),
-            Container(),
           ],
         ),
       ),

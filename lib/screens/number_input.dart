@@ -32,51 +32,6 @@ class _NumberInputState extends State<NumberInput> {
     super.dispose();
   }
 
-  void _openDropDown() {
-    showCountryPicker(
-      context: context,
-      showPhoneCode: true,
-      countryListTheme: const CountryListThemeData(
-        bottomSheetHeight: 500,
-      ),
-      onSelect: (Country country) {
-        setState(
-          () {
-            _selectedCountry = country;
-          },
-        );
-      },
-    );
-  }
-
-  Future<void> _phoneAuth(String phoneNumber) async {
-    await FirebaseAuth.instance.verifyPhoneNumber(
-      phoneNumber: phoneNumber,
-      verificationCompleted: (credential) async {
-        await FirebaseAuth.instance.signInWithCredential(credential);
-      },
-      verificationFailed: (e) {
-        if (e.code == 'invalid-phone-number') {
-          showErrorDialog(
-            context,
-            "Invalid phone number",
-            "Enter a valid phone number",
-          );
-        } else {
-          showErrorDialog(
-            context,
-            "An error occurred",
-            "Try again",
-          );
-        }
-      },
-      codeSent: (verificationID, resendToken) {
-        this.verificationID.value = verificationID;
-      },
-      codeAutoRetrievalTimeout: (verificationID) {},
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -150,21 +105,74 @@ class _NumberInputState extends State<NumberInput> {
                     },
                   );
                   if (!context.mounted) return;
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => OTPInput(
-                        verificationID: verificationID.value,
-                      ),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => OTPInput(
+                  //       verificationID: verificationID.value,
+                  //     ),
+                  //   ),
+                  // );
                 },
-                child: const Text("Verify your phone number"),
+                child: const Text("Verify"),
               ),
             ),
           ],
         ),
       ),
+    );
+  }
+
+  void _openDropDown() {
+    showCountryPicker(
+      context: context,
+      showPhoneCode: true,
+      countryListTheme: const CountryListThemeData(
+        bottomSheetHeight: 500,
+      ),
+      onSelect: (Country country) {
+        setState(
+          () {
+            _selectedCountry = country;
+          },
+        );
+      },
+    );
+  }
+
+  Future<void> _phoneAuth(String phoneNumber) async {
+    await FirebaseAuth.instance.verifyPhoneNumber(
+      phoneNumber: phoneNumber,
+      verificationCompleted: (PhoneAuthCredential credential) async {
+        await FirebaseAuth.instance.signInWithCredential(credential);
+      },
+      verificationFailed: (e) {
+        if (e.code == 'invalid-phone-number') {
+          showErrorDialog(
+            context,
+            "Invalid phone number",
+            "Enter a valid phone number",
+          );
+        } else {
+          showErrorDialog(
+            context,
+            "An error occurred",
+            "Try again",
+          );
+        }
+      },
+      codeSent: (verificationID, resendToken) {
+   //     this.verificationID.value = verificationID;
+    Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => OTPInput(
+                        verificationID: verificationID,
+                      ),
+                    ),
+                  );
+      },
+      codeAutoRetrievalTimeout: (verificationID) {},
     );
   }
 }

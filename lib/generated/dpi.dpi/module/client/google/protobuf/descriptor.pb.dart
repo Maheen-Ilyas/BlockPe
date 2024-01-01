@@ -23,11 +23,11 @@ class FileDescriptorSet extends $pb.GeneratedMessage {
   factory FileDescriptorSet({
     $core.Iterable<FileDescriptorProto>? file,
   }) {
-    final result = create();
+    final _result = create();
     if (file != null) {
-      result.file.addAll(file);
+      _result.file.addAll(file);
     }
-    return result;
+    return _result;
   }
   factory FileDescriptorSet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory FileDescriptorSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -85,44 +85,44 @@ class FileDescriptorProto extends $pb.GeneratedMessage {
     $core.Iterable<$core.int>? weakDependency,
     $core.String? syntax,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (package != null) {
-      result.package = package;
+      _result.package = package;
     }
     if (dependency != null) {
-      result.dependency.addAll(dependency);
+      _result.dependency.addAll(dependency);
     }
     if (messageType != null) {
-      result.messageType.addAll(messageType);
+      _result.messageType.addAll(messageType);
     }
     if (enumType != null) {
-      result.enumType.addAll(enumType);
+      _result.enumType.addAll(enumType);
     }
     if (service != null) {
-      result.service.addAll(service);
+      _result.service.addAll(service);
     }
     if (extension != null) {
-      result.extension.addAll(extension);
+      _result.extension.addAll(extension);
     }
     if (options != null) {
-      result.options = options;
+      _result.options = options;
     }
     if (sourceCodeInfo != null) {
-      result.sourceCodeInfo = sourceCodeInfo;
+      _result.sourceCodeInfo = sourceCodeInfo;
     }
     if (publicDependency != null) {
-      result.publicDependency.addAll(publicDependency);
+      _result.publicDependency.addAll(publicDependency);
     }
     if (weakDependency != null) {
-      result.weakDependency.addAll(weakDependency);
+      _result.weakDependency.addAll(weakDependency);
     }
     if (syntax != null) {
-      result.syntax = syntax;
+      _result.syntax = syntax;
     }
-    return result;
+    return _result;
   }
   factory FileDescriptorProto.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory FileDescriptorProto.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -229,17 +229,17 @@ class DescriptorProto_ExtensionRange extends $pb.GeneratedMessage {
     $core.int? end,
     ExtensionRangeOptions? options,
   }) {
-    final result = create();
+    final _result = create();
     if (start != null) {
-      result.start = start;
+      _result.start = start;
     }
     if (end != null) {
-      result.end = end;
+      _result.end = end;
     }
     if (options != null) {
-      result.options = options;
+      _result.options = options;
     }
-    return result;
+    return _result;
   }
   factory DescriptorProto_ExtensionRange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DescriptorProto_ExtensionRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -304,14 +304,14 @@ class DescriptorProto_ReservedRange extends $pb.GeneratedMessage {
     $core.int? start,
     $core.int? end,
   }) {
-    final result = create();
+    final _result = create();
     if (start != null) {
-      result.start = start;
+      _result.start = start;
     }
     if (end != null) {
-      result.end = end;
+      _result.end = end;
     }
-    return result;
+    return _result;
   }
   factory DescriptorProto_ReservedRange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DescriptorProto_ReservedRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -380,38 +380,38 @@ class DescriptorProto extends $pb.GeneratedMessage {
     $core.Iterable<DescriptorProto_ReservedRange>? reservedRange,
     $core.Iterable<$core.String>? reservedName,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (field != null) {
-      result.field.addAll(field);
+      _result.field.addAll(field);
     }
     if (nestedType != null) {
-      result.nestedType.addAll(nestedType);
+      _result.nestedType.addAll(nestedType);
     }
     if (enumType != null) {
-      result.enumType.addAll(enumType);
+      _result.enumType.addAll(enumType);
     }
     if (extensionRange != null) {
-      result.extensionRange.addAll(extensionRange);
+      _result.extensionRange.addAll(extensionRange);
     }
     if (extension != null) {
-      result.extension.addAll(extension);
+      _result.extension.addAll(extension);
     }
     if (options != null) {
-      result.options = options;
+      _result.options = options;
     }
     if (oneofDecl != null) {
-      result.oneofDecl.addAll(oneofDecl);
+      _result.oneofDecl.addAll(oneofDecl);
     }
     if (reservedRange != null) {
-      result.reservedRange.addAll(reservedRange);
+      _result.reservedRange.addAll(reservedRange);
     }
     if (reservedName != null) {
-      result.reservedName.addAll(reservedName);
+      _result.reservedName.addAll(reservedName);
     }
-    return result;
+    return _result;
   }
   factory DescriptorProto.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DescriptorProto.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -489,11 +489,11 @@ class ExtensionRangeOptions extends $pb.GeneratedMessage {
   factory ExtensionRangeOptions({
     $core.Iterable<UninterpretedOption>? uninterpretedOption,
   }) {
-    final result = create();
+    final _result = create();
     if (uninterpretedOption != null) {
-      result.uninterpretedOption.addAll(uninterpretedOption);
+      _result.uninterpretedOption.addAll(uninterpretedOption);
     }
-    return result;
+    return _result;
   }
   factory ExtensionRangeOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ExtensionRangeOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -549,41 +549,41 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
     $core.String? jsonName,
     $core.bool? proto3Optional,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (extendee != null) {
-      result.extendee = extendee;
+      _result.extendee = extendee;
     }
     if (number != null) {
-      result.number = number;
+      _result.number = number;
     }
     if (label != null) {
-      result.label = label;
+      _result.label = label;
     }
     if (type != null) {
-      result.type = type;
+      _result.type = type;
     }
     if (typeName != null) {
-      result.typeName = typeName;
+      _result.typeName = typeName;
     }
     if (defaultValue != null) {
-      result.defaultValue = defaultValue;
+      _result.defaultValue = defaultValue;
     }
     if (options != null) {
-      result.options = options;
+      _result.options = options;
     }
     if (oneofIndex != null) {
-      result.oneofIndex = oneofIndex;
+      _result.oneofIndex = oneofIndex;
     }
     if (jsonName != null) {
-      result.jsonName = jsonName;
+      _result.jsonName = jsonName;
     }
     if (proto3Optional != null) {
-      result.proto3Optional = proto3Optional;
+      _result.proto3Optional = proto3Optional;
     }
-    return result;
+    return _result;
   }
   factory FieldDescriptorProto.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory FieldDescriptorProto.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -719,14 +719,14 @@ class OneofDescriptorProto extends $pb.GeneratedMessage {
     $core.String? name,
     OneofOptions? options,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (options != null) {
-      result.options = options;
+      _result.options = options;
     }
-    return result;
+    return _result;
   }
   factory OneofDescriptorProto.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory OneofDescriptorProto.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -782,14 +782,14 @@ class EnumDescriptorProto_EnumReservedRange extends $pb.GeneratedMessage {
     $core.int? start,
     $core.int? end,
   }) {
-    final result = create();
+    final _result = create();
     if (start != null) {
-      result.start = start;
+      _result.start = start;
     }
     if (end != null) {
-      result.end = end;
+      _result.end = end;
     }
-    return result;
+    return _result;
   }
   factory EnumDescriptorProto_EnumReservedRange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EnumDescriptorProto_EnumReservedRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -848,23 +848,23 @@ class EnumDescriptorProto extends $pb.GeneratedMessage {
     $core.Iterable<EnumDescriptorProto_EnumReservedRange>? reservedRange,
     $core.Iterable<$core.String>? reservedName,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (value != null) {
-      result.value.addAll(value);
+      _result.value.addAll(value);
     }
     if (options != null) {
-      result.options = options;
+      _result.options = options;
     }
     if (reservedRange != null) {
-      result.reservedRange.addAll(reservedRange);
+      _result.reservedRange.addAll(reservedRange);
     }
     if (reservedName != null) {
-      result.reservedName.addAll(reservedName);
+      _result.reservedName.addAll(reservedName);
     }
-    return result;
+    return _result;
   }
   factory EnumDescriptorProto.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EnumDescriptorProto.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -930,17 +930,17 @@ class EnumValueDescriptorProto extends $pb.GeneratedMessage {
     $core.int? number,
     EnumValueOptions? options,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (number != null) {
-      result.number = number;
+      _result.number = number;
     }
     if (options != null) {
-      result.options = options;
+      _result.options = options;
     }
-    return result;
+    return _result;
   }
   factory EnumValueDescriptorProto.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EnumValueDescriptorProto.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1006,17 +1006,17 @@ class ServiceDescriptorProto extends $pb.GeneratedMessage {
     $core.Iterable<MethodDescriptorProto>? method,
     ServiceOptions? options,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (method != null) {
-      result.method.addAll(method);
+      _result.method.addAll(method);
     }
     if (options != null) {
-      result.options = options;
+      _result.options = options;
     }
-    return result;
+    return _result;
   }
   factory ServiceDescriptorProto.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ServiceDescriptorProto.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1082,26 +1082,26 @@ class MethodDescriptorProto extends $pb.GeneratedMessage {
     $core.bool? clientStreaming,
     $core.bool? serverStreaming,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (inputType != null) {
-      result.inputType = inputType;
+      _result.inputType = inputType;
     }
     if (outputType != null) {
-      result.outputType = outputType;
+      _result.outputType = outputType;
     }
     if (options != null) {
-      result.options = options;
+      _result.options = options;
     }
     if (clientStreaming != null) {
-      result.clientStreaming = clientStreaming;
+      _result.clientStreaming = clientStreaming;
     }
     if (serverStreaming != null) {
-      result.serverStreaming = serverStreaming;
+      _result.serverStreaming = serverStreaming;
     }
-    return result;
+    return _result;
   }
   factory MethodDescriptorProto.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MethodDescriptorProto.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1232,72 +1232,72 @@ class FileOptions extends $pb.GeneratedMessage {
     $core.String? rubyPackage,
     $core.Iterable<UninterpretedOption>? uninterpretedOption,
   }) {
-    final result = create();
+    final _result = create();
     if (javaPackage != null) {
-      result.javaPackage = javaPackage;
+      _result.javaPackage = javaPackage;
     }
     if (javaOuterClassname != null) {
-      result.javaOuterClassname = javaOuterClassname;
+      _result.javaOuterClassname = javaOuterClassname;
     }
     if (optimizeFor != null) {
-      result.optimizeFor = optimizeFor;
+      _result.optimizeFor = optimizeFor;
     }
     if (javaMultipleFiles != null) {
-      result.javaMultipleFiles = javaMultipleFiles;
+      _result.javaMultipleFiles = javaMultipleFiles;
     }
     if (goPackage != null) {
-      result.goPackage = goPackage;
+      _result.goPackage = goPackage;
     }
     if (ccGenericServices != null) {
-      result.ccGenericServices = ccGenericServices;
+      _result.ccGenericServices = ccGenericServices;
     }
     if (javaGenericServices != null) {
-      result.javaGenericServices = javaGenericServices;
+      _result.javaGenericServices = javaGenericServices;
     }
     if (pyGenericServices != null) {
-      result.pyGenericServices = pyGenericServices;
+      _result.pyGenericServices = pyGenericServices;
     }
     if (javaGenerateEqualsAndHash != null) {
       // ignore: deprecated_member_use_from_same_package
-      result.javaGenerateEqualsAndHash = javaGenerateEqualsAndHash;
+      _result.javaGenerateEqualsAndHash = javaGenerateEqualsAndHash;
     }
     if (deprecated != null) {
-      result.deprecated = deprecated;
+      _result.deprecated = deprecated;
     }
     if (javaStringCheckUtf8 != null) {
-      result.javaStringCheckUtf8 = javaStringCheckUtf8;
+      _result.javaStringCheckUtf8 = javaStringCheckUtf8;
     }
     if (ccEnableArenas != null) {
-      result.ccEnableArenas = ccEnableArenas;
+      _result.ccEnableArenas = ccEnableArenas;
     }
     if (objcClassPrefix != null) {
-      result.objcClassPrefix = objcClassPrefix;
+      _result.objcClassPrefix = objcClassPrefix;
     }
     if (csharpNamespace != null) {
-      result.csharpNamespace = csharpNamespace;
+      _result.csharpNamespace = csharpNamespace;
     }
     if (swiftPrefix != null) {
-      result.swiftPrefix = swiftPrefix;
+      _result.swiftPrefix = swiftPrefix;
     }
     if (phpClassPrefix != null) {
-      result.phpClassPrefix = phpClassPrefix;
+      _result.phpClassPrefix = phpClassPrefix;
     }
     if (phpNamespace != null) {
-      result.phpNamespace = phpNamespace;
+      _result.phpNamespace = phpNamespace;
     }
     if (phpGenericServices != null) {
-      result.phpGenericServices = phpGenericServices;
+      _result.phpGenericServices = phpGenericServices;
     }
     if (phpMetadataNamespace != null) {
-      result.phpMetadataNamespace = phpMetadataNamespace;
+      _result.phpMetadataNamespace = phpMetadataNamespace;
     }
     if (rubyPackage != null) {
-      result.rubyPackage = rubyPackage;
+      _result.rubyPackage = rubyPackage;
     }
     if (uninterpretedOption != null) {
-      result.uninterpretedOption.addAll(uninterpretedOption);
+      _result.uninterpretedOption.addAll(uninterpretedOption);
     }
-    return result;
+    return _result;
   }
   factory FileOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory FileOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1526,23 +1526,23 @@ class MessageOptions extends $pb.GeneratedMessage {
     $core.bool? mapEntry,
     $core.Iterable<UninterpretedOption>? uninterpretedOption,
   }) {
-    final result = create();
+    final _result = create();
     if (messageSetWireFormat != null) {
-      result.messageSetWireFormat = messageSetWireFormat;
+      _result.messageSetWireFormat = messageSetWireFormat;
     }
     if (noStandardDescriptorAccessor != null) {
-      result.noStandardDescriptorAccessor = noStandardDescriptorAccessor;
+      _result.noStandardDescriptorAccessor = noStandardDescriptorAccessor;
     }
     if (deprecated != null) {
-      result.deprecated = deprecated;
+      _result.deprecated = deprecated;
     }
     if (mapEntry != null) {
-      result.mapEntry = mapEntry;
+      _result.mapEntry = mapEntry;
     }
     if (uninterpretedOption != null) {
-      result.uninterpretedOption.addAll(uninterpretedOption);
+      _result.uninterpretedOption.addAll(uninterpretedOption);
     }
-    return result;
+    return _result;
   }
   factory MessageOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MessageOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1627,29 +1627,29 @@ class FieldOptions extends $pb.GeneratedMessage {
     $core.bool? weak,
     $core.Iterable<UninterpretedOption>? uninterpretedOption,
   }) {
-    final result = create();
+    final _result = create();
     if (ctype != null) {
-      result.ctype = ctype;
+      _result.ctype = ctype;
     }
     if (packed != null) {
-      result.packed = packed;
+      _result.packed = packed;
     }
     if (deprecated != null) {
-      result.deprecated = deprecated;
+      _result.deprecated = deprecated;
     }
     if (lazy != null) {
-      result.lazy = lazy;
+      _result.lazy = lazy;
     }
     if (jstype != null) {
-      result.jstype = jstype;
+      _result.jstype = jstype;
     }
     if (weak != null) {
-      result.weak = weak;
+      _result.weak = weak;
     }
     if (uninterpretedOption != null) {
-      result.uninterpretedOption.addAll(uninterpretedOption);
+      _result.uninterpretedOption.addAll(uninterpretedOption);
     }
-    return result;
+    return _result;
   }
   factory FieldOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory FieldOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1740,11 +1740,11 @@ class OneofOptions extends $pb.GeneratedMessage {
   factory OneofOptions({
     $core.Iterable<UninterpretedOption>? uninterpretedOption,
   }) {
-    final result = create();
+    final _result = create();
     if (uninterpretedOption != null) {
-      result.uninterpretedOption.addAll(uninterpretedOption);
+      _result.uninterpretedOption.addAll(uninterpretedOption);
     }
-    return result;
+    return _result;
   }
   factory OneofOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory OneofOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1785,17 +1785,17 @@ class EnumOptions extends $pb.GeneratedMessage {
     $core.bool? deprecated,
     $core.Iterable<UninterpretedOption>? uninterpretedOption,
   }) {
-    final result = create();
+    final _result = create();
     if (allowAlias != null) {
-      result.allowAlias = allowAlias;
+      _result.allowAlias = allowAlias;
     }
     if (deprecated != null) {
-      result.deprecated = deprecated;
+      _result.deprecated = deprecated;
     }
     if (uninterpretedOption != null) {
-      result.uninterpretedOption.addAll(uninterpretedOption);
+      _result.uninterpretedOption.addAll(uninterpretedOption);
     }
-    return result;
+    return _result;
   }
   factory EnumOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EnumOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1852,14 +1852,14 @@ class EnumValueOptions extends $pb.GeneratedMessage {
     $core.bool? deprecated,
     $core.Iterable<UninterpretedOption>? uninterpretedOption,
   }) {
-    final result = create();
+    final _result = create();
     if (deprecated != null) {
-      result.deprecated = deprecated;
+      _result.deprecated = deprecated;
     }
     if (uninterpretedOption != null) {
-      result.uninterpretedOption.addAll(uninterpretedOption);
+      _result.uninterpretedOption.addAll(uninterpretedOption);
     }
-    return result;
+    return _result;
   }
   factory EnumValueOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory EnumValueOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1907,14 +1907,14 @@ class ServiceOptions extends $pb.GeneratedMessage {
     $core.bool? deprecated,
     $core.Iterable<UninterpretedOption>? uninterpretedOption,
   }) {
-    final result = create();
+    final _result = create();
     if (deprecated != null) {
-      result.deprecated = deprecated;
+      _result.deprecated = deprecated;
     }
     if (uninterpretedOption != null) {
-      result.uninterpretedOption.addAll(uninterpretedOption);
+      _result.uninterpretedOption.addAll(uninterpretedOption);
     }
-    return result;
+    return _result;
   }
   factory ServiceOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ServiceOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1964,17 +1964,17 @@ class MethodOptions extends $pb.GeneratedMessage {
     MethodOptions_IdempotencyLevel? idempotencyLevel,
     $core.Iterable<UninterpretedOption>? uninterpretedOption,
   }) {
-    final result = create();
+    final _result = create();
     if (deprecated != null) {
-      result.deprecated = deprecated;
+      _result.deprecated = deprecated;
     }
     if (idempotencyLevel != null) {
-      result.idempotencyLevel = idempotencyLevel;
+      _result.idempotencyLevel = idempotencyLevel;
     }
     if (uninterpretedOption != null) {
-      result.uninterpretedOption.addAll(uninterpretedOption);
+      _result.uninterpretedOption.addAll(uninterpretedOption);
     }
-    return result;
+    return _result;
   }
   factory MethodOptions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MethodOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -2030,14 +2030,14 @@ class UninterpretedOption_NamePart extends $pb.GeneratedMessage {
     $core.String? namePart,
     $core.bool? isExtension,
   }) {
-    final result = create();
+    final _result = create();
     if (namePart != null) {
-      result.namePart = namePart;
+      _result.namePart = namePart;
     }
     if (isExtension != null) {
-      result.isExtension = isExtension;
+      _result.isExtension = isExtension;
     }
-    return result;
+    return _result;
   }
   factory UninterpretedOption_NamePart.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory UninterpretedOption_NamePart.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -2100,29 +2100,29 @@ class UninterpretedOption extends $pb.GeneratedMessage {
     $core.List<$core.int>? stringValue,
     $core.String? aggregateValue,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name.addAll(name);
+      _result.name.addAll(name);
     }
     if (identifierValue != null) {
-      result.identifierValue = identifierValue;
+      _result.identifierValue = identifierValue;
     }
     if (positiveIntValue != null) {
-      result.positiveIntValue = positiveIntValue;
+      _result.positiveIntValue = positiveIntValue;
     }
     if (negativeIntValue != null) {
-      result.negativeIntValue = negativeIntValue;
+      _result.negativeIntValue = negativeIntValue;
     }
     if (doubleValue != null) {
-      result.doubleValue = doubleValue;
+      _result.doubleValue = doubleValue;
     }
     if (stringValue != null) {
-      result.stringValue = stringValue;
+      _result.stringValue = stringValue;
     }
     if (aggregateValue != null) {
-      result.aggregateValue = aggregateValue;
+      _result.aggregateValue = aggregateValue;
     }
-    return result;
+    return _result;
   }
   factory UninterpretedOption.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory UninterpretedOption.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -2221,23 +2221,23 @@ class SourceCodeInfo_Location extends $pb.GeneratedMessage {
     $core.String? trailingComments,
     $core.Iterable<$core.String>? leadingDetachedComments,
   }) {
-    final result = create();
+    final _result = create();
     if (path != null) {
-      result.path.addAll(path);
+      _result.path.addAll(path);
     }
     if (span != null) {
-      result.span.addAll(span);
+      _result.span.addAll(span);
     }
     if (leadingComments != null) {
-      result.leadingComments = leadingComments;
+      _result.leadingComments = leadingComments;
     }
     if (trailingComments != null) {
-      result.trailingComments = trailingComments;
+      _result.trailingComments = trailingComments;
     }
     if (leadingDetachedComments != null) {
-      result.leadingDetachedComments.addAll(leadingDetachedComments);
+      _result.leadingDetachedComments.addAll(leadingDetachedComments);
     }
-    return result;
+    return _result;
   }
   factory SourceCodeInfo_Location.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SourceCodeInfo_Location.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -2298,11 +2298,11 @@ class SourceCodeInfo extends $pb.GeneratedMessage {
   factory SourceCodeInfo({
     $core.Iterable<SourceCodeInfo_Location>? location,
   }) {
-    final result = create();
+    final _result = create();
     if (location != null) {
-      result.location.addAll(location);
+      _result.location.addAll(location);
     }
-    return result;
+    return _result;
   }
   factory SourceCodeInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SourceCodeInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -2345,20 +2345,20 @@ class GeneratedCodeInfo_Annotation extends $pb.GeneratedMessage {
     $core.int? begin,
     $core.int? end,
   }) {
-    final result = create();
+    final _result = create();
     if (path != null) {
-      result.path.addAll(path);
+      _result.path.addAll(path);
     }
     if (sourceFile != null) {
-      result.sourceFile = sourceFile;
+      _result.sourceFile = sourceFile;
     }
     if (begin != null) {
-      result.begin = begin;
+      _result.begin = begin;
     }
     if (end != null) {
-      result.end = end;
+      _result.end = end;
     }
-    return result;
+    return _result;
   }
   factory GeneratedCodeInfo_Annotation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GeneratedCodeInfo_Annotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -2422,11 +2422,11 @@ class GeneratedCodeInfo extends $pb.GeneratedMessage {
   factory GeneratedCodeInfo({
     $core.Iterable<GeneratedCodeInfo_Annotation>? annotation,
   }) {
-    final result = create();
+    final _result = create();
     if (annotation != null) {
-      result.annotation.addAll(annotation);
+      _result.annotation.addAll(annotation);
     }
-    return result;
+    return _result;
   }
   factory GeneratedCodeInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GeneratedCodeInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

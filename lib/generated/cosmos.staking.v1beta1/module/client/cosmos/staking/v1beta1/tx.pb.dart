@@ -37,29 +37,29 @@ class MsgCreateValidator extends $pb.GeneratedMessage {
     $9.Any? pubkey,
     $2.Coin? value,
   }) {
-    final result = create();
+    final _result = create();
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
     if (commission != null) {
-      result.commission = commission;
+      _result.commission = commission;
     }
     if (minSelfDelegation != null) {
-      result.minSelfDelegation = minSelfDelegation;
+      _result.minSelfDelegation = minSelfDelegation;
     }
     if (delegatorAddress != null) {
-      result.delegatorAddress = delegatorAddress;
+      _result.delegatorAddress = delegatorAddress;
     }
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (pubkey != null) {
-      result.pubkey = pubkey;
+      _result.pubkey = pubkey;
     }
     if (value != null) {
-      result.value = value;
+      _result.value = value;
     }
-    return result;
+    return _result;
   }
   factory MsgCreateValidator.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreateValidator.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -199,20 +199,20 @@ class MsgEditValidator extends $pb.GeneratedMessage {
     $core.String? commissionRate,
     $core.String? minSelfDelegation,
   }) {
-    final result = create();
+    final _result = create();
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (commissionRate != null) {
-      result.commissionRate = commissionRate;
+      _result.commissionRate = commissionRate;
     }
     if (minSelfDelegation != null) {
-      result.minSelfDelegation = minSelfDelegation;
+      _result.minSelfDelegation = minSelfDelegation;
     }
-    return result;
+    return _result;
   }
   factory MsgEditValidator.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgEditValidator.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -317,17 +317,17 @@ class MsgDelegate extends $pb.GeneratedMessage {
     $core.String? validatorAddress,
     $2.Coin? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (delegatorAddress != null) {
-      result.delegatorAddress = delegatorAddress;
+      _result.delegatorAddress = delegatorAddress;
     }
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (amount != null) {
-      result.amount = amount;
+      _result.amount = amount;
     }
-    return result;
+    return _result;
   }
   factory MsgDelegate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgDelegate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -425,20 +425,20 @@ class MsgBeginRedelegate extends $pb.GeneratedMessage {
     $core.String? validatorDstAddress,
     $2.Coin? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (delegatorAddress != null) {
-      result.delegatorAddress = delegatorAddress;
+      _result.delegatorAddress = delegatorAddress;
     }
     if (validatorSrcAddress != null) {
-      result.validatorSrcAddress = validatorSrcAddress;
+      _result.validatorSrcAddress = validatorSrcAddress;
     }
     if (validatorDstAddress != null) {
-      result.validatorDstAddress = validatorDstAddress;
+      _result.validatorDstAddress = validatorDstAddress;
     }
     if (amount != null) {
-      result.amount = amount;
+      _result.amount = amount;
     }
-    return result;
+    return _result;
   }
   factory MsgBeginRedelegate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgBeginRedelegate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -510,11 +510,11 @@ class MsgBeginRedelegateResponse extends $pb.GeneratedMessage {
   factory MsgBeginRedelegateResponse({
     $6.Timestamp? completionTime,
   }) {
-    final result = create();
+    final _result = create();
     if (completionTime != null) {
-      result.completionTime = completionTime;
+      _result.completionTime = completionTime;
     }
-    return result;
+    return _result;
   }
   factory MsgBeginRedelegateResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgBeginRedelegateResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -563,17 +563,17 @@ class MsgUndelegate extends $pb.GeneratedMessage {
     $core.String? validatorAddress,
     $2.Coin? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (delegatorAddress != null) {
-      result.delegatorAddress = delegatorAddress;
+      _result.delegatorAddress = delegatorAddress;
     }
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (amount != null) {
-      result.amount = amount;
+      _result.amount = amount;
     }
-    return result;
+    return _result;
   }
   factory MsgUndelegate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUndelegate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -636,11 +636,11 @@ class MsgUndelegateResponse extends $pb.GeneratedMessage {
   factory MsgUndelegateResponse({
     $6.Timestamp? completionTime,
   }) {
-    final result = create();
+    final _result = create();
     if (completionTime != null) {
-      result.completionTime = completionTime;
+      _result.completionTime = completionTime;
     }
-    return result;
+    return _result;
   }
   factory MsgUndelegateResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUndelegateResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -691,20 +691,20 @@ class MsgCancelUnbondingDelegation extends $pb.GeneratedMessage {
     $2.Coin? amount,
     $fixnum.Int64? creationHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (delegatorAddress != null) {
-      result.delegatorAddress = delegatorAddress;
+      _result.delegatorAddress = delegatorAddress;
     }
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (amount != null) {
-      result.amount = amount;
+      _result.amount = amount;
     }
     if (creationHeight != null) {
-      result.creationHeight = creationHeight;
+      _result.creationHeight = creationHeight;
     }
-    return result;
+    return _result;
   }
   factory MsgCancelUnbondingDelegation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCancelUnbondingDelegation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

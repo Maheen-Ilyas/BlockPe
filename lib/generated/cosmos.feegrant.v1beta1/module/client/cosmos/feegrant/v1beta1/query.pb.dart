@@ -24,14 +24,14 @@ class QueryAllowanceRequest extends $pb.GeneratedMessage {
     $core.String? granter,
     $core.String? grantee,
   }) {
-    final result = create();
+    final _result = create();
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
-    return result;
+    return _result;
   }
   factory QueryAllowanceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllowanceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -83,11 +83,11 @@ class QueryAllowanceResponse extends $pb.GeneratedMessage {
   factory QueryAllowanceResponse({
     $6.Grant? allowance,
   }) {
-    final result = create();
+    final _result = create();
     if (allowance != null) {
-      result.allowance = allowance;
+      _result.allowance = allowance;
     }
-    return result;
+    return _result;
   }
   factory QueryAllowanceResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllowanceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -134,14 +134,14 @@ class QueryAllowancesRequest extends $pb.GeneratedMessage {
     $core.String? grantee,
     $8.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryAllowancesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllowancesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -197,14 +197,14 @@ class QueryAllowancesResponse extends $pb.GeneratedMessage {
     $core.Iterable<$6.Grant>? allowances,
     $8.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (allowances != null) {
-      result.allowances.addAll(allowances);
+      _result.allowances.addAll(allowances);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryAllowancesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllowancesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -254,14 +254,14 @@ class QueryAllowancesByGranterRequest extends $pb.GeneratedMessage {
     $core.String? granter,
     $8.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryAllowancesByGranterRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllowancesByGranterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -317,14 +317,14 @@ class QueryAllowancesByGranterResponse extends $pb.GeneratedMessage {
     $core.Iterable<$6.Grant>? allowances,
     $8.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (allowances != null) {
-      result.allowances.addAll(allowances);
+      _result.allowances.addAll(allowances);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryAllowancesByGranterResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllowancesByGranterResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

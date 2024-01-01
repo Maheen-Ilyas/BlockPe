@@ -34,29 +34,29 @@ class GenesisState extends $pb.GeneratedMessage {
     $6.VotingParams? votingParams,
     $6.TallyParams? tallyParams,
   }) {
-    final result = create();
+    final _result = create();
     if (startingProposalId != null) {
-      result.startingProposalId = startingProposalId;
+      _result.startingProposalId = startingProposalId;
     }
     if (deposits != null) {
-      result.deposits.addAll(deposits);
+      _result.deposits.addAll(deposits);
     }
     if (votes != null) {
-      result.votes.addAll(votes);
+      _result.votes.addAll(votes);
     }
     if (proposals != null) {
-      result.proposals.addAll(proposals);
+      _result.proposals.addAll(proposals);
     }
     if (depositParams != null) {
-      result.depositParams = depositParams;
+      _result.depositParams = depositParams;
     }
     if (votingParams != null) {
-      result.votingParams = votingParams;
+      _result.votingParams = votingParams;
     }
     if (tallyParams != null) {
-      result.tallyParams = tallyParams;
+      _result.tallyParams = tallyParams;
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

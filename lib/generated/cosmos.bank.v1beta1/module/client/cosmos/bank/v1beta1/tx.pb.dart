@@ -26,17 +26,17 @@ class MsgSend extends $pb.GeneratedMessage {
     $core.String? toAddress,
     $core.Iterable<$2.Coin>? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (fromAddress != null) {
-      result.fromAddress = fromAddress;
+      _result.fromAddress = fromAddress;
     }
     if (toAddress != null) {
-      result.toAddress = toAddress;
+      _result.toAddress = toAddress;
     }
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
-    return result;
+    return _result;
   }
   factory MsgSend.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgSend.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -122,14 +122,14 @@ class MsgMultiSend extends $pb.GeneratedMessage {
     $core.Iterable<$3.Input>? inputs,
     $core.Iterable<$3.Output>? outputs,
   }) {
-    final result = create();
+    final _result = create();
     if (inputs != null) {
-      result.inputs.addAll(inputs);
+      _result.inputs.addAll(inputs);
     }
     if (outputs != null) {
-      result.outputs.addAll(outputs);
+      _result.outputs.addAll(outputs);
     }
-    return result;
+    return _result;
   }
   factory MsgMultiSend.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgMultiSend.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

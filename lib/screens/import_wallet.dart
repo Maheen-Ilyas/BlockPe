@@ -1,8 +1,7 @@
-// import 'package:blockpe/providers/account_provider.dart';
+import 'package:blockpe/providers/account_provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-// import 'package:provider/provider.dart';
 
 class ImportWallet extends StatefulWidget {
   const ImportWallet({super.key});
@@ -24,6 +23,10 @@ class _ImportWalletState extends State<ImportWallet> {
   void initState() {
     _accountName = TextEditingController();
     _seedPhrase = TextEditingController();
+    AccountProvider().importWallet(
+      _seedPhrase.text,
+      _accountName.text,
+    );
     super.initState();
   }
 
@@ -47,26 +50,26 @@ class _ImportWalletState extends State<ImportWallet> {
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
-        child: Column(
-          children: [
-            const SizedBox(height: 15),
-            SizedBox(
-              height: 56,
-              child: TextField(
-                controller: _accountName,
-                keyboardType: TextInputType.text,
-                decoration: const InputDecoration(
-                  icon: Icon(
-                    Icons.account_box,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+              const SizedBox(height: 15),
+              SizedBox(
+                height: 56,
+                child: TextField(
+                  controller: _accountName,
+                  keyboardType: TextInputType.text,
+                  decoration: const InputDecoration(
+                    icon: Icon(
+                      Icons.account_box,
+                    ),
+                    label: Text("Account Name"),
                   ),
-                  label: Text("Account Name"),
                 ),
               ),
-            ),
-            const SizedBox(height: 15),
-            SizedBox(
-              height: 56,
-              child: TextField(
+              const SizedBox(height: 15),
+              TextField(
                 controller: _seedPhrase,
                 maxLines: 4,
                 keyboardType: TextInputType.text,
@@ -77,33 +80,36 @@ class _ImportWalletState extends State<ImportWallet> {
                   label: Text("Seed Phrase"),
                 ),
               ),
-            ),
-            const SizedBox(height: 15),
-            SizedBox(
-              height: 50,
-              width: double.infinity,
-              child: FilledButton(
-                onPressed: () async {
-                  await FirebaseFirestore.instance
-                      .collection('wallet')
-                      .doc(FirebaseAuth.instance.currentUser?.uid)
-                      .set(
-                    {
-                      "accountName": _accountName.text,
-                      "seedPhrase": _seedPhrase.text,
-                    },
-                  );
-                  if (!context.mounted) return;
-                  // Provider.of<AccountProvider>(context, listen: false)
-                  //     .importWallet(
-                  //   _accountName.text,
-                  //   _seedPhrase.text,
-                  // );
-                },
-                child: const Text("Import"),
+              const SizedBox(height: 80),
+              SizedBox(
+                height: 50,
+                width: double.infinity,
+                child: FilledButton(
+                  onPressed: () async {
+                    AccountProvider().importWallet(
+                      _seedPhrase.text,
+                      _accountName.text,
+                    );
+                    await FirebaseFirestore.instance
+                        .collection('wallet')
+                        .doc(FirebaseAuth.instance.currentUser?.uid)
+                        .set(
+                      {
+                        "accountName": _accountName.text,
+                        "seedPhrase": _seedPhrase.text,
+                      },
+                    );
+                    if (!context.mounted) return;
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                      '/homepage',
+                      (route) => false,
+                    );
+                  },
+                  child: const Text("Import"),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

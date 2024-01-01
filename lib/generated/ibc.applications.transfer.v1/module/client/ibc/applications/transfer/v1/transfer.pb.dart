@@ -21,14 +21,14 @@ class DenomTrace extends $pb.GeneratedMessage {
     $core.String? path,
     $core.String? baseDenom,
   }) {
-    final result = create();
+    final _result = create();
     if (path != null) {
-      result.path = path;
+      _result.path = path;
     }
     if (baseDenom != null) {
-      result.baseDenom = baseDenom;
+      _result.baseDenom = baseDenom;
     }
-    return result;
+    return _result;
   }
   factory DenomTrace.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DenomTrace.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -82,14 +82,14 @@ class Params extends $pb.GeneratedMessage {
     $core.bool? sendEnabled,
     $core.bool? receiveEnabled,
   }) {
-    final result = create();
+    final _result = create();
     if (sendEnabled != null) {
-      result.sendEnabled = sendEnabled;
+      _result.sendEnabled = sendEnabled;
     }
     if (receiveEnabled != null) {
-      result.receiveEnabled = receiveEnabled;
+      _result.receiveEnabled = receiveEnabled;
     }
-    return result;
+    return _result;
   }
   factory Params.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Params.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

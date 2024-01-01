@@ -28,20 +28,20 @@ class GenesisState extends $pb.GeneratedMessage {
     $fixnum.Int64? nextConnectionSequence,
     $4.Params? params,
   }) {
-    final result = create();
+    final _result = create();
     if (connections != null) {
-      result.connections.addAll(connections);
+      _result.connections.addAll(connections);
     }
     if (clientConnectionPaths != null) {
-      result.clientConnectionPaths.addAll(clientConnectionPaths);
+      _result.clientConnectionPaths.addAll(clientConnectionPaths);
     }
     if (nextConnectionSequence != null) {
-      result.nextConnectionSequence = nextConnectionSequence;
+      _result.nextConnectionSequence = nextConnectionSequence;
     }
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

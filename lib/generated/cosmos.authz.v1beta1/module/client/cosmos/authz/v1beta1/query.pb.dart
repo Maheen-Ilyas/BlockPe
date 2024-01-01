@@ -28,20 +28,20 @@ class QueryGrantsRequest extends $pb.GeneratedMessage {
     $core.String? msgTypeUrl,
     $6.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
     if (msgTypeUrl != null) {
-      result.msgTypeUrl = msgTypeUrl;
+      _result.msgTypeUrl = msgTypeUrl;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryGrantsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryGrantsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -115,14 +115,14 @@ class QueryGrantsResponse extends $pb.GeneratedMessage {
     $core.Iterable<$4.Grant>? grants,
     $6.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (grants != null) {
-      result.grants.addAll(grants);
+      _result.grants.addAll(grants);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryGrantsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryGrantsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -172,14 +172,14 @@ class QueryGranterGrantsRequest extends $pb.GeneratedMessage {
     $core.String? granter,
     $6.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryGranterGrantsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryGranterGrantsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -235,14 +235,14 @@ class QueryGranterGrantsResponse extends $pb.GeneratedMessage {
     $core.Iterable<$4.GrantAuthorization>? grants,
     $6.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (grants != null) {
-      result.grants.addAll(grants);
+      _result.grants.addAll(grants);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryGranterGrantsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryGranterGrantsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -292,14 +292,14 @@ class QueryGranteeGrantsRequest extends $pb.GeneratedMessage {
     $core.String? grantee,
     $6.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryGranteeGrantsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryGranteeGrantsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -355,14 +355,14 @@ class QueryGranteeGrantsResponse extends $pb.GeneratedMessage {
     $core.Iterable<$4.GrantAuthorization>? grants,
     $6.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (grants != null) {
-      result.grants.addAll(grants);
+      _result.grants.addAll(grants);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryGranteeGrantsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryGranteeGrantsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

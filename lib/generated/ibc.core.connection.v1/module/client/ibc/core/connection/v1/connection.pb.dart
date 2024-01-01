@@ -34,23 +34,23 @@ class ConnectionEnd extends $pb.GeneratedMessage {
     Counterparty? counterparty,
     $fixnum.Int64? delayPeriod,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (versions != null) {
-      result.versions.addAll(versions);
+      _result.versions.addAll(versions);
     }
     if (state != null) {
-      result.state = state;
+      _result.state = state;
     }
     if (counterparty != null) {
-      result.counterparty = counterparty;
+      _result.counterparty = counterparty;
     }
     if (delayPeriod != null) {
-      result.delayPeriod = delayPeriod;
+      _result.delayPeriod = delayPeriod;
     }
-    return result;
+    return _result;
   }
   factory ConnectionEnd.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ConnectionEnd.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -135,26 +135,26 @@ class IdentifiedConnection extends $pb.GeneratedMessage {
     Counterparty? counterparty,
     $fixnum.Int64? delayPeriod,
   }) {
-    final result = create();
+    final _result = create();
     if (id != null) {
-      result.id = id;
+      _result.id = id;
     }
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (versions != null) {
-      result.versions.addAll(versions);
+      _result.versions.addAll(versions);
     }
     if (state != null) {
-      result.state = state;
+      _result.state = state;
     }
     if (counterparty != null) {
-      result.counterparty = counterparty;
+      _result.counterparty = counterparty;
     }
     if (delayPeriod != null) {
-      result.delayPeriod = delayPeriod;
+      _result.delayPeriod = delayPeriod;
     }
-    return result;
+    return _result;
   }
   factory IdentifiedConnection.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory IdentifiedConnection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -242,17 +242,17 @@ class Counterparty extends $pb.GeneratedMessage {
     $core.String? connectionId,
     $3.MerklePrefix? prefix,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (connectionId != null) {
-      result.connectionId = connectionId;
+      _result.connectionId = connectionId;
     }
     if (prefix != null) {
-      result.prefix = prefix;
+      _result.prefix = prefix;
     }
-    return result;
+    return _result;
   }
   factory Counterparty.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Counterparty.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -315,11 +315,11 @@ class ClientPaths extends $pb.GeneratedMessage {
   factory ClientPaths({
     $core.Iterable<$core.String>? paths,
   }) {
-    final result = create();
+    final _result = create();
     if (paths != null) {
-      result.paths.addAll(paths);
+      _result.paths.addAll(paths);
     }
-    return result;
+    return _result;
   }
   factory ClientPaths.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ClientPaths.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -358,14 +358,14 @@ class ConnectionPaths extends $pb.GeneratedMessage {
     $core.String? clientId,
     $core.Iterable<$core.String>? paths,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (paths != null) {
-      result.paths.addAll(paths);
+      _result.paths.addAll(paths);
     }
-    return result;
+    return _result;
   }
   factory ConnectionPaths.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ConnectionPaths.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -413,14 +413,14 @@ class Version extends $pb.GeneratedMessage {
     $core.String? identifier,
     $core.Iterable<$core.String>? features,
   }) {
-    final result = create();
+    final _result = create();
     if (identifier != null) {
-      result.identifier = identifier;
+      _result.identifier = identifier;
     }
     if (features != null) {
-      result.features.addAll(features);
+      _result.features.addAll(features);
     }
-    return result;
+    return _result;
   }
   factory Version.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Version.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -466,11 +466,11 @@ class Params extends $pb.GeneratedMessage {
   factory Params({
     $fixnum.Int64? maxExpectedTimePerBlock,
   }) {
-    final result = create();
+    final _result = create();
     if (maxExpectedTimePerBlock != null) {
-      result.maxExpectedTimePerBlock = maxExpectedTimePerBlock;
+      _result.maxExpectedTimePerBlock = maxExpectedTimePerBlock;
     }
-    return result;
+    return _result;
   }
   factory Params.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Params.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

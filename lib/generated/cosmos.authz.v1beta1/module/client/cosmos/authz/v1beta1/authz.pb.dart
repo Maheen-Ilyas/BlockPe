@@ -22,11 +22,11 @@ class GenericAuthorization extends $pb.GeneratedMessage {
   factory GenericAuthorization({
     $core.String? msg,
   }) {
-    final result = create();
+    final _result = create();
     if (msg != null) {
-      result.msg = msg;
+      _result.msg = msg;
     }
-    return result;
+    return _result;
   }
   factory GenericAuthorization.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenericAuthorization.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -71,14 +71,14 @@ class Grant extends $pb.GeneratedMessage {
     $2.Any? authorization,
     $3.Timestamp? expiration,
   }) {
-    final result = create();
+    final _result = create();
     if (authorization != null) {
-      result.authorization = authorization;
+      _result.authorization = authorization;
     }
     if (expiration != null) {
-      result.expiration = expiration;
+      _result.expiration = expiration;
     }
-    return result;
+    return _result;
   }
   factory Grant.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Grant.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -140,20 +140,20 @@ class GrantAuthorization extends $pb.GeneratedMessage {
     $2.Any? authorization,
     $3.Timestamp? expiration,
   }) {
-    final result = create();
+    final _result = create();
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
     if (authorization != null) {
-      result.authorization = authorization;
+      _result.authorization = authorization;
     }
     if (expiration != null) {
-      result.expiration = expiration;
+      _result.expiration = expiration;
     }
-    return result;
+    return _result;
   }
   factory GrantAuthorization.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GrantAuthorization.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -227,11 +227,11 @@ class GrantQueueItem extends $pb.GeneratedMessage {
   factory GrantQueueItem({
     $core.Iterable<$core.String>? msgTypeUrls,
   }) {
-    final result = create();
+    final _result = create();
     if (msgTypeUrls != null) {
-      result.msgTypeUrls.addAll(msgTypeUrls);
+      _result.msgTypeUrls.addAll(msgTypeUrls);
     }
-    return result;
+    return _result;
   }
   factory GrantQueueItem.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GrantQueueItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

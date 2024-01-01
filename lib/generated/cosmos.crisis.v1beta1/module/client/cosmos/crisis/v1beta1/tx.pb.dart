@@ -23,17 +23,17 @@ class MsgVerifyInvariant extends $pb.GeneratedMessage {
     $core.String? invariantModuleName,
     $core.String? invariantRoute,
   }) {
-    final result = create();
+    final _result = create();
     if (sender != null) {
-      result.sender = sender;
+      _result.sender = sender;
     }
     if (invariantModuleName != null) {
-      result.invariantModuleName = invariantModuleName;
+      _result.invariantModuleName = invariantModuleName;
     }
     if (invariantRoute != null) {
-      result.invariantRoute = invariantRoute;
+      _result.invariantRoute = invariantRoute;
     }
-    return result;
+    return _result;
   }
   factory MsgVerifyInvariant.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgVerifyInvariant.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

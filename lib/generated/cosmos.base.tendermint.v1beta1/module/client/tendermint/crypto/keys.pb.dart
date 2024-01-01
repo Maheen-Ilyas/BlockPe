@@ -3,7 +3,7 @@
 //  source: tendermint/crypto/keys.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, constant_identifier_names
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -33,14 +33,14 @@ class PublicKey extends $pb.GeneratedMessage {
     $core.List<$core.int>? ed25519,
     $core.List<$core.int>? secp256k1,
   }) {
-    final result = create();
+    final _result = create();
     if (ed25519 != null) {
-      result.ed25519 = ed25519;
+      _result.ed25519 = ed25519;
     }
     if (secp256k1 != null) {
-      result.secp256k1 = secp256k1;
+      _result.secp256k1 = secp256k1;
     }
-    return result;
+    return _result;
   }
   factory PublicKey.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory PublicKey.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

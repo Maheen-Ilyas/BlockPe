@@ -61,7 +61,7 @@ class PaymentSuccess extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             SizedBox(
-              height: 60,
+              height: 50,
               width: double.infinity,
               child: FilledButton(
                 onPressed: () {

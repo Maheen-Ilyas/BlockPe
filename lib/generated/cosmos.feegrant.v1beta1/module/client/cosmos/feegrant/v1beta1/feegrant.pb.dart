@@ -26,14 +26,14 @@ class BasicAllowance extends $pb.GeneratedMessage {
     $core.Iterable<$2.Coin>? spendLimit,
     $3.Timestamp? expiration,
   }) {
-    final result = create();
+    final _result = create();
     if (spendLimit != null) {
-      result.spendLimit.addAll(spendLimit);
+      _result.spendLimit.addAll(spendLimit);
     }
     if (expiration != null) {
-      result.expiration = expiration;
+      _result.expiration = expiration;
     }
-    return result;
+    return _result;
   }
   factory BasicAllowance.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory BasicAllowance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -89,23 +89,23 @@ class PeriodicAllowance extends $pb.GeneratedMessage {
     $core.Iterable<$2.Coin>? periodCanSpend,
     $3.Timestamp? periodReset,
   }) {
-    final result = create();
+    final _result = create();
     if (basic != null) {
-      result.basic = basic;
+      _result.basic = basic;
     }
     if (period != null) {
-      result.period = period;
+      _result.period = period;
     }
     if (periodSpendLimit != null) {
-      result.periodSpendLimit.addAll(periodSpendLimit);
+      _result.periodSpendLimit.addAll(periodSpendLimit);
     }
     if (periodCanSpend != null) {
-      result.periodCanSpend.addAll(periodCanSpend);
+      _result.periodCanSpend.addAll(periodCanSpend);
     }
     if (periodReset != null) {
-      result.periodReset = periodReset;
+      _result.periodReset = periodReset;
     }
-    return result;
+    return _result;
   }
   factory PeriodicAllowance.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory PeriodicAllowance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -180,14 +180,14 @@ class AllowedMsgAllowance extends $pb.GeneratedMessage {
     $5.Any? allowance,
     $core.Iterable<$core.String>? allowedMessages,
   }) {
-    final result = create();
+    final _result = create();
     if (allowance != null) {
-      result.allowance = allowance;
+      _result.allowance = allowance;
     }
     if (allowedMessages != null) {
-      result.allowedMessages.addAll(allowedMessages);
+      _result.allowedMessages.addAll(allowedMessages);
     }
-    return result;
+    return _result;
   }
   factory AllowedMsgAllowance.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory AllowedMsgAllowance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -239,17 +239,17 @@ class Grant extends $pb.GeneratedMessage {
     $core.String? grantee,
     $5.Any? allowance,
   }) {
-    final result = create();
+    final _result = create();
     if (granter != null) {
-      result.granter = granter;
+      _result.granter = granter;
     }
     if (grantee != null) {
-      result.grantee = grantee;
+      _result.grantee = grantee;
     }
     if (allowance != null) {
-      result.allowance = allowance;
+      _result.allowance = allowance;
     }
-    return result;
+    return _result;
   }
   factory Grant.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Grant.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

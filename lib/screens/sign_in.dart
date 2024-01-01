@@ -29,47 +29,6 @@ class _SignInState extends State<SignIn> {
     super.dispose();
   }
 
-  Future<void> _signin() async {
-    try {
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: _email.text,
-        password: _password.text,
-      );
-      if (!context.mounted) return;
-      Navigator.of(context).pushNamedAndRemoveUntil(
-        '/homepage',
-        (route) => false,
-      );
-    } on FirebaseAuthException catch (e) {
-      if (!context.mounted) return;
-      if (e.code == 'user-not-found') {
-        showErrorDialog(
-          context,
-          "User not found",
-          "Sign up to create your account",
-        );
-      } else if (e.code == 'wrong-password') {
-        showErrorDialog(
-          context,
-          "Wrong password",
-          "Enter the right password to sign in",
-        );
-      } else {
-        showErrorDialog(
-          context,
-          "An exception occurred",
-          "Try signing in again",
-        );
-      }
-    } catch (e) {
-      showErrorDialog(
-        context,
-        "An exception occurred",
-        "Try signing in again",
-      );
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -132,7 +91,7 @@ class _SignInState extends State<SignIn> {
             ),
             const SizedBox(height: 10),
             SizedBox(
-              height: 60,
+              height: 50,
               width: double.infinity,
               child: FilledButton(
                 onPressed: () async {
@@ -158,5 +117,46 @@ class _SignInState extends State<SignIn> {
         ),
       ),
     );
+  }
+
+  Future<void> _signin() async {
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: _email.text,
+        password: _password.text,
+      );
+      if (!context.mounted) return;
+      Navigator.of(context).pushNamedAndRemoveUntil(
+        '/importwallet',
+        (route) => false,
+      );
+    } on FirebaseAuthException catch (e) {
+      if (!context.mounted) return;
+      if (e.code == 'user-not-found') {
+        showErrorDialog(
+          context,
+          "User not found",
+          "Sign up to create your account",
+        );
+      } else if (e.code == 'wrong-password') {
+        showErrorDialog(
+          context,
+          "Wrong password",
+          "Enter the right password to sign in",
+        );
+      } else {
+        showErrorDialog(
+          context,
+          "An exception occurred",
+          "Try signing in again",
+        );
+      }
+    } catch (e) {
+      showErrorDialog(
+        context,
+        "An exception occurred",
+        "Try signing in again",
+      );
+    }
   }
 }

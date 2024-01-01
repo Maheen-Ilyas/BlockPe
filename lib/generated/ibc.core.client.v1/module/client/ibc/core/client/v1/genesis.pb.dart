@@ -32,26 +32,26 @@ class GenesisState extends $pb.GeneratedMessage {
     $core.bool? createLocalhost,
     $fixnum.Int64? nextClientSequence,
   }) {
-    final result = create();
+    final _result = create();
     if (clients != null) {
-      result.clients.addAll(clients);
+      _result.clients.addAll(clients);
     }
     if (clientsConsensus != null) {
-      result.clientsConsensus.addAll(clientsConsensus);
+      _result.clientsConsensus.addAll(clientsConsensus);
     }
     if (clientsMetadata != null) {
-      result.clientsMetadata.addAll(clientsMetadata);
+      _result.clientsMetadata.addAll(clientsMetadata);
     }
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
     if (createLocalhost != null) {
-      result.createLocalhost = createLocalhost;
+      _result.createLocalhost = createLocalhost;
     }
     if (nextClientSequence != null) {
-      result.nextClientSequence = nextClientSequence;
+      _result.nextClientSequence = nextClientSequence;
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -125,14 +125,14 @@ class GenesisMetadata extends $pb.GeneratedMessage {
     $core.List<$core.int>? key,
     $core.List<$core.int>? value,
   }) {
-    final result = create();
+    final _result = create();
     if (key != null) {
-      result.key = key;
+      _result.key = key;
     }
     if (value != null) {
-      result.value = value;
+      _result.value = value;
     }
-    return result;
+    return _result;
   }
   factory GenesisMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -186,14 +186,14 @@ class IdentifiedGenesisMetadata extends $pb.GeneratedMessage {
     $core.String? clientId,
     $core.Iterable<GenesisMetadata>? clientMetadata,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (clientMetadata != null) {
-      result.clientMetadata.addAll(clientMetadata);
+      _result.clientMetadata.addAll(clientMetadata);
     }
-    return result;
+    return _result;
   }
   factory IdentifiedGenesisMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory IdentifiedGenesisMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

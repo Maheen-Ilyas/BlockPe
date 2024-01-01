@@ -3,7 +3,7 @@
 //  source: cosmos/group/v1/tx.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, unnecessary_import, unnecessary_null_comparison
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -32,17 +32,17 @@ class MsgCreateGroup extends $pb.GeneratedMessage {
     $core.Iterable<$5.MemberRequest>? members,
     $core.String? metadata,
   }) {
-    final result = create();
+    final _result = create();
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (members != null) {
-      result.members.addAll(members);
+      _result.members.addAll(members);
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
-    return result;
+    return _result;
   }
   factory MsgCreateGroup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreateGroup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -97,11 +97,11 @@ class MsgCreateGroupResponse extends $pb.GeneratedMessage {
   factory MsgCreateGroupResponse({
     $fixnum.Int64? groupId,
   }) {
-    final result = create();
+    final _result = create();
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
-    return result;
+    return _result;
   }
   factory MsgCreateGroupResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreateGroupResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -148,17 +148,17 @@ class MsgUpdateGroupMembers extends $pb.GeneratedMessage {
     $fixnum.Int64? groupId,
     $core.Iterable<$5.MemberRequest>? memberUpdates,
   }) {
-    final result = create();
+    final _result = create();
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
     if (memberUpdates != null) {
-      result.memberUpdates.addAll(memberUpdates);
+      _result.memberUpdates.addAll(memberUpdates);
     }
-    return result;
+    return _result;
   }
   factory MsgUpdateGroupMembers.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUpdateGroupMembers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -246,17 +246,17 @@ class MsgUpdateGroupAdmin extends $pb.GeneratedMessage {
     $fixnum.Int64? groupId,
     $core.String? newAdmin,
   }) {
-    final result = create();
+    final _result = create();
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
     if (newAdmin != null) {
-      result.newAdmin = newAdmin;
+      _result.newAdmin = newAdmin;
     }
-    return result;
+    return _result;
   }
   factory MsgUpdateGroupAdmin.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUpdateGroupAdmin.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -350,17 +350,17 @@ class MsgUpdateGroupMetadata extends $pb.GeneratedMessage {
     $fixnum.Int64? groupId,
     $core.String? metadata,
   }) {
-    final result = create();
+    final _result = create();
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
-    return result;
+    return _result;
   }
   factory MsgUpdateGroupMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUpdateGroupMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -456,20 +456,20 @@ class MsgCreateGroupPolicy extends $pb.GeneratedMessage {
     $core.String? metadata,
     $4.Any? decisionPolicy,
   }) {
-    final result = create();
+    final _result = create();
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
     if (decisionPolicy != null) {
-      result.decisionPolicy = decisionPolicy;
+      _result.decisionPolicy = decisionPolicy;
     }
-    return result;
+    return _result;
   }
   factory MsgCreateGroupPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreateGroupPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -541,11 +541,11 @@ class MsgCreateGroupPolicyResponse extends $pb.GeneratedMessage {
   factory MsgCreateGroupPolicyResponse({
     $core.String? address,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
-    return result;
+    return _result;
   }
   factory MsgCreateGroupPolicyResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreateGroupPolicyResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -592,17 +592,17 @@ class MsgUpdateGroupPolicyAdmin extends $pb.GeneratedMessage {
     $core.String? groupPolicyAddress,
     $core.String? newAdmin,
   }) {
-    final result = create();
+    final _result = create();
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (groupPolicyAddress != null) {
-      result.groupPolicyAddress = groupPolicyAddress;
+      _result.groupPolicyAddress = groupPolicyAddress;
     }
     if (newAdmin != null) {
-      result.newAdmin = newAdmin;
+      _result.newAdmin = newAdmin;
     }
-    return result;
+    return _result;
   }
   factory MsgUpdateGroupPolicyAdmin.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUpdateGroupPolicyAdmin.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -673,26 +673,26 @@ class MsgCreateGroupWithPolicy extends $pb.GeneratedMessage {
     $core.bool? groupPolicyAsAdmin,
     $4.Any? decisionPolicy,
   }) {
-    final result = create();
+    final _result = create();
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (members != null) {
-      result.members.addAll(members);
+      _result.members.addAll(members);
     }
     if (groupMetadata != null) {
-      result.groupMetadata = groupMetadata;
+      _result.groupMetadata = groupMetadata;
     }
     if (groupPolicyMetadata != null) {
-      result.groupPolicyMetadata = groupPolicyMetadata;
+      _result.groupPolicyMetadata = groupPolicyMetadata;
     }
     if (groupPolicyAsAdmin != null) {
-      result.groupPolicyAsAdmin = groupPolicyAsAdmin;
+      _result.groupPolicyAsAdmin = groupPolicyAsAdmin;
     }
     if (decisionPolicy != null) {
-      result.decisionPolicy = decisionPolicy;
+      _result.decisionPolicy = decisionPolicy;
     }
-    return result;
+    return _result;
   }
   factory MsgCreateGroupWithPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreateGroupWithPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -778,14 +778,14 @@ class MsgCreateGroupWithPolicyResponse extends $pb.GeneratedMessage {
     $fixnum.Int64? groupId,
     $core.String? groupPolicyAddress,
   }) {
-    final result = create();
+    final _result = create();
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
     if (groupPolicyAddress != null) {
-      result.groupPolicyAddress = groupPolicyAddress;
+      _result.groupPolicyAddress = groupPolicyAddress;
     }
-    return result;
+    return _result;
   }
   factory MsgCreateGroupWithPolicyResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreateGroupWithPolicyResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -870,17 +870,17 @@ class MsgUpdateGroupPolicyDecisionPolicy extends $pb.GeneratedMessage {
     $core.String? groupPolicyAddress,
     $4.Any? decisionPolicy,
   }) {
-    final result = create();
+    final _result = create();
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (groupPolicyAddress != null) {
-      result.groupPolicyAddress = groupPolicyAddress;
+      _result.groupPolicyAddress = groupPolicyAddress;
     }
     if (decisionPolicy != null) {
-      result.decisionPolicy = decisionPolicy;
+      _result.decisionPolicy = decisionPolicy;
     }
-    return result;
+    return _result;
   }
   factory MsgUpdateGroupPolicyDecisionPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUpdateGroupPolicyDecisionPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -976,17 +976,17 @@ class MsgUpdateGroupPolicyMetadata extends $pb.GeneratedMessage {
     $core.String? groupPolicyAddress,
     $core.String? metadata,
   }) {
-    final result = create();
+    final _result = create();
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (groupPolicyAddress != null) {
-      result.groupPolicyAddress = groupPolicyAddress;
+      _result.groupPolicyAddress = groupPolicyAddress;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
-    return result;
+    return _result;
   }
   factory MsgUpdateGroupPolicyMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUpdateGroupPolicyMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1084,23 +1084,23 @@ class MsgSubmitProposal extends $pb.GeneratedMessage {
     $core.Iterable<$4.Any>? messages,
     Exec? exec,
   }) {
-    final result = create();
+    final _result = create();
     if (groupPolicyAddress != null) {
-      result.groupPolicyAddress = groupPolicyAddress;
+      _result.groupPolicyAddress = groupPolicyAddress;
     }
     if (proposers != null) {
-      result.proposers.addAll(proposers);
+      _result.proposers.addAll(proposers);
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
     if (messages != null) {
-      result.messages.addAll(messages);
+      _result.messages.addAll(messages);
     }
     if (exec != null) {
-      result.exec = exec;
+      _result.exec = exec;
     }
-    return result;
+    return _result;
   }
   factory MsgSubmitProposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgSubmitProposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1167,11 +1167,11 @@ class MsgSubmitProposalResponse extends $pb.GeneratedMessage {
   factory MsgSubmitProposalResponse({
     $fixnum.Int64? proposalId,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
-    return result;
+    return _result;
   }
   factory MsgSubmitProposalResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgSubmitProposalResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1216,14 +1216,14 @@ class MsgWithdrawProposal extends $pb.GeneratedMessage {
     $fixnum.Int64? proposalId,
     $core.String? address,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
-    return result;
+    return _result;
   }
   factory MsgWithdrawProposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgWithdrawProposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1312,23 +1312,23 @@ class MsgVote extends $pb.GeneratedMessage {
     $core.String? metadata,
     Exec? exec,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (voter != null) {
-      result.voter = voter;
+      _result.voter = voter;
     }
     if (option != null) {
-      result.option = option;
+      _result.option = option;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
     if (exec != null) {
-      result.exec = exec;
+      _result.exec = exec;
     }
-    return result;
+    return _result;
   }
   factory MsgVote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgVote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1438,14 +1438,14 @@ class MsgExec extends $pb.GeneratedMessage {
     $fixnum.Int64? proposalId,
     $core.String? executor,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (executor != null) {
-      result.executor = executor;
+      _result.executor = executor;
     }
-    return result;
+    return _result;
   }
   factory MsgExec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgExec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1497,11 +1497,11 @@ class MsgExecResponse extends $pb.GeneratedMessage {
   factory MsgExecResponse({
     $5.ProposalExecutorResult? result,
   }) {
-    final result = create();
+    final _result = create();
     if (result != null) {
-      result.result = result;
+      _result.result = result;
     }
-    return result;
+    return _result;
   }
   factory MsgExecResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgExecResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1546,14 +1546,14 @@ class MsgLeaveGroup extends $pb.GeneratedMessage {
     $core.String? address,
     $fixnum.Int64? groupId,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
-    return result;
+    return _result;
   }
   factory MsgLeaveGroup.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgLeaveGroup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

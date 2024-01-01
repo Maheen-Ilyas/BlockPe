@@ -21,11 +21,11 @@ class MerkleRoot extends $pb.GeneratedMessage {
   factory MerkleRoot({
     $core.List<$core.int>? hash,
   }) {
-    final result = create();
+    final _result = create();
     if (hash != null) {
-      result.hash = hash;
+      _result.hash = hash;
     }
-    return result;
+    return _result;
   }
   factory MerkleRoot.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MerkleRoot.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -68,11 +68,11 @@ class MerklePrefix extends $pb.GeneratedMessage {
   factory MerklePrefix({
     $core.List<$core.int>? keyPrefix,
   }) {
-    final result = create();
+    final _result = create();
     if (keyPrefix != null) {
-      result.keyPrefix = keyPrefix;
+      _result.keyPrefix = keyPrefix;
     }
-    return result;
+    return _result;
   }
   factory MerklePrefix.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MerklePrefix.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -115,11 +115,11 @@ class MerklePath extends $pb.GeneratedMessage {
   factory MerklePath({
     $core.Iterable<$core.String>? keyPath,
   }) {
-    final result = create();
+    final _result = create();
     if (keyPath != null) {
-      result.keyPath.addAll(keyPath);
+      _result.keyPath.addAll(keyPath);
     }
-    return result;
+    return _result;
   }
   factory MerklePath.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MerklePath.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -156,11 +156,11 @@ class MerkleProof extends $pb.GeneratedMessage {
   factory MerkleProof({
     $core.Iterable<$2.CommitmentProof>? proofs,
   }) {
-    final result = create();
+    final _result = create();
     if (proofs != null) {
-      result.proofs.addAll(proofs);
+      _result.proofs.addAll(proofs);
     }
-    return result;
+    return _result;
   }
   factory MerkleProof.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MerkleProof.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

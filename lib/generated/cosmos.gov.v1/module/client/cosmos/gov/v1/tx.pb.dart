@@ -3,7 +3,7 @@
 //  source: cosmos/gov/v1/tx.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, unnecessary_import
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -32,20 +32,20 @@ class MsgSubmitProposal extends $pb.GeneratedMessage {
     $core.String? proposer,
     $core.String? metadata,
   }) {
-    final result = create();
+    final _result = create();
     if (messages != null) {
-      result.messages.addAll(messages);
+      _result.messages.addAll(messages);
     }
     if (initialDeposit != null) {
-      result.initialDeposit.addAll(initialDeposit);
+      _result.initialDeposit.addAll(initialDeposit);
     }
     if (proposer != null) {
-      result.proposer = proposer;
+      _result.proposer = proposer;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
-    return result;
+    return _result;
   }
   factory MsgSubmitProposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgSubmitProposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -103,11 +103,11 @@ class MsgSubmitProposalResponse extends $pb.GeneratedMessage {
   factory MsgSubmitProposalResponse({
     $fixnum.Int64? proposalId,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
-    return result;
+    return _result;
   }
   factory MsgSubmitProposalResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgSubmitProposalResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -152,14 +152,14 @@ class MsgExecLegacyContent extends $pb.GeneratedMessage {
     $3.Any? content,
     $core.String? authority,
   }) {
-    final result = create();
+    final _result = create();
     if (content != null) {
-      result.content = content;
+      _result.content = content;
     }
     if (authority != null) {
-      result.authority = authority;
+      _result.authority = authority;
     }
-    return result;
+    return _result;
   }
   factory MsgExecLegacyContent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgExecLegacyContent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -248,20 +248,20 @@ class MsgVote extends $pb.GeneratedMessage {
     $6.VoteOption? option,
     $core.String? metadata,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (voter != null) {
-      result.voter = voter;
+      _result.voter = voter;
     }
     if (option != null) {
-      result.option = option;
+      _result.option = option;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
-    return result;
+    return _result;
   }
   factory MsgVote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgVote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -366,20 +366,20 @@ class MsgVoteWeighted extends $pb.GeneratedMessage {
     $core.Iterable<$6.WeightedVoteOption>? options,
     $core.String? metadata,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (voter != null) {
-      result.voter = voter;
+      _result.voter = voter;
     }
     if (options != null) {
-      result.options.addAll(options);
+      _result.options.addAll(options);
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
-    return result;
+    return _result;
   }
   factory MsgVoteWeighted.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgVoteWeighted.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -476,17 +476,17 @@ class MsgDeposit extends $pb.GeneratedMessage {
     $core.String? depositor,
     $core.Iterable<$2.Coin>? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (depositor != null) {
-      result.depositor = depositor;
+      _result.depositor = depositor;
     }
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
-    return result;
+    return _result;
   }
   factory MsgDeposit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgDeposit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

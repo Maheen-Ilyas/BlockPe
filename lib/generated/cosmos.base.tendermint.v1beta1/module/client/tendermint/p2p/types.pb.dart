@@ -24,17 +24,17 @@ class NetAddress extends $pb.GeneratedMessage {
     $core.String? ip,
     $core.int? port,
   }) {
-    final result = create();
+    final _result = create();
     if (id != null) {
-      result.id = id;
+      _result.id = id;
     }
     if (ip != null) {
-      result.ip = ip;
+      _result.ip = ip;
     }
     if (port != null) {
-      result.port = port;
+      _result.port = port;
     }
-    return result;
+    return _result;
   }
   factory NetAddress.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory NetAddress.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -99,17 +99,17 @@ class ProtocolVersion extends $pb.GeneratedMessage {
     $fixnum.Int64? block,
     $fixnum.Int64? app,
   }) {
-    final result = create();
+    final _result = create();
     if (p2p != null) {
-      result.p2p = p2p;
+      _result.p2p = p2p;
     }
     if (block != null) {
-      result.block = block;
+      _result.block = block;
     }
     if (app != null) {
-      result.app = app;
+      _result.app = app;
     }
-    return result;
+    return _result;
   }
   factory ProtocolVersion.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ProtocolVersion.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -184,32 +184,32 @@ class DefaultNodeInfo extends $pb.GeneratedMessage {
     $core.String? moniker,
     DefaultNodeInfoOther? other,
   }) {
-    final result = create();
+    final _result = create();
     if (protocolVersion != null) {
-      result.protocolVersion = protocolVersion;
+      _result.protocolVersion = protocolVersion;
     }
     if (defaultNodeId != null) {
-      result.defaultNodeId = defaultNodeId;
+      _result.defaultNodeId = defaultNodeId;
     }
     if (listenAddr != null) {
-      result.listenAddr = listenAddr;
+      _result.listenAddr = listenAddr;
     }
     if (network != null) {
-      result.network = network;
+      _result.network = network;
     }
     if (version != null) {
-      result.version = version;
+      _result.version = version;
     }
     if (channels != null) {
-      result.channels = channels;
+      _result.channels = channels;
     }
     if (moniker != null) {
-      result.moniker = moniker;
+      _result.moniker = moniker;
     }
     if (other != null) {
-      result.other = other;
+      _result.other = other;
     }
-    return result;
+    return _result;
   }
   factory DefaultNodeInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DefaultNodeInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -321,14 +321,14 @@ class DefaultNodeInfoOther extends $pb.GeneratedMessage {
     $core.String? txIndex,
     $core.String? rpcAddress,
   }) {
-    final result = create();
+    final _result = create();
     if (txIndex != null) {
-      result.txIndex = txIndex;
+      _result.txIndex = txIndex;
     }
     if (rpcAddress != null) {
-      result.rpcAddress = rpcAddress;
+      _result.rpcAddress = rpcAddress;
     }
-    return result;
+    return _result;
   }
   factory DefaultNodeInfoOther.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DefaultNodeInfoOther.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

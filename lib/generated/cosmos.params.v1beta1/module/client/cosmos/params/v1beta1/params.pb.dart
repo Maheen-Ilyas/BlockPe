@@ -23,17 +23,17 @@ class ParameterChangeProposal extends $pb.GeneratedMessage {
     $core.String? description,
     $core.Iterable<ParamChange>? changes,
   }) {
-    final result = create();
+    final _result = create();
     if (title != null) {
-      result.title = title;
+      _result.title = title;
     }
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
     if (changes != null) {
-      result.changes.addAll(changes);
+      _result.changes.addAll(changes);
     }
-    return result;
+    return _result;
   }
   factory ParameterChangeProposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ParameterChangeProposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -92,17 +92,17 @@ class ParamChange extends $pb.GeneratedMessage {
     $core.String? key,
     $core.String? value,
   }) {
-    final result = create();
+    final _result = create();
     if (subspace != null) {
-      result.subspace = subspace;
+      _result.subspace = subspace;
     }
     if (key != null) {
-      result.key = key;
+      _result.key = key;
     }
     if (value != null) {
-      result.value = value;
+      _result.value = value;
     }
-    return result;
+    return _result;
   }
   factory ParamChange.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ParamChange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

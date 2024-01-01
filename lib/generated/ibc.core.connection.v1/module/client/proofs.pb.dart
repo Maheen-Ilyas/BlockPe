@@ -3,7 +3,7 @@
 //  source: proofs.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, constant_identifier_names
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -29,20 +29,20 @@ class ExistenceProof extends $pb.GeneratedMessage {
     LeafOp? leaf,
     $core.Iterable<InnerOp>? path,
   }) {
-    final result = create();
+    final _result = create();
     if (key != null) {
-      result.key = key;
+      _result.key = key;
     }
     if (value != null) {
-      result.value = value;
+      _result.value = value;
     }
     if (leaf != null) {
-      result.leaf = leaf;
+      _result.leaf = leaf;
     }
     if (path != null) {
-      result.path.addAll(path);
+      _result.path.addAll(path);
     }
-    return result;
+    return _result;
   }
   factory ExistenceProof.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ExistenceProof.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -112,17 +112,17 @@ class NonExistenceProof extends $pb.GeneratedMessage {
     ExistenceProof? left,
     ExistenceProof? right,
   }) {
-    final result = create();
+    final _result = create();
     if (key != null) {
-      result.key = key;
+      _result.key = key;
     }
     if (left != null) {
-      result.left = left;
+      _result.left = left;
     }
     if (right != null) {
-      result.right = right;
+      _result.right = right;
     }
-    return result;
+    return _result;
   }
   factory NonExistenceProof.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory NonExistenceProof.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -209,20 +209,20 @@ class CommitmentProof extends $pb.GeneratedMessage {
     BatchProof? batch,
     CompressedBatchProof? compressed,
   }) {
-    final result = create();
+    final _result = create();
     if (exist != null) {
-      result.exist = exist;
+      _result.exist = exist;
     }
     if (nonexist != null) {
-      result.nonexist = nonexist;
+      _result.nonexist = nonexist;
     }
     if (batch != null) {
-      result.batch = batch;
+      _result.batch = batch;
     }
     if (compressed != null) {
-      result.compressed = compressed;
+      _result.compressed = compressed;
     }
-    return result;
+    return _result;
   }
   factory CommitmentProof.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CommitmentProof.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -311,23 +311,23 @@ class LeafOp extends $pb.GeneratedMessage {
     LengthOp? length,
     $core.List<$core.int>? prefix,
   }) {
-    final result = create();
+    final _result = create();
     if (hash != null) {
-      result.hash = hash;
+      _result.hash = hash;
     }
     if (prehashKey != null) {
-      result.prehashKey = prehashKey;
+      _result.prehashKey = prehashKey;
     }
     if (prehashValue != null) {
-      result.prehashValue = prehashValue;
+      _result.prehashValue = prehashValue;
     }
     if (length != null) {
-      result.length = length;
+      _result.length = length;
     }
     if (prefix != null) {
-      result.prefix = prefix;
+      _result.prefix = prefix;
     }
-    return result;
+    return _result;
   }
   factory LeafOp.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory LeafOp.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -410,17 +410,17 @@ class InnerOp extends $pb.GeneratedMessage {
     $core.List<$core.int>? prefix,
     $core.List<$core.int>? suffix,
   }) {
-    final result = create();
+    final _result = create();
     if (hash != null) {
-      result.hash = hash;
+      _result.hash = hash;
     }
     if (prefix != null) {
-      result.prefix = prefix;
+      _result.prefix = prefix;
     }
     if (suffix != null) {
-      result.suffix = suffix;
+      _result.suffix = suffix;
     }
-    return result;
+    return _result;
   }
   factory InnerOp.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory InnerOp.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -487,20 +487,20 @@ class ProofSpec extends $pb.GeneratedMessage {
     $core.int? maxDepth,
     $core.int? minDepth,
   }) {
-    final result = create();
+    final _result = create();
     if (leafSpec != null) {
-      result.leafSpec = leafSpec;
+      _result.leafSpec = leafSpec;
     }
     if (innerSpec != null) {
-      result.innerSpec = innerSpec;
+      _result.innerSpec = innerSpec;
     }
     if (maxDepth != null) {
-      result.maxDepth = maxDepth;
+      _result.maxDepth = maxDepth;
     }
     if (minDepth != null) {
-      result.minDepth = minDepth;
+      _result.minDepth = minDepth;
     }
-    return result;
+    return _result;
   }
   factory ProofSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ProofSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -584,26 +584,26 @@ class InnerSpec extends $pb.GeneratedMessage {
     $core.List<$core.int>? emptyChild,
     HashOp? hash,
   }) {
-    final result = create();
+    final _result = create();
     if (childOrder != null) {
-      result.childOrder.addAll(childOrder);
+      _result.childOrder.addAll(childOrder);
     }
     if (childSize != null) {
-      result.childSize = childSize;
+      _result.childSize = childSize;
     }
     if (minPrefixLength != null) {
-      result.minPrefixLength = minPrefixLength;
+      _result.minPrefixLength = minPrefixLength;
     }
     if (maxPrefixLength != null) {
-      result.maxPrefixLength = maxPrefixLength;
+      _result.maxPrefixLength = maxPrefixLength;
     }
     if (emptyChild != null) {
-      result.emptyChild = emptyChild;
+      _result.emptyChild = emptyChild;
     }
     if (hash != null) {
-      result.hash = hash;
+      _result.hash = hash;
     }
-    return result;
+    return _result;
   }
   factory InnerSpec.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory InnerSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -685,11 +685,11 @@ class BatchProof extends $pb.GeneratedMessage {
   factory BatchProof({
     $core.Iterable<BatchEntry>? entries,
   }) {
-    final result = create();
+    final _result = create();
     if (entries != null) {
-      result.entries.addAll(entries);
+      _result.entries.addAll(entries);
     }
-    return result;
+    return _result;
   }
   factory BatchProof.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory BatchProof.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -740,14 +740,14 @@ class BatchEntry extends $pb.GeneratedMessage {
     ExistenceProof? exist,
     NonExistenceProof? nonexist,
   }) {
-    final result = create();
+    final _result = create();
     if (exist != null) {
-      result.exist = exist;
+      _result.exist = exist;
     }
     if (nonexist != null) {
-      result.nonexist = nonexist;
+      _result.nonexist = nonexist;
     }
-    return result;
+    return _result;
   }
   factory BatchEntry.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory BatchEntry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -808,14 +808,14 @@ class CompressedBatchProof extends $pb.GeneratedMessage {
     $core.Iterable<CompressedBatchEntry>? entries,
     $core.Iterable<InnerOp>? lookupInners,
   }) {
-    final result = create();
+    final _result = create();
     if (entries != null) {
-      result.entries.addAll(entries);
+      _result.entries.addAll(entries);
     }
     if (lookupInners != null) {
-      result.lookupInners.addAll(lookupInners);
+      _result.lookupInners.addAll(lookupInners);
     }
-    return result;
+    return _result;
   }
   factory CompressedBatchProof.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CompressedBatchProof.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -869,14 +869,14 @@ class CompressedBatchEntry extends $pb.GeneratedMessage {
     CompressedExistenceProof? exist,
     CompressedNonExistenceProof? nonexist,
   }) {
-    final result = create();
+    final _result = create();
     if (exist != null) {
-      result.exist = exist;
+      _result.exist = exist;
     }
     if (nonexist != null) {
-      result.nonexist = nonexist;
+      _result.nonexist = nonexist;
     }
-    return result;
+    return _result;
   }
   factory CompressedBatchEntry.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CompressedBatchEntry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -941,20 +941,20 @@ class CompressedExistenceProof extends $pb.GeneratedMessage {
     LeafOp? leaf,
     $core.Iterable<$core.int>? path,
   }) {
-    final result = create();
+    final _result = create();
     if (key != null) {
-      result.key = key;
+      _result.key = key;
     }
     if (value != null) {
-      result.value = value;
+      _result.value = value;
     }
     if (leaf != null) {
-      result.leaf = leaf;
+      _result.leaf = leaf;
     }
     if (path != null) {
-      result.path.addAll(path);
+      _result.path.addAll(path);
     }
-    return result;
+    return _result;
   }
   factory CompressedExistenceProof.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CompressedExistenceProof.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1024,17 +1024,17 @@ class CompressedNonExistenceProof extends $pb.GeneratedMessage {
     CompressedExistenceProof? left,
     CompressedExistenceProof? right,
   }) {
-    final result = create();
+    final _result = create();
     if (key != null) {
-      result.key = key;
+      _result.key = key;
     }
     if (left != null) {
-      result.left = left;
+      _result.left = left;
     }
     if (right != null) {
-      result.right = right;
+      _result.right = right;
     }
-    return result;
+    return _result;
   }
   factory CompressedNonExistenceProof.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CompressedNonExistenceProof.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

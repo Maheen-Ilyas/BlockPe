@@ -37,32 +37,32 @@ class MsgTransfer extends $pb.GeneratedMessage {
     $fixnum.Int64? timeoutTimestamp,
     $core.String? memo,
   }) {
-    final result = create();
+    final _result = create();
     if (sourcePort != null) {
-      result.sourcePort = sourcePort;
+      _result.sourcePort = sourcePort;
     }
     if (sourceChannel != null) {
-      result.sourceChannel = sourceChannel;
+      _result.sourceChannel = sourceChannel;
     }
     if (token != null) {
-      result.token = token;
+      _result.token = token;
     }
     if (sender != null) {
-      result.sender = sender;
+      _result.sender = sender;
     }
     if (receiver != null) {
-      result.receiver = receiver;
+      _result.receiver = receiver;
     }
     if (timeoutHeight != null) {
-      result.timeoutHeight = timeoutHeight;
+      _result.timeoutHeight = timeoutHeight;
     }
     if (timeoutTimestamp != null) {
-      result.timeoutTimestamp = timeoutTimestamp;
+      _result.timeoutTimestamp = timeoutTimestamp;
     }
     if (memo != null) {
-      result.memo = memo;
+      _result.memo = memo;
     }
-    return result;
+    return _result;
   }
   factory MsgTransfer.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgTransfer.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -172,11 +172,11 @@ class MsgTransferResponse extends $pb.GeneratedMessage {
   factory MsgTransferResponse({
     $fixnum.Int64? sequence,
   }) {
-    final result = create();
+    final _result = create();
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
-    return result;
+    return _result;
   }
   factory MsgTransferResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgTransferResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

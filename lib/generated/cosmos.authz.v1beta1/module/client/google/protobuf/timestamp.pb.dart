@@ -3,7 +3,7 @@
 //  source: google/protobuf/timestamp.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, implementation_imports
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -24,14 +24,14 @@ class Timestamp extends $pb.GeneratedMessage with $mixin.TimestampMixin {
     $fixnum.Int64? seconds,
     $core.int? nanos,
   }) {
-    final result = create();
+    final _result = create();
     if (seconds != null) {
-      result.seconds = seconds;
+      _result.seconds = seconds;
     }
     if (nanos != null) {
-      result.nanos = nanos;
+      _result.nanos = nanos;
     }
-    return result;
+    return _result;
   }
   factory Timestamp.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Timestamp.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.16"
+  aadhaar_kyc_flutter:
+    dependency: "direct main"
+    description:
+      name: aadhaar_kyc_flutter
+      sha256: "4403bcbdf81ab635fd88326a8ed1b86b18522e39b72f3930ada68483e486eac8"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.4"
   alan:
     dependency: "direct main"
     description:
@@ -382,6 +390,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.17"
+  flutter_tesseract_ocr:
+    dependency: transitive
+    description:
+      name: flutter_tesseract_ocr
+      sha256: "4a8d0e3f562ee01d94a464ff9d31d9e907b1e374aeff29bf696f979417c70bcf"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.24"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -460,10 +476,10 @@ packages:
     dependency: "direct main"
     description:
       name: image_picker
-      sha256: "7d7f2768df2a8b0a3cefa5ef4f84636121987d403130e70b17ef7e2cf650ba84"
+      sha256: b6951e25b795d053a6ba03af5f710069c99349de9341af95155d52665cb4607c
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.4"
+    version: "0.8.9"
   image_picker_android:
     dependency: transitive
     description:
@@ -476,10 +492,10 @@ packages:
     dependency: transitive
     description:
       name: image_picker_for_web
-      sha256: "50bc9ae6a77eea3a8b11af5eb6c661eeb858fdd2f734c2a4fd17086922347ef7"
+      sha256: "869fe8a64771b7afbc99fc433a5f7be2fea4d1cb3d7c11a48b6b579eb9c797f0"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.1"
+    version: "2.2.0"
   image_picker_ios:
     dependency: transitive
     description:
@@ -616,6 +632,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.3"
+  path_provider:
+    dependency: transitive
+    description:
+      name: path_provider
+      sha256: a1aa8aaa2542a6bc57e381f132af822420216c80d4781f7aa085ca3229208aaa
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.1"
+  path_provider_android:
+    dependency: transitive
+    description:
+      name: path_provider_android
+      sha256: e595b98692943b4881b219f0a9e3945118d3c16bd7e2813f98ec6e532d905f72
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.1"
+  path_provider_foundation:
+    dependency: transitive
+    description:
+      name: path_provider_foundation
+      sha256: "19314d595120f82aca0ba62787d58dde2cc6b5df7d2f0daf72489e38d1b57f2d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.1"
   path_provider_linux:
     dependency: transitive
     description:
@@ -648,6 +688,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.2"
+  pin_code_fields:
+    dependency: transitive
+    description:
+      name: pin_code_fields
+      sha256: c8652519d14688f3fe2a8288d86910a46aa0b9046d728f292d3bf6067c31b4c7
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.4.0"
   platform:
     dependency: transitive
     description:
@@ -789,14 +837,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
-  sprintf:
-    dependency: transitive
-    description:
-      name: sprintf
-      sha256: "1fc9ffe69d4df602376b52949af107d8f5703b77cda567c4d7d86a0693120f23"
-      url: "https://pub.dev"
-    source: hosted
-    version: "7.0.0"
   stack_trace:
     dependency: transitive
     description:
@@ -853,14 +893,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.2"
-  uuid:
-    dependency: "direct main"
-    description:
-      name: uuid
-      sha256: "22c94e5ad1e75f9934b766b53c742572ee2677c56bc871d850a57dad0f82127f"
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.2.2"
   vector_math:
     dependency: transitive
     description:

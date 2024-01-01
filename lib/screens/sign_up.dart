@@ -47,67 +47,6 @@ class _SignUpState extends State<SignUp> {
     super.dispose();
   }
 
-  Future<void> _signup() async {
-    try {
-      UserCredential userCred =
-          await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: _email.text,
-        password: _password.text,
-      );
-      await FirebaseFirestore.instance
-          .collection('users')
-          .doc(userCred.user?.uid)
-          .set(
-        {
-          'name': _name.text,
-          'aadharNumber': _aadharNumber.text,
-          'gender': _gender.text,
-          'dob': _dob.text,
-          'email': _email.text,
-        },
-      );
-      if (!context.mounted) return;
-      await Navigator.of(context).pushNamedAndRemoveUntil(
-        '/numberinput',
-        (route) => false,
-      );
-    } on FirebaseAuthException catch (e) {
-      if (!context.mounted) return;
-      if (e.code == 'invalid-email') {
-        showErrorDialog(
-          context,
-          "Invalid email",
-          "Enter a valid email address",
-        );
-      } else if (e.code == 'weak-password') {
-        showErrorDialog(
-          context,
-          "Weak password",
-          "Enter a password with more than 6 characters",
-        );
-      } else if (e.code == 'email-already-in-use') {
-        showErrorDialog(
-          context,
-          "Email already in use",
-          "Proceed to sign in using this email",
-        );
-      } else {
-        showErrorDialog(
-          context,
-          "An exception occurred",
-          "Try signing up again",
-        );
-      }
-    } catch (e) {
-      if (!context.mounted) return;
-      showErrorDialog(
-        context,
-        "An exception occurred",
-        "Try signing up again",
-      );
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -258,5 +197,66 @@ class _SignUpState extends State<SignUp> {
         ),
       ),
     );
+  }
+
+  Future<void> _signup() async {
+    try {
+      UserCredential userCred =
+          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: _email.text,
+        password: _password.text,
+      );
+      await FirebaseFirestore.instance
+          .collection('users')
+          .doc(userCred.user?.uid)
+          .set(
+        {
+          'name': _name.text,
+          'aadharNumber': _aadharNumber.text,
+          'gender': _gender.text,
+          'dob': _dob.text,
+          'email': _email.text,
+        },
+      );
+      if (!context.mounted) return;
+      await Navigator.of(context).pushNamedAndRemoveUntil(
+        '/importwallet',
+        (route) => false,
+      );
+    } on FirebaseAuthException catch (e) {
+      if (!context.mounted) return;
+      if (e.code == 'invalid-email') {
+        showErrorDialog(
+          context,
+          "Invalid email",
+          "Enter a valid email address",
+        );
+      } else if (e.code == 'weak-password') {
+        showErrorDialog(
+          context,
+          "Weak password",
+          "Enter a password with more than 6 characters",
+        );
+      } else if (e.code == 'email-already-in-use') {
+        showErrorDialog(
+          context,
+          "Email already in use",
+          "Proceed to sign in using this email",
+        );
+      } else {
+        showErrorDialog(
+          context,
+          "An exception occurred",
+          "Try signing up again",
+        );
+      }
+    } catch (e) {
+      if (!context.mounted) return;
+      showErrorDialog(
+        context,
+        "An exception occurred",
+        "Try signing up again",
+      );
+    }
   }
 }

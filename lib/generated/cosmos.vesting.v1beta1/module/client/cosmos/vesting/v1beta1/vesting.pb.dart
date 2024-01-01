@@ -31,23 +31,23 @@ class BaseVestingAccount extends $pb.GeneratedMessage {
     $core.Iterable<$3.Coin>? delegatedVesting,
     $fixnum.Int64? endTime,
   }) {
-    final result = create();
+    final _result = create();
     if (baseAccount != null) {
-      result.baseAccount = baseAccount;
+      _result.baseAccount = baseAccount;
     }
     if (originalVesting != null) {
-      result.originalVesting.addAll(originalVesting);
+      _result.originalVesting.addAll(originalVesting);
     }
     if (delegatedFree != null) {
-      result.delegatedFree.addAll(delegatedFree);
+      _result.delegatedFree.addAll(delegatedFree);
     }
     if (delegatedVesting != null) {
-      result.delegatedVesting.addAll(delegatedVesting);
+      _result.delegatedVesting.addAll(delegatedVesting);
     }
     if (endTime != null) {
-      result.endTime = endTime;
+      _result.endTime = endTime;
     }
-    return result;
+    return _result;
   }
   factory BaseVestingAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory BaseVestingAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -112,14 +112,14 @@ class ContinuousVestingAccount extends $pb.GeneratedMessage {
     BaseVestingAccount? baseVestingAccount,
     $fixnum.Int64? startTime,
   }) {
-    final result = create();
+    final _result = create();
     if (baseVestingAccount != null) {
-      result.baseVestingAccount = baseVestingAccount;
+      _result.baseVestingAccount = baseVestingAccount;
     }
     if (startTime != null) {
-      result.startTime = startTime;
+      _result.startTime = startTime;
     }
-    return result;
+    return _result;
   }
   factory ContinuousVestingAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ContinuousVestingAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -173,11 +173,11 @@ class DelayedVestingAccount extends $pb.GeneratedMessage {
   factory DelayedVestingAccount({
     BaseVestingAccount? baseVestingAccount,
   }) {
-    final result = create();
+    final _result = create();
     if (baseVestingAccount != null) {
-      result.baseVestingAccount = baseVestingAccount;
+      _result.baseVestingAccount = baseVestingAccount;
     }
-    return result;
+    return _result;
   }
   factory DelayedVestingAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DelayedVestingAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -224,14 +224,14 @@ class Period extends $pb.GeneratedMessage {
     $fixnum.Int64? length,
     $core.Iterable<$3.Coin>? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (length != null) {
-      result.length = length;
+      _result.length = length;
     }
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
-    return result;
+    return _result;
   }
   factory Period.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Period.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -281,17 +281,17 @@ class PeriodicVestingAccount extends $pb.GeneratedMessage {
     $fixnum.Int64? startTime,
     $core.Iterable<Period>? vestingPeriods,
   }) {
-    final result = create();
+    final _result = create();
     if (baseVestingAccount != null) {
-      result.baseVestingAccount = baseVestingAccount;
+      _result.baseVestingAccount = baseVestingAccount;
     }
     if (startTime != null) {
-      result.startTime = startTime;
+      _result.startTime = startTime;
     }
     if (vestingPeriods != null) {
-      result.vestingPeriods.addAll(vestingPeriods);
+      _result.vestingPeriods.addAll(vestingPeriods);
     }
-    return result;
+    return _result;
   }
   factory PeriodicVestingAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory PeriodicVestingAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -348,11 +348,11 @@ class PermanentLockedAccount extends $pb.GeneratedMessage {
   factory PermanentLockedAccount({
     BaseVestingAccount? baseVestingAccount,
   }) {
-    final result = create();
+    final _result = create();
     if (baseVestingAccount != null) {
-      result.baseVestingAccount = baseVestingAccount;
+      _result.baseVestingAccount = baseVestingAccount;
     }
-    return result;
+    return _result;
   }
   factory PermanentLockedAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory PermanentLockedAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

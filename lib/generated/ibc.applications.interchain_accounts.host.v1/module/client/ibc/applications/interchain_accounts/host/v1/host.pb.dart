@@ -21,14 +21,14 @@ class Params extends $pb.GeneratedMessage {
     $core.bool? hostEnabled,
     $core.Iterable<$core.String>? allowMessages,
   }) {
-    final result = create();
+    final _result = create();
     if (hostEnabled != null) {
-      result.hostEnabled = hostEnabled;
+      _result.hostEnabled = hostEnabled;
     }
     if (allowMessages != null) {
-      result.allowMessages.addAll(allowMessages);
+      _result.allowMessages.addAll(allowMessages);
     }
-    return result;
+    return _result;
   }
   factory Params.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Params.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

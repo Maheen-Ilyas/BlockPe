@@ -34,20 +34,20 @@ class Member extends $pb.GeneratedMessage {
     $core.String? metadata,
     $2.Timestamp? addedAt,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (weight != null) {
-      result.weight = weight;
+      _result.weight = weight;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
     if (addedAt != null) {
-      result.addedAt = addedAt;
+      _result.addedAt = addedAt;
     }
-    return result;
+    return _result;
   }
   factory Member.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Member.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -123,17 +123,17 @@ class MemberRequest extends $pb.GeneratedMessage {
     $core.String? weight,
     $core.String? metadata,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (weight != null) {
-      result.weight = weight;
+      _result.weight = weight;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
-    return result;
+    return _result;
   }
   factory MemberRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MemberRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -196,14 +196,14 @@ class ThresholdDecisionPolicy extends $pb.GeneratedMessage {
     $core.String? threshold,
     DecisionPolicyWindows? windows,
   }) {
-    final result = create();
+    final _result = create();
     if (threshold != null) {
-      result.threshold = threshold;
+      _result.threshold = threshold;
     }
     if (windows != null) {
-      result.windows = windows;
+      _result.windows = windows;
     }
-    return result;
+    return _result;
   }
   factory ThresholdDecisionPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ThresholdDecisionPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -259,14 +259,14 @@ class PercentageDecisionPolicy extends $pb.GeneratedMessage {
     $core.String? percentage,
     DecisionPolicyWindows? windows,
   }) {
-    final result = create();
+    final _result = create();
     if (percentage != null) {
-      result.percentage = percentage;
+      _result.percentage = percentage;
     }
     if (windows != null) {
-      result.windows = windows;
+      _result.windows = windows;
     }
-    return result;
+    return _result;
   }
   factory PercentageDecisionPolicy.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory PercentageDecisionPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -322,14 +322,14 @@ class DecisionPolicyWindows extends $pb.GeneratedMessage {
     $3.Duration? votingPeriod,
     $3.Duration? minExecutionPeriod,
   }) {
-    final result = create();
+    final _result = create();
     if (votingPeriod != null) {
-      result.votingPeriod = votingPeriod;
+      _result.votingPeriod = votingPeriod;
     }
     if (minExecutionPeriod != null) {
-      result.minExecutionPeriod = minExecutionPeriod;
+      _result.minExecutionPeriod = minExecutionPeriod;
     }
-    return result;
+    return _result;
   }
   factory DecisionPolicyWindows.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DecisionPolicyWindows.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -395,26 +395,26 @@ class GroupInfo extends $pb.GeneratedMessage {
     $core.String? totalWeight,
     $2.Timestamp? createdAt,
   }) {
-    final result = create();
+    final _result = create();
     if (id != null) {
-      result.id = id;
+      _result.id = id;
     }
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
     if (version != null) {
-      result.version = version;
+      _result.version = version;
     }
     if (totalWeight != null) {
-      result.totalWeight = totalWeight;
+      _result.totalWeight = totalWeight;
     }
     if (createdAt != null) {
-      result.createdAt = createdAt;
+      _result.createdAt = createdAt;
     }
-    return result;
+    return _result;
   }
   factory GroupInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GroupInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -506,14 +506,14 @@ class GroupMember extends $pb.GeneratedMessage {
     $fixnum.Int64? groupId,
     Member? member,
   }) {
-    final result = create();
+    final _result = create();
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
     if (member != null) {
-      result.member = member;
+      _result.member = member;
     }
-    return result;
+    return _result;
   }
   factory GroupMember.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GroupMember.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -579,29 +579,29 @@ class GroupPolicyInfo extends $pb.GeneratedMessage {
     $4.Any? decisionPolicy,
     $2.Timestamp? createdAt,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (groupId != null) {
-      result.groupId = groupId;
+      _result.groupId = groupId;
     }
     if (admin != null) {
-      result.admin = admin;
+      _result.admin = admin;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
     if (version != null) {
-      result.version = version;
+      _result.version = version;
     }
     if (decisionPolicy != null) {
-      result.decisionPolicy = decisionPolicy;
+      _result.decisionPolicy = decisionPolicy;
     }
     if (createdAt != null) {
-      result.createdAt = createdAt;
+      _result.createdAt = createdAt;
     }
-    return result;
+    return _result;
   }
   factory GroupPolicyInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GroupPolicyInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -724,44 +724,44 @@ class Proposal extends $pb.GeneratedMessage {
     ProposalExecutorResult? executorResult,
     $core.Iterable<$4.Any>? messages,
   }) {
-    final result = create();
+    final _result = create();
     if (id != null) {
-      result.id = id;
+      _result.id = id;
     }
     if (groupPolicyAddress != null) {
-      result.groupPolicyAddress = groupPolicyAddress;
+      _result.groupPolicyAddress = groupPolicyAddress;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
     if (proposers != null) {
-      result.proposers.addAll(proposers);
+      _result.proposers.addAll(proposers);
     }
     if (submitTime != null) {
-      result.submitTime = submitTime;
+      _result.submitTime = submitTime;
     }
     if (groupVersion != null) {
-      result.groupVersion = groupVersion;
+      _result.groupVersion = groupVersion;
     }
     if (groupPolicyVersion != null) {
-      result.groupPolicyVersion = groupPolicyVersion;
+      _result.groupPolicyVersion = groupPolicyVersion;
     }
     if (status != null) {
-      result.status = status;
+      _result.status = status;
     }
     if (finalTallyResult != null) {
-      result.finalTallyResult = finalTallyResult;
+      _result.finalTallyResult = finalTallyResult;
     }
     if (votingPeriodEnd != null) {
-      result.votingPeriodEnd = votingPeriodEnd;
+      _result.votingPeriodEnd = votingPeriodEnd;
     }
     if (executorResult != null) {
-      result.executorResult = executorResult;
+      _result.executorResult = executorResult;
     }
     if (messages != null) {
-      result.messages.addAll(messages);
+      _result.messages.addAll(messages);
     }
-    return result;
+    return _result;
   }
   factory Proposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Proposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -903,20 +903,20 @@ class TallyResult extends $pb.GeneratedMessage {
     $core.String? noCount,
     $core.String? noWithVetoCount,
   }) {
-    final result = create();
+    final _result = create();
     if (yesCount != null) {
-      result.yesCount = yesCount;
+      _result.yesCount = yesCount;
     }
     if (abstainCount != null) {
-      result.abstainCount = abstainCount;
+      _result.abstainCount = abstainCount;
     }
     if (noCount != null) {
-      result.noCount = noCount;
+      _result.noCount = noCount;
     }
     if (noWithVetoCount != null) {
-      result.noWithVetoCount = noWithVetoCount;
+      _result.noWithVetoCount = noWithVetoCount;
     }
-    return result;
+    return _result;
   }
   factory TallyResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory TallyResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -994,23 +994,23 @@ class Vote extends $pb.GeneratedMessage {
     $core.String? metadata,
     $2.Timestamp? submitTime,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (voter != null) {
-      result.voter = voter;
+      _result.voter = voter;
     }
     if (option != null) {
-      result.option = option;
+      _result.option = option;
     }
     if (metadata != null) {
-      result.metadata = metadata;
+      _result.metadata = metadata;
     }
     if (submitTime != null) {
-      result.submitTime = submitTime;
+      _result.submitTime = submitTime;
     }
-    return result;
+    return _result;
   }
   factory Vote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Vote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

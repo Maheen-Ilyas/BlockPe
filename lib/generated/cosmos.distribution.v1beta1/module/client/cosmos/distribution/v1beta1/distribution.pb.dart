@@ -28,20 +28,20 @@ class Params extends $pb.GeneratedMessage {
     $core.String? bonusProposerReward,
     $core.bool? withdrawAddrEnabled,
   }) {
-    final result = create();
+    final _result = create();
     if (communityTax != null) {
-      result.communityTax = communityTax;
+      _result.communityTax = communityTax;
     }
     if (baseProposerReward != null) {
-      result.baseProposerReward = baseProposerReward;
+      _result.baseProposerReward = baseProposerReward;
     }
     if (bonusProposerReward != null) {
-      result.bonusProposerReward = bonusProposerReward;
+      _result.bonusProposerReward = bonusProposerReward;
     }
     if (withdrawAddrEnabled != null) {
-      result.withdrawAddrEnabled = withdrawAddrEnabled;
+      _result.withdrawAddrEnabled = withdrawAddrEnabled;
     }
-    return result;
+    return _result;
   }
   factory Params.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Params.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -113,14 +113,14 @@ class ValidatorHistoricalRewards extends $pb.GeneratedMessage {
     $core.Iterable<$2.DecCoin>? cumulativeRewardRatio,
     $core.int? referenceCount,
   }) {
-    final result = create();
+    final _result = create();
     if (cumulativeRewardRatio != null) {
-      result.cumulativeRewardRatio.addAll(cumulativeRewardRatio);
+      _result.cumulativeRewardRatio.addAll(cumulativeRewardRatio);
     }
     if (referenceCount != null) {
-      result.referenceCount = referenceCount;
+      _result.referenceCount = referenceCount;
     }
-    return result;
+    return _result;
   }
   factory ValidatorHistoricalRewards.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorHistoricalRewards.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -168,14 +168,14 @@ class ValidatorCurrentRewards extends $pb.GeneratedMessage {
     $core.Iterable<$2.DecCoin>? rewards,
     $fixnum.Int64? period,
   }) {
-    final result = create();
+    final _result = create();
     if (rewards != null) {
-      result.rewards.addAll(rewards);
+      _result.rewards.addAll(rewards);
     }
     if (period != null) {
-      result.period = period;
+      _result.period = period;
     }
-    return result;
+    return _result;
   }
   factory ValidatorCurrentRewards.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorCurrentRewards.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -221,11 +221,11 @@ class ValidatorAccumulatedCommission extends $pb.GeneratedMessage {
   factory ValidatorAccumulatedCommission({
     $core.Iterable<$2.DecCoin>? commission,
   }) {
-    final result = create();
+    final _result = create();
     if (commission != null) {
-      result.commission.addAll(commission);
+      _result.commission.addAll(commission);
     }
-    return result;
+    return _result;
   }
   factory ValidatorAccumulatedCommission.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorAccumulatedCommission.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -262,11 +262,11 @@ class ValidatorOutstandingRewards extends $pb.GeneratedMessage {
   factory ValidatorOutstandingRewards({
     $core.Iterable<$2.DecCoin>? rewards,
   }) {
-    final result = create();
+    final _result = create();
     if (rewards != null) {
-      result.rewards.addAll(rewards);
+      _result.rewards.addAll(rewards);
     }
-    return result;
+    return _result;
   }
   factory ValidatorOutstandingRewards.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorOutstandingRewards.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -305,14 +305,14 @@ class ValidatorSlashEvent extends $pb.GeneratedMessage {
     $fixnum.Int64? validatorPeriod,
     $core.String? fraction,
   }) {
-    final result = create();
+    final _result = create();
     if (validatorPeriod != null) {
-      result.validatorPeriod = validatorPeriod;
+      _result.validatorPeriod = validatorPeriod;
     }
     if (fraction != null) {
-      result.fraction = fraction;
+      _result.fraction = fraction;
     }
-    return result;
+    return _result;
   }
   factory ValidatorSlashEvent.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorSlashEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -364,11 +364,11 @@ class ValidatorSlashEvents extends $pb.GeneratedMessage {
   factory ValidatorSlashEvents({
     $core.Iterable<ValidatorSlashEvent>? validatorSlashEvents,
   }) {
-    final result = create();
+    final _result = create();
     if (validatorSlashEvents != null) {
-      result.validatorSlashEvents.addAll(validatorSlashEvents);
+      _result.validatorSlashEvents.addAll(validatorSlashEvents);
     }
-    return result;
+    return _result;
   }
   factory ValidatorSlashEvents.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorSlashEvents.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -405,11 +405,11 @@ class FeePool extends $pb.GeneratedMessage {
   factory FeePool({
     $core.Iterable<$2.DecCoin>? communityPool,
   }) {
-    final result = create();
+    final _result = create();
     if (communityPool != null) {
-      result.communityPool.addAll(communityPool);
+      _result.communityPool.addAll(communityPool);
     }
-    return result;
+    return _result;
   }
   factory FeePool.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory FeePool.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -452,20 +452,20 @@ class CommunityPoolSpendProposal extends $pb.GeneratedMessage {
     $core.String? recipient,
     $core.Iterable<$2.Coin>? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (title != null) {
-      result.title = title;
+      _result.title = title;
     }
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
     if (recipient != null) {
-      result.recipient = recipient;
+      _result.recipient = recipient;
     }
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
-    return result;
+    return _result;
   }
   factory CommunityPoolSpendProposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CommunityPoolSpendProposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -533,17 +533,17 @@ class DelegatorStartingInfo extends $pb.GeneratedMessage {
     $core.String? stake,
     $fixnum.Int64? height,
   }) {
-    final result = create();
+    final _result = create();
     if (previousPeriod != null) {
-      result.previousPeriod = previousPeriod;
+      _result.previousPeriod = previousPeriod;
     }
     if (stake != null) {
-      result.stake = stake;
+      _result.stake = stake;
     }
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
-    return result;
+    return _result;
   }
   factory DelegatorStartingInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DelegatorStartingInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -606,14 +606,14 @@ class DelegationDelegatorReward extends $pb.GeneratedMessage {
     $core.String? validatorAddress,
     $core.Iterable<$2.DecCoin>? reward,
   }) {
-    final result = create();
+    final _result = create();
     if (validatorAddress != null) {
-      result.validatorAddress = validatorAddress;
+      _result.validatorAddress = validatorAddress;
     }
     if (reward != null) {
-      result.reward.addAll(reward);
+      _result.reward.addAll(reward);
     }
-    return result;
+    return _result;
   }
   factory DelegationDelegatorReward.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DelegationDelegatorReward.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -667,23 +667,23 @@ class CommunityPoolSpendProposalWithDeposit extends $pb.GeneratedMessage {
     $core.String? amount,
     $core.String? deposit,
   }) {
-    final result = create();
+    final _result = create();
     if (title != null) {
-      result.title = title;
+      _result.title = title;
     }
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
     if (recipient != null) {
-      result.recipient = recipient;
+      _result.recipient = recipient;
     }
     if (amount != null) {
-      result.amount = amount;
+      _result.amount = amount;
     }
     if (deposit != null) {
-      result.deposit = deposit;
+      _result.deposit = deposit;
     }
-    return result;
+    return _result;
   }
   factory CommunityPoolSpendProposalWithDeposit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CommunityPoolSpendProposalWithDeposit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

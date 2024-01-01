@@ -25,17 +25,17 @@ class MsgCreateClient extends $pb.GeneratedMessage {
     $3.Any? consensusState,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (clientState != null) {
-      result.clientState = clientState;
+      _result.clientState = clientState;
     }
     if (consensusState != null) {
-      result.consensusState = consensusState;
+      _result.consensusState = consensusState;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgCreateClient.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgCreateClient.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -133,17 +133,17 @@ class MsgUpdateClient extends $pb.GeneratedMessage {
     $3.Any? header,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (header != null) {
-      result.header = header;
+      _result.header = header;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgUpdateClient.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUpdateClient.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -245,26 +245,26 @@ class MsgUpgradeClient extends $pb.GeneratedMessage {
     $core.List<$core.int>? proofUpgradeConsensusState,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (clientState != null) {
-      result.clientState = clientState;
+      _result.clientState = clientState;
     }
     if (consensusState != null) {
-      result.consensusState = consensusState;
+      _result.consensusState = consensusState;
     }
     if (proofUpgradeClient != null) {
-      result.proofUpgradeClient = proofUpgradeClient;
+      _result.proofUpgradeClient = proofUpgradeClient;
     }
     if (proofUpgradeConsensusState != null) {
-      result.proofUpgradeConsensusState = proofUpgradeConsensusState;
+      _result.proofUpgradeConsensusState = proofUpgradeConsensusState;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgUpgradeClient.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUpgradeClient.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -389,17 +389,17 @@ class MsgSubmitMisbehaviour extends $pb.GeneratedMessage {
     $3.Any? misbehaviour,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (misbehaviour != null) {
-      result.misbehaviour = misbehaviour;
+      _result.misbehaviour = misbehaviour;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgSubmitMisbehaviour.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgSubmitMisbehaviour.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

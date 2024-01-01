@@ -4,6 +4,7 @@ import 'package:blockpe/providers/account_provider.dart';
 import 'package:blockpe/providers/theme_provider.dart';
 import 'package:blockpe/screens/aadhar.dart';
 import 'package:blockpe/screens/home_page.dart';
+import 'package:blockpe/screens/import_wallet.dart';
 import 'package:blockpe/screens/number_input.dart';
 import 'package:blockpe/screens/payment_success.dart';
 import 'package:blockpe/screens/sign_in.dart';
@@ -18,6 +19,7 @@ Future<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  // await FirebaseAppCheck.instance.activate();
   runApp(
     ChangeNotifierProvider(
       create: (context) => ThemeProvider(),
@@ -29,9 +31,11 @@ Future<void> main() async {
 final networkInfo = NetworkInfo(
   bech32Hrp: "cosmos",
   grpcInfo: GRPCInfo(
-    host: "http://10.0.2.2",
+    host: "http://127.0.0.1",
   ),
-  lcdInfo: LCDInfo(host: "http://10.0.2.2"),
+  lcdInfo: LCDInfo(
+    host: "http://127.0.0.1",
+  ),
 );
 
 class MyApp extends StatelessWidget {
@@ -52,8 +56,11 @@ class MyApp extends StatelessWidget {
           '/homepage': (context) => const HomePage(),
           '/signin': (context) => const SignIn(),
           '/numberinput': (context) => const NumberInput(),
-          '/signup': (context) => const SignUp(userData: {}),
+          '/signup': (context) => const SignUp(
+                userData: {},
+              ),
           '/paymentsuccess': (context) => const PaymentSuccess(),
+          '/importwallet': (context) => const ImportWallet(),
         },
         home: FutureBuilder<bool>(
           future: _signUpStatus(),

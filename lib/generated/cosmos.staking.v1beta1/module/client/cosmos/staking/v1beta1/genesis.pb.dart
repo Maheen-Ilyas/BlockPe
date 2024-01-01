@@ -36,32 +36,32 @@ class GenesisState extends $pb.GeneratedMessage {
     $core.Iterable<$11.Redelegation>? redelegations,
     $core.bool? exported,
   }) {
-    final result = create();
+    final _result = create();
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
     if (lastTotalPower != null) {
-      result.lastTotalPower = lastTotalPower;
+      _result.lastTotalPower = lastTotalPower;
     }
     if (lastValidatorPowers != null) {
-      result.lastValidatorPowers.addAll(lastValidatorPowers);
+      _result.lastValidatorPowers.addAll(lastValidatorPowers);
     }
     if (validators != null) {
-      result.validators.addAll(validators);
+      _result.validators.addAll(validators);
     }
     if (delegations != null) {
-      result.delegations.addAll(delegations);
+      _result.delegations.addAll(delegations);
     }
     if (unbondingDelegations != null) {
-      result.unbondingDelegations.addAll(unbondingDelegations);
+      _result.unbondingDelegations.addAll(unbondingDelegations);
     }
     if (redelegations != null) {
-      result.redelegations.addAll(redelegations);
+      _result.redelegations.addAll(redelegations);
     }
     if (exported != null) {
-      result.exported = exported;
+      _result.exported = exported;
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -141,14 +141,14 @@ class LastValidatorPower extends $pb.GeneratedMessage {
     $core.String? address,
     $fixnum.Int64? power,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (power != null) {
-      result.power = power;
+      _result.power = power;
     }
-    return result;
+    return _result;
   }
   factory LastValidatorPower.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory LastValidatorPower.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

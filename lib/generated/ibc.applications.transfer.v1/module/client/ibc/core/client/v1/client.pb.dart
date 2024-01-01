@@ -25,14 +25,14 @@ class IdentifiedClientState extends $pb.GeneratedMessage {
     $core.String? clientId,
     $6.Any? clientState,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (clientState != null) {
-      result.clientState = clientState;
+      _result.clientState = clientState;
     }
-    return result;
+    return _result;
   }
   factory IdentifiedClientState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory IdentifiedClientState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -88,14 +88,14 @@ class ConsensusStateWithHeight extends $pb.GeneratedMessage {
     Height? height,
     $6.Any? consensusState,
   }) {
-    final result = create();
+    final _result = create();
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
     if (consensusState != null) {
-      result.consensusState = consensusState;
+      _result.consensusState = consensusState;
     }
-    return result;
+    return _result;
   }
   factory ConsensusStateWithHeight.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ConsensusStateWithHeight.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -153,14 +153,14 @@ class ClientConsensusStates extends $pb.GeneratedMessage {
     $core.String? clientId,
     $core.Iterable<ConsensusStateWithHeight>? consensusStates,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (consensusStates != null) {
-      result.consensusStates.addAll(consensusStates);
+      _result.consensusStates.addAll(consensusStates);
     }
-    return result;
+    return _result;
   }
   factory ClientConsensusStates.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ClientConsensusStates.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -212,20 +212,20 @@ class ClientUpdateProposal extends $pb.GeneratedMessage {
     $core.String? subjectClientId,
     $core.String? substituteClientId,
   }) {
-    final result = create();
+    final _result = create();
     if (title != null) {
-      result.title = title;
+      _result.title = title;
     }
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
     if (subjectClientId != null) {
-      result.subjectClientId = subjectClientId;
+      _result.subjectClientId = subjectClientId;
     }
     if (substituteClientId != null) {
-      result.substituteClientId = substituteClientId;
+      _result.substituteClientId = substituteClientId;
     }
-    return result;
+    return _result;
   }
   factory ClientUpdateProposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ClientUpdateProposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -301,20 +301,20 @@ class UpgradeProposal extends $pb.GeneratedMessage {
     $7.Plan? plan,
     $6.Any? upgradedClientState,
   }) {
-    final result = create();
+    final _result = create();
     if (title != null) {
-      result.title = title;
+      _result.title = title;
     }
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
     if (plan != null) {
-      result.plan = plan;
+      _result.plan = plan;
     }
     if (upgradedClientState != null) {
-      result.upgradedClientState = upgradedClientState;
+      _result.upgradedClientState = upgradedClientState;
     }
-    return result;
+    return _result;
   }
   factory UpgradeProposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory UpgradeProposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -390,14 +390,14 @@ class Height extends $pb.GeneratedMessage {
     $fixnum.Int64? revisionNumber,
     $fixnum.Int64? revisionHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (revisionNumber != null) {
-      result.revisionNumber = revisionNumber;
+      _result.revisionNumber = revisionNumber;
     }
     if (revisionHeight != null) {
-      result.revisionHeight = revisionHeight;
+      _result.revisionHeight = revisionHeight;
     }
-    return result;
+    return _result;
   }
   factory Height.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Height.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -449,11 +449,11 @@ class Params extends $pb.GeneratedMessage {
   factory Params({
     $core.Iterable<$core.String>? allowedClients,
   }) {
-    final result = create();
+    final _result = create();
     if (allowedClients != null) {
-      result.allowedClients.addAll(allowedClients);
+      _result.allowedClients.addAll(allowedClients);
     }
-    return result;
+    return _result;
   }
   factory Params.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Params.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

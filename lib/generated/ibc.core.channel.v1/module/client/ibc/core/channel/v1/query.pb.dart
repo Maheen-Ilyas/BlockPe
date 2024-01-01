@@ -27,14 +27,14 @@ class QueryChannelRequest extends $pb.GeneratedMessage {
     $core.String? portId,
     $core.String? channelId,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
-    return result;
+    return _result;
   }
   factory QueryChannelRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryChannelRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -90,17 +90,17 @@ class QueryChannelResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $5.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (channel != null) {
-      result.channel = channel;
+      _result.channel = channel;
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryChannelResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryChannelResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -165,11 +165,11 @@ class QueryChannelsRequest extends $pb.GeneratedMessage {
   factory QueryChannelsRequest({
     $8.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryChannelsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryChannelsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -218,17 +218,17 @@ class QueryChannelsResponse extends $pb.GeneratedMessage {
     $8.PageResponse? pagination,
     $5.Height? height,
   }) {
-    final result = create();
+    final _result = create();
     if (channels != null) {
-      result.channels.addAll(channels);
+      _result.channels.addAll(channels);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
-    return result;
+    return _result;
   }
   factory QueryChannelsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryChannelsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -289,14 +289,14 @@ class QueryConnectionChannelsRequest extends $pb.GeneratedMessage {
     $core.String? connection,
     $8.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (connection != null) {
-      result.connection = connection;
+      _result.connection = connection;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryConnectionChannelsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryConnectionChannelsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -354,17 +354,17 @@ class QueryConnectionChannelsResponse extends $pb.GeneratedMessage {
     $8.PageResponse? pagination,
     $5.Height? height,
   }) {
-    final result = create();
+    final _result = create();
     if (channels != null) {
-      result.channels.addAll(channels);
+      _result.channels.addAll(channels);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
-    return result;
+    return _result;
   }
   factory QueryConnectionChannelsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryConnectionChannelsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -425,14 +425,14 @@ class QueryChannelClientStateRequest extends $pb.GeneratedMessage {
     $core.String? portId,
     $core.String? channelId,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
-    return result;
+    return _result;
   }
   factory QueryChannelClientStateRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryChannelClientStateRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -488,17 +488,17 @@ class QueryChannelClientStateResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $5.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (identifiedClientState != null) {
-      result.identifiedClientState = identifiedClientState;
+      _result.identifiedClientState = identifiedClientState;
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryChannelClientStateResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryChannelClientStateResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -569,20 +569,20 @@ class QueryChannelConsensusStateRequest extends $pb.GeneratedMessage {
     $fixnum.Int64? revisionNumber,
     $fixnum.Int64? revisionHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (revisionNumber != null) {
-      result.revisionNumber = revisionNumber;
+      _result.revisionNumber = revisionNumber;
     }
     if (revisionHeight != null) {
-      result.revisionHeight = revisionHeight;
+      _result.revisionHeight = revisionHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryChannelConsensusStateRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryChannelConsensusStateRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -658,20 +658,20 @@ class QueryChannelConsensusStateResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $5.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (consensusState != null) {
-      result.consensusState = consensusState;
+      _result.consensusState = consensusState;
     }
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryChannelConsensusStateResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryChannelConsensusStateResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -749,17 +749,17 @@ class QueryPacketCommitmentRequest extends $pb.GeneratedMessage {
     $core.String? channelId,
     $fixnum.Int64? sequence,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
-    return result;
+    return _result;
   }
   factory QueryPacketCommitmentRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryPacketCommitmentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -824,17 +824,17 @@ class QueryPacketCommitmentResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $5.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (commitment != null) {
-      result.commitment = commitment;
+      _result.commitment = commitment;
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryPacketCommitmentResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryPacketCommitmentResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -901,17 +901,17 @@ class QueryPacketCommitmentsRequest extends $pb.GeneratedMessage {
     $core.String? channelId,
     $8.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryPacketCommitmentsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryPacketCommitmentsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -978,17 +978,17 @@ class QueryPacketCommitmentsResponse extends $pb.GeneratedMessage {
     $8.PageResponse? pagination,
     $5.Height? height,
   }) {
-    final result = create();
+    final _result = create();
     if (commitments != null) {
-      result.commitments.addAll(commitments);
+      _result.commitments.addAll(commitments);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
-    return result;
+    return _result;
   }
   factory QueryPacketCommitmentsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryPacketCommitmentsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1051,17 +1051,17 @@ class QueryPacketReceiptRequest extends $pb.GeneratedMessage {
     $core.String? channelId,
     $fixnum.Int64? sequence,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
-    return result;
+    return _result;
   }
   factory QueryPacketReceiptRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryPacketReceiptRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1126,17 +1126,17 @@ class QueryPacketReceiptResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $5.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (received != null) {
-      result.received = received;
+      _result.received = received;
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryPacketReceiptResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryPacketReceiptResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1203,17 +1203,17 @@ class QueryPacketAcknowledgementRequest extends $pb.GeneratedMessage {
     $core.String? channelId,
     $fixnum.Int64? sequence,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
-    return result;
+    return _result;
   }
   factory QueryPacketAcknowledgementRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryPacketAcknowledgementRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1278,17 +1278,17 @@ class QueryPacketAcknowledgementResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $5.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (acknowledgement != null) {
-      result.acknowledgement = acknowledgement;
+      _result.acknowledgement = acknowledgement;
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryPacketAcknowledgementResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryPacketAcknowledgementResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1357,20 +1357,20 @@ class QueryPacketAcknowledgementsRequest extends $pb.GeneratedMessage {
     $8.PageRequest? pagination,
     $core.Iterable<$fixnum.Int64>? packetCommitmentSequences,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
     if (packetCommitmentSequences != null) {
-      result.packetCommitmentSequences.addAll(packetCommitmentSequences);
+      _result.packetCommitmentSequences.addAll(packetCommitmentSequences);
     }
-    return result;
+    return _result;
   }
   factory QueryPacketAcknowledgementsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryPacketAcknowledgementsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1440,17 +1440,17 @@ class QueryPacketAcknowledgementsResponse extends $pb.GeneratedMessage {
     $8.PageResponse? pagination,
     $5.Height? height,
   }) {
-    final result = create();
+    final _result = create();
     if (acknowledgements != null) {
-      result.acknowledgements.addAll(acknowledgements);
+      _result.acknowledgements.addAll(acknowledgements);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
-    return result;
+    return _result;
   }
   factory QueryPacketAcknowledgementsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryPacketAcknowledgementsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1513,17 +1513,17 @@ class QueryUnreceivedPacketsRequest extends $pb.GeneratedMessage {
     $core.String? channelId,
     $core.Iterable<$fixnum.Int64>? packetCommitmentSequences,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (packetCommitmentSequences != null) {
-      result.packetCommitmentSequences.addAll(packetCommitmentSequences);
+      _result.packetCommitmentSequences.addAll(packetCommitmentSequences);
     }
-    return result;
+    return _result;
   }
   factory QueryUnreceivedPacketsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryUnreceivedPacketsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1580,14 +1580,14 @@ class QueryUnreceivedPacketsResponse extends $pb.GeneratedMessage {
     $core.Iterable<$fixnum.Int64>? sequences,
     $5.Height? height,
   }) {
-    final result = create();
+    final _result = create();
     if (sequences != null) {
-      result.sequences.addAll(sequences);
+      _result.sequences.addAll(sequences);
     }
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
-    return result;
+    return _result;
   }
   factory QueryUnreceivedPacketsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryUnreceivedPacketsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1639,17 +1639,17 @@ class QueryUnreceivedAcksRequest extends $pb.GeneratedMessage {
     $core.String? channelId,
     $core.Iterable<$fixnum.Int64>? packetAckSequences,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (packetAckSequences != null) {
-      result.packetAckSequences.addAll(packetAckSequences);
+      _result.packetAckSequences.addAll(packetAckSequences);
     }
-    return result;
+    return _result;
   }
   factory QueryUnreceivedAcksRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryUnreceivedAcksRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1706,14 +1706,14 @@ class QueryUnreceivedAcksResponse extends $pb.GeneratedMessage {
     $core.Iterable<$fixnum.Int64>? sequences,
     $5.Height? height,
   }) {
-    final result = create();
+    final _result = create();
     if (sequences != null) {
-      result.sequences.addAll(sequences);
+      _result.sequences.addAll(sequences);
     }
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
-    return result;
+    return _result;
   }
   factory QueryUnreceivedAcksResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryUnreceivedAcksResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1763,14 +1763,14 @@ class QueryNextSequenceReceiveRequest extends $pb.GeneratedMessage {
     $core.String? portId,
     $core.String? channelId,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
-    return result;
+    return _result;
   }
   factory QueryNextSequenceReceiveRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryNextSequenceReceiveRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -1826,17 +1826,17 @@ class QueryNextSequenceReceiveResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? proof,
     $5.Height? proofHeight,
   }) {
-    final result = create();
+    final _result = create();
     if (nextSequenceReceive != null) {
-      result.nextSequenceReceive = nextSequenceReceive;
+      _result.nextSequenceReceive = nextSequenceReceive;
     }
     if (proof != null) {
-      result.proof = proof;
+      _result.proof = proof;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
-    return result;
+    return _result;
   }
   factory QueryNextSequenceReceiveResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryNextSequenceReceiveResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

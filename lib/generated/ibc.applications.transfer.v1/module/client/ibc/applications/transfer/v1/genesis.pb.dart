@@ -25,17 +25,17 @@ class GenesisState extends $pb.GeneratedMessage {
     $core.Iterable<$2.DenomTrace>? denomTraces,
     $2.Params? params,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (denomTraces != null) {
-      result.denomTraces.addAll(denomTraces);
+      _result.denomTraces.addAll(denomTraces);
     }
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

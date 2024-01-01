@@ -1,5 +1,6 @@
 import 'package:barcode_scan2/barcode_scan2.dart';
 import 'package:blockpe/providers/theme_provider.dart';
+// import 'package:aadhaar_kyc_flutter/aadhaar_kyc_flutter.dart';
 import 'package:blockpe/screens/sign_up.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -15,20 +16,6 @@ class AadharScreen extends StatefulWidget {
 
 class _AadharScreenState extends State<AadharScreen> {
   late ScanResult scanResult;
-
-  Map<String, String> _parseXmlData(String xmlData) {
-    Map<String, String> userData = {};
-
-    XmlDocument document = XmlDocument.parse(xmlData);
-    XmlElement root = document.rootElement;
-
-    userData['Aadhar Number'] = root.getAttribute('uid') ?? '';
-    userData['Name'] = root.getAttribute('name') ?? '';
-    userData['Gender'] = root.getAttribute('gender') ?? '';
-    userData['DOB'] = root.getAttribute('dob') ?? '';
-
-    return userData;
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -64,16 +51,20 @@ class _AadharScreenState extends State<AadharScreen> {
               style: Provider.of<ThemeProvider>(context)
                   .theme
                   .textTheme
-                  .labelMedium!
-                  .copyWith(fontWeight: FontWeight.w500),
+                  .labelSmall!
+                  .copyWith(
+                    fontWeight: FontWeight.w500,
+                  ),
             ),
             const SizedBox(height: 20),
             SizedBox(
-              height: 60,
+              height: 50,
               width: double.infinity,
               child: FilledButton(
                 onPressed: () async {
-                  ScanResult result = await BarcodeScanner.scan();
+                  ScanResult result = await BarcodeScanner.scan(
+                    options: const ScanOptions(),
+                  );
                   dev.log(result.rawContent);
                   dev.log(result.format.toString());
                   if (result.rawContent.isNotEmpty) {
@@ -99,5 +90,19 @@ class _AadharScreenState extends State<AadharScreen> {
         ),
       ),
     );
+  }
+
+  Map<String, String> _parseXmlData(String xmlData) {
+    Map<String, String> userData = {};
+
+    XmlDocument document = XmlDocument.parse(xmlData);
+    XmlElement root = document.rootElement;
+
+    userData['Aadhar Number'] = root.getAttribute('uid') ?? '';
+    userData['Name'] = root.getAttribute('name') ?? '';
+    userData['Gender'] = root.getAttribute('gender') ?? '';
+    userData['DOB'] = root.getAttribute('dob') ?? '';
+
+    return userData;
   }
 }

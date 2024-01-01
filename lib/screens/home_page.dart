@@ -1,7 +1,7 @@
 import 'package:blockpe/screens/home.dart';
-import 'package:blockpe/screens/import_wallet.dart';
 import 'package:blockpe/screens/initiate_payment.dart';
 import 'package:blockpe/screens/profile.dart';
+import 'package:blockpe/screens/save_vpa.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
     const Home(),
-    const ImportWallet(),
+    const SaveVPA(),
     const InitiatePayment(),
     const Profile(),
   ];
@@ -44,13 +44,13 @@ class _HomePageState extends State<HomePage> {
                 label: 'Home',
               ),
               NavigationDestination(
-                icon: Icon(Icons.wallet_outlined),
-                selectedIcon: Icon(Icons.wallet),
-                label: 'Import Wallet',
-              ),
-              NavigationDestination(
                 icon: Icon(Icons.account_balance_outlined),
                 selectedIcon: Icon(Icons.account_balance),
+                label: 'VPA',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.wallet_outlined),
+                selectedIcon: Icon(Icons.wallet),
                 label: 'Payment',
               ),
               NavigationDestination(

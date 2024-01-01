@@ -34,40 +34,6 @@ class _ProfileState extends State<Profile> {
     fetchUserDetails();
   }
 
-  void fetchUserDetails() async {
-    try {
-      DocumentSnapshot<Map<String, dynamic>> snapshot = await FirebaseFirestore
-          .instance
-          .collection('users')
-          .doc(FirebaseAuth.instance.currentUser?.uid)
-          .get();
-      if (snapshot.exists) {
-        setState(
-          () {
-            _aadharNumber.text = snapshot.get('aadharNumber') ?? '';
-            _name.text = snapshot.get('name') ?? '';
-            _gender.text = snapshot.get('gender') ?? '';
-            _dob.text = snapshot.get('dob') ?? '';
-          },
-        );
-      } else {
-        if (!context.mounted) return;
-        showErrorDialog(
-          context,
-          "An error occurred",
-          "Unable to fetch user details",
-        );
-      }
-    } catch (e) {
-      if (!context.mounted) return;
-      showErrorDialog(
-        context,
-        "An error occurred",
-        "Error in fetching user details",
-      );
-    }
-  }
-
   @override
   void dispose() {
     _aadharNumber.dispose();
@@ -237,5 +203,39 @@ class _ProfileState extends State<Profile> {
         ),
       ),
     );
+  }
+
+  void fetchUserDetails() async {
+    try {
+      DocumentSnapshot<Map<String, dynamic>> snapshot = await FirebaseFirestore
+          .instance
+          .collection('users')
+          .doc(FirebaseAuth.instance.currentUser?.uid)
+          .get();
+      if (snapshot.exists) {
+        setState(
+          () {
+            _aadharNumber.text = snapshot.get('aadharNumber') ?? '';
+            _name.text = snapshot.get('name') ?? '';
+            _gender.text = snapshot.get('gender') ?? '';
+            _dob.text = snapshot.get('dob') ?? '';
+          },
+        );
+      } else {
+        if (!context.mounted) return;
+        showErrorDialog(
+          context,
+          "An error occurred",
+          "Unable to fetch user details",
+        );
+      }
+    } catch (e) {
+      if (!context.mounted) return;
+      showErrorDialog(
+        context,
+        "An error occurred",
+        "Error in fetching user details",
+      );
+    }
   }
 }

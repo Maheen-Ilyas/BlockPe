@@ -28,20 +28,20 @@ class Equivocation extends $pb.GeneratedMessage {
     $fixnum.Int64? power,
     $core.String? consensusAddress,
   }) {
-    final result = create();
+    final _result = create();
     if (height != null) {
-      result.height = height;
+      _result.height = height;
     }
     if (time != null) {
-      result.time = time;
+      _result.time = time;
     }
     if (power != null) {
-      result.power = power;
+      _result.power = power;
     }
     if (consensusAddress != null) {
-      result.consensusAddress = consensusAddress;
+      _result.consensusAddress = consensusAddress;
     }
-    return result;
+    return _result;
   }
   factory Equivocation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Equivocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

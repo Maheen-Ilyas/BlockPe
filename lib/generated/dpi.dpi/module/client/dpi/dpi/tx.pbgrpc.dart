@@ -20,12 +20,6 @@ class MsgClient extends $grpc.Client {
           ($1.MsgSaveVpa value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
               $1.MsgSaveVpaResponse.fromBuffer(value));
-  static final _$transferTokens =
-      $grpc.ClientMethod<$1.MsgTransferTokens, $1.MsgTransferTokensResponse>(
-          '/dpi.dpi.Msg/TransferTokens',
-          ($1.MsgTransferTokens value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) =>
-              $1.MsgTransferTokensResponse.fromBuffer(value));
 
   MsgClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -35,12 +29,6 @@ class MsgClient extends $grpc.Client {
   $grpc.ResponseFuture<$1.MsgSaveVpaResponse> saveVpa($1.MsgSaveVpa request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$saveVpa, request, options: options);
-  }
-
-  $grpc.ResponseFuture<$1.MsgTransferTokensResponse> transferTokens(
-      $1.MsgTransferTokens request,
-      {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$transferTokens, request, options: options);
   }
 }
 
@@ -55,15 +43,6 @@ abstract class MsgServiceBase extends $grpc.Service {
         false,
         ($core.List<$core.int> value) => $1.MsgSaveVpa.fromBuffer(value),
         ($1.MsgSaveVpaResponse value) => value.writeToBuffer()));
-    $addMethod(
-        $grpc.ServiceMethod<$1.MsgTransferTokens, $1.MsgTransferTokensResponse>(
-            'TransferTokens',
-            transferTokens_Pre,
-            false,
-            false,
-            ($core.List<$core.int> value) =>
-                $1.MsgTransferTokens.fromBuffer(value),
-            ($1.MsgTransferTokensResponse value) => value.writeToBuffer()));
   }
 
   $async.Future<$1.MsgSaveVpaResponse> saveVpa_Pre(
@@ -71,14 +50,6 @@ abstract class MsgServiceBase extends $grpc.Service {
     return saveVpa(call, await request);
   }
 
-  $async.Future<$1.MsgTransferTokensResponse> transferTokens_Pre(
-      $grpc.ServiceCall call,
-      $async.Future<$1.MsgTransferTokens> request) async {
-    return transferTokens(call, await request);
-  }
-
   $async.Future<$1.MsgSaveVpaResponse> saveVpa(
       $grpc.ServiceCall call, $1.MsgSaveVpa request);
-  $async.Future<$1.MsgTransferTokensResponse> transferTokens(
-      $grpc.ServiceCall call, $1.MsgTransferTokens request);
 }

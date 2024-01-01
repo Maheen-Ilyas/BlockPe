@@ -19,11 +19,11 @@ class Params extends $pb.GeneratedMessage {
   factory Params({
     $core.bool? controllerEnabled,
   }) {
-    final result = create();
+    final _result = create();
     if (controllerEnabled != null) {
-      result.controllerEnabled = controllerEnabled;
+      _result.controllerEnabled = controllerEnabled;
     }
-    return result;
+    return _result;
   }
   factory Params.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Params.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

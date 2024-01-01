@@ -52,11 +52,11 @@ class QueryParamsResponse extends $pb.GeneratedMessage {
   factory QueryParamsResponse({
     $2.Params? params,
   }) {
-    final result = create();
+    final _result = create();
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
-    return result;
+    return _result;
   }
   factory QueryParamsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryParamsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -101,11 +101,11 @@ class QueryGetVpaRequest extends $pb.GeneratedMessage {
   factory QueryGetVpaRequest({
     $core.String? index,
   }) {
-    final result = create();
+    final _result = create();
     if (index != null) {
-      result.index = index;
+      _result.index = index;
     }
-    return result;
+    return _result;
   }
   factory QueryGetVpaRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryGetVpaRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -148,11 +148,11 @@ class QueryGetVpaResponse extends $pb.GeneratedMessage {
   factory QueryGetVpaResponse({
     $3.Vpa? vpa,
   }) {
-    final result = create();
+    final _result = create();
     if (vpa != null) {
-      result.vpa = vpa;
+      _result.vpa = vpa;
     }
-    return result;
+    return _result;
   }
   factory QueryGetVpaResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryGetVpaResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -197,11 +197,11 @@ class QueryAllVpaRequest extends $pb.GeneratedMessage {
   factory QueryAllVpaRequest({
     $5.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryAllVpaRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllVpaRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -248,14 +248,14 @@ class QueryAllVpaResponse extends $pb.GeneratedMessage {
     $core.Iterable<$3.Vpa>? vpa,
     $5.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (vpa != null) {
-      result.vpa.addAll(vpa);
+      _result.vpa.addAll(vpa);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryAllVpaResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllVpaResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

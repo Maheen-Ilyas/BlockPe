@@ -3,7 +3,7 @@
 //  source: cosmos/gov/v1beta1/query.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, unnecessary_import
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -25,11 +25,11 @@ class QueryProposalRequest extends $pb.GeneratedMessage {
   factory QueryProposalRequest({
     $fixnum.Int64? proposalId,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
-    return result;
+    return _result;
   }
   factory QueryProposalRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryProposalRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -72,11 +72,11 @@ class QueryProposalResponse extends $pb.GeneratedMessage {
   factory QueryProposalResponse({
     $6.Proposal? proposal,
   }) {
-    final result = create();
+    final _result = create();
     if (proposal != null) {
-      result.proposal = proposal;
+      _result.proposal = proposal;
     }
-    return result;
+    return _result;
   }
   factory QueryProposalResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryProposalResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -127,20 +127,20 @@ class QueryProposalsRequest extends $pb.GeneratedMessage {
     $core.String? depositor,
     $8.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalStatus != null) {
-      result.proposalStatus = proposalStatus;
+      _result.proposalStatus = proposalStatus;
     }
     if (voter != null) {
-      result.voter = voter;
+      _result.voter = voter;
     }
     if (depositor != null) {
-      result.depositor = depositor;
+      _result.depositor = depositor;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryProposalsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryProposalsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -214,14 +214,14 @@ class QueryProposalsResponse extends $pb.GeneratedMessage {
     $core.Iterable<$6.Proposal>? proposals,
     $8.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (proposals != null) {
-      result.proposals.addAll(proposals);
+      _result.proposals.addAll(proposals);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryProposalsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryProposalsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -271,14 +271,14 @@ class QueryVoteRequest extends $pb.GeneratedMessage {
     $fixnum.Int64? proposalId,
     $core.String? voter,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (voter != null) {
-      result.voter = voter;
+      _result.voter = voter;
     }
-    return result;
+    return _result;
   }
   factory QueryVoteRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryVoteRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -330,11 +330,11 @@ class QueryVoteResponse extends $pb.GeneratedMessage {
   factory QueryVoteResponse({
     $6.Vote? vote,
   }) {
-    final result = create();
+    final _result = create();
     if (vote != null) {
-      result.vote = vote;
+      _result.vote = vote;
     }
-    return result;
+    return _result;
   }
   factory QueryVoteResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryVoteResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -381,14 +381,14 @@ class QueryVotesRequest extends $pb.GeneratedMessage {
     $fixnum.Int64? proposalId,
     $8.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryVotesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryVotesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -444,14 +444,14 @@ class QueryVotesResponse extends $pb.GeneratedMessage {
     $core.Iterable<$6.Vote>? votes,
     $8.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (votes != null) {
-      result.votes.addAll(votes);
+      _result.votes.addAll(votes);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryVotesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryVotesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -499,11 +499,11 @@ class QueryParamsRequest extends $pb.GeneratedMessage {
   factory QueryParamsRequest({
     $core.String? paramsType,
   }) {
-    final result = create();
+    final _result = create();
     if (paramsType != null) {
-      result.paramsType = paramsType;
+      _result.paramsType = paramsType;
     }
-    return result;
+    return _result;
   }
   factory QueryParamsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryParamsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -550,17 +550,17 @@ class QueryParamsResponse extends $pb.GeneratedMessage {
     $6.DepositParams? depositParams,
     $6.TallyParams? tallyParams,
   }) {
-    final result = create();
+    final _result = create();
     if (votingParams != null) {
-      result.votingParams = votingParams;
+      _result.votingParams = votingParams;
     }
     if (depositParams != null) {
-      result.depositParams = depositParams;
+      _result.depositParams = depositParams;
     }
     if (tallyParams != null) {
-      result.tallyParams = tallyParams;
+      _result.tallyParams = tallyParams;
     }
-    return result;
+    return _result;
   }
   factory QueryParamsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryParamsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -629,14 +629,14 @@ class QueryDepositRequest extends $pb.GeneratedMessage {
     $fixnum.Int64? proposalId,
     $core.String? depositor,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (depositor != null) {
-      result.depositor = depositor;
+      _result.depositor = depositor;
     }
-    return result;
+    return _result;
   }
   factory QueryDepositRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDepositRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -688,11 +688,11 @@ class QueryDepositResponse extends $pb.GeneratedMessage {
   factory QueryDepositResponse({
     $6.Deposit? deposit,
   }) {
-    final result = create();
+    final _result = create();
     if (deposit != null) {
-      result.deposit = deposit;
+      _result.deposit = deposit;
     }
-    return result;
+    return _result;
   }
   factory QueryDepositResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDepositResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -739,14 +739,14 @@ class QueryDepositsRequest extends $pb.GeneratedMessage {
     $fixnum.Int64? proposalId,
     $8.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryDepositsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDepositsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -802,14 +802,14 @@ class QueryDepositsResponse extends $pb.GeneratedMessage {
     $core.Iterable<$6.Deposit>? deposits,
     $8.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (deposits != null) {
-      result.deposits.addAll(deposits);
+      _result.deposits.addAll(deposits);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryDepositsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDepositsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -857,11 +857,11 @@ class QueryTallyResultRequest extends $pb.GeneratedMessage {
   factory QueryTallyResultRequest({
     $fixnum.Int64? proposalId,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
-    return result;
+    return _result;
   }
   factory QueryTallyResultRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryTallyResultRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -904,11 +904,11 @@ class QueryTallyResultResponse extends $pb.GeneratedMessage {
   factory QueryTallyResultResponse({
     $6.TallyResult? tally,
   }) {
-    final result = create();
+    final _result = create();
     if (tally != null) {
-      result.tally = tally;
+      _result.tally = tally;
     }
-    return result;
+    return _result;
   }
   factory QueryTallyResultResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryTallyResultResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

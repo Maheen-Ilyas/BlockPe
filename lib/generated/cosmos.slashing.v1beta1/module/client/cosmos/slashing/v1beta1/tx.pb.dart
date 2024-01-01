@@ -19,11 +19,11 @@ class MsgUnjail extends $pb.GeneratedMessage {
   factory MsgUnjail({
     $core.String? validatorAddr,
   }) {
-    final result = create();
+    final _result = create();
     if (validatorAddr != null) {
-      result.validatorAddr = validatorAddr;
+      _result.validatorAddr = validatorAddr;
     }
-    return result;
+    return _result;
   }
   factory MsgUnjail.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgUnjail.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

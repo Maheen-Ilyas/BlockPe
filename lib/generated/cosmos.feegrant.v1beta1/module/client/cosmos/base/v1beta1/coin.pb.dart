@@ -21,14 +21,14 @@ class Coin extends $pb.GeneratedMessage {
     $core.String? denom,
     $core.String? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (denom != null) {
-      result.denom = denom;
+      _result.denom = denom;
     }
     if (amount != null) {
-      result.amount = amount;
+      _result.amount = amount;
     }
-    return result;
+    return _result;
   }
   factory Coin.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Coin.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -82,14 +82,14 @@ class DecCoin extends $pb.GeneratedMessage {
     $core.String? denom,
     $core.String? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (denom != null) {
-      result.denom = denom;
+      _result.denom = denom;
     }
     if (amount != null) {
-      result.amount = amount;
+      _result.amount = amount;
     }
-    return result;
+    return _result;
   }
   factory DecCoin.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DecCoin.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -141,11 +141,11 @@ class IntProto extends $pb.GeneratedMessage {
   factory IntProto({
     $core.String? int_1,
   }) {
-    final result = create();
+    final _result = create();
     if (int_1 != null) {
-      result.int_1 = int_1;
+      _result.int_1 = int_1;
     }
-    return result;
+    return _result;
   }
   factory IntProto.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory IntProto.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -188,11 +188,11 @@ class DecProto extends $pb.GeneratedMessage {
   factory DecProto({
     $core.String? dec,
   }) {
-    final result = create();
+    final _result = create();
     if (dec != null) {
-      result.dec = dec;
+      _result.dec = dec;
     }
-    return result;
+    return _result;
   }
   factory DecProto.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DecProto.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

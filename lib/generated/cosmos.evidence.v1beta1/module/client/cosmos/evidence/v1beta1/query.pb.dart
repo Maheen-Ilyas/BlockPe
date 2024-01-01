@@ -22,11 +22,11 @@ class QueryEvidenceRequest extends $pb.GeneratedMessage {
   factory QueryEvidenceRequest({
     $core.List<$core.int>? evidenceHash,
   }) {
-    final result = create();
+    final _result = create();
     if (evidenceHash != null) {
-      result.evidenceHash = evidenceHash;
+      _result.evidenceHash = evidenceHash;
     }
-    return result;
+    return _result;
   }
   factory QueryEvidenceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryEvidenceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -69,11 +69,11 @@ class QueryEvidenceResponse extends $pb.GeneratedMessage {
   factory QueryEvidenceResponse({
     $3.Any? evidence,
   }) {
-    final result = create();
+    final _result = create();
     if (evidence != null) {
-      result.evidence = evidence;
+      _result.evidence = evidence;
     }
-    return result;
+    return _result;
   }
   factory QueryEvidenceResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryEvidenceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -118,11 +118,11 @@ class QueryAllEvidenceRequest extends $pb.GeneratedMessage {
   factory QueryAllEvidenceRequest({
     $5.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryAllEvidenceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllEvidenceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -169,14 +169,14 @@ class QueryAllEvidenceResponse extends $pb.GeneratedMessage {
     $core.Iterable<$3.Any>? evidence,
     $5.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (evidence != null) {
-      result.evidence.addAll(evidence);
+      _result.evidence.addAll(evidence);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryAllEvidenceResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryAllEvidenceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

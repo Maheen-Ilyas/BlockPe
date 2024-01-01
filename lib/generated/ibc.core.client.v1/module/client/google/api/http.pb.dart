@@ -3,7 +3,7 @@
 //  source: google/api/http.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, constant_identifier_names
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -21,14 +21,14 @@ class Http extends $pb.GeneratedMessage {
     $core.Iterable<HttpRule>? rules,
     $core.bool? fullyDecodeReservedExpansion,
   }) {
-    final result = create();
+    final _result = create();
     if (rules != null) {
-      result.rules.addAll(rules);
+      _result.rules.addAll(rules);
     }
     if (fullyDecodeReservedExpansion != null) {
-      result.fullyDecodeReservedExpansion = fullyDecodeReservedExpansion;
+      _result.fullyDecodeReservedExpansion = fullyDecodeReservedExpansion;
     }
-    return result;
+    return _result;
   }
   factory Http.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Http.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -112,38 +112,38 @@ class HttpRule extends $pb.GeneratedMessage {
     $core.Iterable<HttpRule>? additionalBindings,
     $core.String? responseBody,
   }) {
-    final result = create();
+    final _result = create();
     if (selector != null) {
-      result.selector = selector;
+      _result.selector = selector;
     }
     if (get != null) {
-      result.get = get;
+      _result.get = get;
     }
     if (put != null) {
-      result.put = put;
+      _result.put = put;
     }
     if (post != null) {
-      result.post = post;
+      _result.post = post;
     }
     if (delete != null) {
-      result.delete = delete;
+      _result.delete = delete;
     }
     if (patch != null) {
-      result.patch = patch;
+      _result.patch = patch;
     }
     if (body != null) {
-      result.body = body;
+      _result.body = body;
     }
     if (custom != null) {
-      result.custom = custom;
+      _result.custom = custom;
     }
     if (additionalBindings != null) {
-      result.additionalBindings.addAll(additionalBindings);
+      _result.additionalBindings.addAll(additionalBindings);
     }
     if (responseBody != null) {
-      result.responseBody = responseBody;
+      _result.responseBody = responseBody;
     }
-    return result;
+    return _result;
   }
   factory HttpRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory HttpRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -268,14 +268,14 @@ class CustomHttpPattern extends $pb.GeneratedMessage {
     $core.String? kind,
     $core.String? path,
   }) {
-    final result = create();
+    final _result = create();
     if (kind != null) {
-      result.kind = kind;
+      _result.kind = kind;
     }
     if (path != null) {
-      result.path = path;
+      _result.path = path;
     }
-    return result;
+    return _result;
   }
   factory CustomHttpPattern.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CustomHttpPattern.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

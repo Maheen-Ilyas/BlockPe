@@ -3,7 +3,7 @@
 //  source: ibc/core/channel/v1/channel.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, unnecessary_null_comparison, constant_identifier_names
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -34,23 +34,23 @@ class Channel extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? connectionHops,
     $core.String? version,
   }) {
-    final result = create();
+    final _result = create();
     if (state != null) {
-      result.state = state;
+      _result.state = state;
     }
     if (ordering != null) {
-      result.ordering = ordering;
+      _result.ordering = ordering;
     }
     if (counterparty != null) {
-      result.counterparty = counterparty;
+      _result.counterparty = counterparty;
     }
     if (connectionHops != null) {
-      result.connectionHops.addAll(connectionHops);
+      _result.connectionHops.addAll(connectionHops);
     }
     if (version != null) {
-      result.version = version;
+      _result.version = version;
     }
-    return result;
+    return _result;
   }
   factory Channel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Channel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -137,29 +137,29 @@ class IdentifiedChannel extends $pb.GeneratedMessage {
     $core.String? portId,
     $core.String? channelId,
   }) {
-    final result = create();
+    final _result = create();
     if (state != null) {
-      result.state = state;
+      _result.state = state;
     }
     if (ordering != null) {
-      result.ordering = ordering;
+      _result.ordering = ordering;
     }
     if (counterparty != null) {
-      result.counterparty = counterparty;
+      _result.counterparty = counterparty;
     }
     if (connectionHops != null) {
-      result.connectionHops.addAll(connectionHops);
+      _result.connectionHops.addAll(connectionHops);
     }
     if (version != null) {
-      result.version = version;
+      _result.version = version;
     }
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
-    return result;
+    return _result;
   }
   factory IdentifiedChannel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory IdentifiedChannel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -254,14 +254,14 @@ class Counterparty extends $pb.GeneratedMessage {
     $core.String? portId,
     $core.String? channelId,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
-    return result;
+    return _result;
   }
   factory Counterparty.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Counterparty.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -327,32 +327,32 @@ class Packet extends $pb.GeneratedMessage {
     $5.Height? timeoutHeight,
     $fixnum.Int64? timeoutTimestamp,
   }) {
-    final result = create();
+    final _result = create();
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
     if (sourcePort != null) {
-      result.sourcePort = sourcePort;
+      _result.sourcePort = sourcePort;
     }
     if (sourceChannel != null) {
-      result.sourceChannel = sourceChannel;
+      _result.sourceChannel = sourceChannel;
     }
     if (destinationPort != null) {
-      result.destinationPort = destinationPort;
+      _result.destinationPort = destinationPort;
     }
     if (destinationChannel != null) {
-      result.destinationChannel = destinationChannel;
+      _result.destinationChannel = destinationChannel;
     }
     if (data != null) {
-      result.data = data;
+      _result.data = data;
     }
     if (timeoutHeight != null) {
-      result.timeoutHeight = timeoutHeight;
+      _result.timeoutHeight = timeoutHeight;
     }
     if (timeoutTimestamp != null) {
-      result.timeoutTimestamp = timeoutTimestamp;
+      _result.timeoutTimestamp = timeoutTimestamp;
     }
-    return result;
+    return _result;
   }
   factory Packet.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Packet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -466,20 +466,20 @@ class PacketState extends $pb.GeneratedMessage {
     $fixnum.Int64? sequence,
     $core.List<$core.int>? data,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
     if (data != null) {
-      result.data = data;
+      _result.data = data;
     }
-    return result;
+    return _result;
   }
   factory PacketState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory PacketState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -553,17 +553,17 @@ class PacketId extends $pb.GeneratedMessage {
     $core.String? channelId,
     $fixnum.Int64? sequence,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
-    return result;
+    return _result;
   }
   factory PacketId.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory PacketId.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -638,14 +638,14 @@ class Acknowledgement extends $pb.GeneratedMessage {
     $core.List<$core.int>? result,
     $core.String? error,
   }) {
-    final result = create();
+    final _result = create();
     if (result != null) {
-      result.result = result;
+      _result.result = result;
     }
     if (error != null) {
-      result.error = error;
+      _result.error = error;
     }
-    return result;
+    return _result;
   }
   factory Acknowledgement.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Acknowledgement.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

@@ -15,7 +15,6 @@ class Vpa extends $pb.GeneratedMessage {
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'btcAddr', protoName: 'btcAddr')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'ethAddr', protoName: 'ethAddr')
     ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'atomAddr', protoName: 'atomAddr')
-    ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'polAddr', protoName: 'polAddr')
     ..hasRequiredFields = false
   ;
 
@@ -25,25 +24,21 @@ class Vpa extends $pb.GeneratedMessage {
     $core.String? btcAddr,
     $core.String? ethAddr,
     $core.String? atomAddr,
-    $core.String? polAddr,
   }) {
-    final result = create();
+    final _result = create();
     if (index != null) {
-      result.index = index;
+      _result.index = index;
     }
     if (btcAddr != null) {
-      result.btcAddr = btcAddr;
+      _result.btcAddr = btcAddr;
     }
     if (ethAddr != null) {
-      result.ethAddr = ethAddr;
+      _result.ethAddr = ethAddr;
     }
     if (atomAddr != null) {
-      result.atomAddr = atomAddr;
+      _result.atomAddr = atomAddr;
     }
-    if (polAddr != null) {
-      result.polAddr = polAddr;
-    }
-    return result;
+    return _result;
   }
   factory Vpa.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Vpa.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -101,14 +96,5 @@ class Vpa extends $pb.GeneratedMessage {
   $core.bool hasAtomAddr() => $_has(3);
   @$pb.TagNumber(4)
   void clearAtomAddr() => clearField(4);
-
-  @$pb.TagNumber(5)
-  $core.String get polAddr => $_getSZ(4);
-  @$pb.TagNumber(5)
-  set polAddr($core.String v) { $_setString(4, v); }
-  @$pb.TagNumber(5)
-  $core.bool hasPolAddr() => $_has(4);
-  @$pb.TagNumber(5)
-  void clearPolAddr() => clearField(5);
 }
 

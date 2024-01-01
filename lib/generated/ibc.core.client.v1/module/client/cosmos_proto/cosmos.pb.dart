@@ -25,14 +25,14 @@ class InterfaceDescriptor extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? description,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
-    return result;
+    return _result;
   }
   factory InterfaceDescriptor.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory InterfaceDescriptor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -88,17 +88,17 @@ class ScalarDescriptor extends $pb.GeneratedMessage {
     $core.String? description,
     $core.Iterable<ScalarType>? fieldType,
   }) {
-    final result = create();
+    final _result = create();
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
     if (fieldType != null) {
-      result.fieldType.addAll(fieldType);
+      _result.fieldType.addAll(fieldType);
     }
-    return result;
+    return _result;
   }
   factory ScalarDescriptor.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ScalarDescriptor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

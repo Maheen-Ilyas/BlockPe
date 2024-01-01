@@ -23,14 +23,14 @@ class QueryParamsRequest extends $pb.GeneratedMessage {
     $core.String? subspace,
     $core.String? key,
   }) {
-    final result = create();
+    final _result = create();
     if (subspace != null) {
-      result.subspace = subspace;
+      _result.subspace = subspace;
     }
     if (key != null) {
-      result.key = key;
+      _result.key = key;
     }
-    return result;
+    return _result;
   }
   factory QueryParamsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryParamsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -82,11 +82,11 @@ class QueryParamsResponse extends $pb.GeneratedMessage {
   factory QueryParamsResponse({
     $2.ParamChange? param,
   }) {
-    final result = create();
+    final _result = create();
     if (param != null) {
-      result.param = param;
+      _result.param = param;
     }
-    return result;
+    return _result;
   }
   factory QueryParamsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryParamsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -160,11 +160,11 @@ class QuerySubspacesResponse extends $pb.GeneratedMessage {
   factory QuerySubspacesResponse({
     $core.Iterable<Subspace>? subspaces,
   }) {
-    final result = create();
+    final _result = create();
     if (subspaces != null) {
-      result.subspaces.addAll(subspaces);
+      _result.subspaces.addAll(subspaces);
     }
-    return result;
+    return _result;
   }
   factory QuerySubspacesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QuerySubspacesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -203,14 +203,14 @@ class Subspace extends $pb.GeneratedMessage {
     $core.String? subspace,
     $core.Iterable<$core.String>? keys,
   }) {
-    final result = create();
+    final _result = create();
     if (subspace != null) {
-      result.subspace = subspace;
+      _result.subspace = subspace;
     }
     if (keys != null) {
-      result.keys.addAll(keys);
+      _result.keys.addAll(keys);
     }
-    return result;
+    return _result;
   }
   factory Subspace.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Subspace.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

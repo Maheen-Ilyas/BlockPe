@@ -1,9 +1,9 @@
-export 'client/cosmos_proto/cosmos.pb.dart';
-export 'client/cosmos_proto/cosmos.pbenum.dart';
-export 'client/cosmos_proto/cosmos.pbjson.dart';
 export 'client/gogoproto/gogo.pb.dart';
 export 'client/gogoproto/gogo.pbenum.dart';
 export 'client/gogoproto/gogo.pbjson.dart';
+export 'client/cosmos_proto/cosmos.pb.dart';
+export 'client/cosmos_proto/cosmos.pbenum.dart';
+export 'client/cosmos_proto/cosmos.pbjson.dart';
 export 'client/google/protobuf/any.pb.dart';
 export 'client/google/protobuf/any.pbenum.dart';
 export 'client/google/protobuf/any.pbjson.dart';

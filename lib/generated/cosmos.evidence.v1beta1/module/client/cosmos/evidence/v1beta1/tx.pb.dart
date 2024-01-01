@@ -23,14 +23,14 @@ class MsgSubmitEvidence extends $pb.GeneratedMessage {
     $core.String? submitter,
     $3.Any? evidence,
   }) {
-    final result = create();
+    final _result = create();
     if (submitter != null) {
-      result.submitter = submitter;
+      _result.submitter = submitter;
     }
     if (evidence != null) {
-      result.evidence = evidence;
+      _result.evidence = evidence;
     }
-    return result;
+    return _result;
   }
   factory MsgSubmitEvidence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgSubmitEvidence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -84,11 +84,11 @@ class MsgSubmitEvidenceResponse extends $pb.GeneratedMessage {
   factory MsgSubmitEvidenceResponse({
     $core.List<$core.int>? hash,
   }) {
-    final result = create();
+    final _result = create();
     if (hash != null) {
-      result.hash = hash;
+      _result.hash = hash;
     }
-    return result;
+    return _result;
   }
   factory MsgSubmitEvidenceResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgSubmitEvidenceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

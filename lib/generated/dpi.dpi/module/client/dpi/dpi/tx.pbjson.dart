@@ -3,7 +3,7 @@
 //  source: dpi/dpi/tx.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields,deprecated_member_use_from_same_package, constant_identifier_names
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields,deprecated_member_use_from_same_package
 
 import 'dart:core' as $core;
 import 'dart:convert' as $convert;
@@ -17,12 +17,11 @@ const MsgSaveVpa$json = const {
     const {'1': 'btcAddr', '3': 3, '4': 1, '5': 9, '10': 'btcAddr'},
     const {'1': 'ethAddr', '3': 4, '4': 1, '5': 9, '10': 'ethAddr'},
     const {'1': 'atomAddr', '3': 5, '4': 1, '5': 9, '10': 'atomAddr'},
-    const {'1': 'polAddr', '3': 6, '4': 1, '5': 9, '10': 'polAddr'},
   ],
 };
 
 /// Descriptor for `MsgSaveVpa`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List msgSaveVpaDescriptor = $convert.base64Decode('CgpNc2dTYXZlVnBhEhgKB2NyZWF0b3IYASABKAlSB2NyZWF0b3ISFAoFdnBhSWQYAiABKAlSBXZwYUlkEhgKB2J0Y0FkZHIYAyABKAlSB2J0Y0FkZHISGAoHZXRoQWRkchgEIAEoCVIHZXRoQWRkchIaCghhdG9tQWRkchgFIAEoCVIIYXRvbUFkZHISGAoHcG9sQWRkchgGIAEoCVIHcG9sQWRkcg==');
+final $typed_data.Uint8List msgSaveVpaDescriptor = $convert.base64Decode('CgpNc2dTYXZlVnBhEhgKB2NyZWF0b3IYASABKAlSB2NyZWF0b3ISFAoFdnBhSWQYAiABKAlSBXZwYUlkEhgKB2J0Y0FkZHIYAyABKAlSB2J0Y0FkZHISGAoHZXRoQWRkchgEIAEoCVIHZXRoQWRkchIaCghhdG9tQWRkchgFIAEoCVIIYXRvbUFkZHI=');
 @$core.Deprecated('Use msgSaveVpaResponseDescriptor instead')
 const MsgSaveVpaResponse$json = const {
   '1': 'MsgSaveVpaResponse',
@@ -30,21 +29,3 @@ const MsgSaveVpaResponse$json = const {
 
 /// Descriptor for `MsgSaveVpaResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List msgSaveVpaResponseDescriptor = $convert.base64Decode('ChJNc2dTYXZlVnBhUmVzcG9uc2U=');
-@$core.Deprecated('Use msgTransferTokensDescriptor instead')
-const MsgTransferTokens$json = const {
-  '1': 'MsgTransferTokens',
-  '2': const [
-    const {'1': 'creator', '3': 1, '4': 1, '5': 9, '10': 'creator'},
-    const {'1': 'amount', '3': 2, '4': 1, '5': 9, '10': 'amount'},
-  ],
-};
-
-/// Descriptor for `MsgTransferTokens`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List msgTransferTokensDescriptor = $convert.base64Decode('ChFNc2dUcmFuc2ZlclRva2VucxIYCgdjcmVhdG9yGAEgASgJUgdjcmVhdG9yEhYKBmFtb3VudBgCIAEoCVIGYW1vdW50');
-@$core.Deprecated('Use msgTransferTokensResponseDescriptor instead')
-const MsgTransferTokensResponse$json = const {
-  '1': 'MsgTransferTokensResponse',
-};
-
-/// Descriptor for `MsgTransferTokensResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List msgTransferTokensResponseDescriptor = $convert.base64Decode('ChlNc2dUcmFuc2ZlclRva2Vuc1Jlc3BvbnNl');

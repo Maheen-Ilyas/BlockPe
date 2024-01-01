@@ -31,14 +31,14 @@ class WeightedVoteOption extends $pb.GeneratedMessage {
     VoteOption? option,
     $core.String? weight,
   }) {
-    final result = create();
+    final _result = create();
     if (option != null) {
-      result.option = option;
+      _result.option = option;
     }
     if (weight != null) {
-      result.weight = weight;
+      _result.weight = weight;
     }
-    return result;
+    return _result;
   }
   factory WeightedVoteOption.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory WeightedVoteOption.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -92,14 +92,14 @@ class TextProposal extends $pb.GeneratedMessage {
     $core.String? title,
     $core.String? description,
   }) {
-    final result = create();
+    final _result = create();
     if (title != null) {
-      result.title = title;
+      _result.title = title;
     }
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
-    return result;
+    return _result;
   }
   factory TextProposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory TextProposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -155,17 +155,17 @@ class Deposit extends $pb.GeneratedMessage {
     $core.String? depositor,
     $core.Iterable<$2.Coin>? amount,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (depositor != null) {
-      result.depositor = depositor;
+      _result.depositor = depositor;
     }
     if (amount != null) {
-      result.amount.addAll(amount);
+      _result.amount.addAll(amount);
     }
-    return result;
+    return _result;
   }
   factory Deposit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Deposit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -236,35 +236,35 @@ class Proposal extends $pb.GeneratedMessage {
     $4.Timestamp? votingStartTime,
     $4.Timestamp? votingEndTime,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (content != null) {
-      result.content = content;
+      _result.content = content;
     }
     if (status != null) {
-      result.status = status;
+      _result.status = status;
     }
     if (finalTallyResult != null) {
-      result.finalTallyResult = finalTallyResult;
+      _result.finalTallyResult = finalTallyResult;
     }
     if (submitTime != null) {
-      result.submitTime = submitTime;
+      _result.submitTime = submitTime;
     }
     if (depositEndTime != null) {
-      result.depositEndTime = depositEndTime;
+      _result.depositEndTime = depositEndTime;
     }
     if (totalDeposit != null) {
-      result.totalDeposit.addAll(totalDeposit);
+      _result.totalDeposit.addAll(totalDeposit);
     }
     if (votingStartTime != null) {
-      result.votingStartTime = votingStartTime;
+      _result.votingStartTime = votingStartTime;
     }
     if (votingEndTime != null) {
-      result.votingEndTime = votingEndTime;
+      _result.votingEndTime = votingEndTime;
     }
-    return result;
+    return _result;
   }
   factory Proposal.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Proposal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -391,20 +391,20 @@ class TallyResult extends $pb.GeneratedMessage {
     $core.String? no,
     $core.String? noWithVeto,
   }) {
-    final result = create();
+    final _result = create();
     if (yes != null) {
-      result.yes = yes;
+      _result.yes = yes;
     }
     if (abstain != null) {
-      result.abstain = abstain;
+      _result.abstain = abstain;
     }
     if (no != null) {
-      result.no = no;
+      _result.no = no;
     }
     if (noWithVeto != null) {
-      result.noWithVeto = noWithVeto;
+      _result.noWithVeto = noWithVeto;
     }
-    return result;
+    return _result;
   }
   factory TallyResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory TallyResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -481,21 +481,21 @@ class Vote extends $pb.GeneratedMessage {
     VoteOption? option,
     $core.Iterable<WeightedVoteOption>? options,
   }) {
-    final result = create();
+    final _result = create();
     if (proposalId != null) {
-      result.proposalId = proposalId;
+      _result.proposalId = proposalId;
     }
     if (voter != null) {
-      result.voter = voter;
+      _result.voter = voter;
     }
     if (option != null) {
       // ignore: deprecated_member_use_from_same_package
-      result.option = option;
+      _result.option = option;
     }
     if (options != null) {
-      result.options.addAll(options);
+      _result.options.addAll(options);
     }
-    return result;
+    return _result;
   }
   factory Vote.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Vote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -565,14 +565,14 @@ class DepositParams extends $pb.GeneratedMessage {
     $core.Iterable<$2.Coin>? minDeposit,
     $5.Duration? maxDepositPeriod,
   }) {
-    final result = create();
+    final _result = create();
     if (minDeposit != null) {
-      result.minDeposit.addAll(minDeposit);
+      _result.minDeposit.addAll(minDeposit);
     }
     if (maxDepositPeriod != null) {
-      result.maxDepositPeriod = maxDepositPeriod;
+      _result.maxDepositPeriod = maxDepositPeriod;
     }
-    return result;
+    return _result;
   }
   factory DepositParams.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DepositParams.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -620,11 +620,11 @@ class VotingParams extends $pb.GeneratedMessage {
   factory VotingParams({
     $5.Duration? votingPeriod,
   }) {
-    final result = create();
+    final _result = create();
     if (votingPeriod != null) {
-      result.votingPeriod = votingPeriod;
+      _result.votingPeriod = votingPeriod;
     }
-    return result;
+    return _result;
   }
   factory VotingParams.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory VotingParams.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -673,17 +673,17 @@ class TallyParams extends $pb.GeneratedMessage {
     $core.List<$core.int>? threshold,
     $core.List<$core.int>? vetoThreshold,
   }) {
-    final result = create();
+    final _result = create();
     if (quorum != null) {
-      result.quorum = quorum;
+      _result.quorum = quorum;
     }
     if (threshold != null) {
-      result.threshold = threshold;
+      _result.threshold = threshold;
     }
     if (vetoThreshold != null) {
-      result.vetoThreshold = vetoThreshold;
+      _result.vetoThreshold = vetoThreshold;
     }
-    return result;
+    return _result;
   }
   factory TallyParams.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory TallyParams.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

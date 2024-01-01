@@ -24,14 +24,14 @@ class GenesisState extends $pb.GeneratedMessage {
     $2.Params? params,
     $core.Iterable<$3.Vpa>? vpaList,
   }) {
-    final result = create();
+    final _result = create();
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
     if (vpaList != null) {
-      result.vpaList.addAll(vpaList);
+      _result.vpaList.addAll(vpaList);
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

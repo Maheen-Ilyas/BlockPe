@@ -21,11 +21,11 @@ class GenesisState extends $pb.GeneratedMessage {
   factory GenesisState({
     $1.Coin? constantFee,
   }) {
-    final result = create();
+    final _result = create();
     if (constantFee != null) {
-      result.constantFee = constantFee;
+      _result.constantFee = constantFee;
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

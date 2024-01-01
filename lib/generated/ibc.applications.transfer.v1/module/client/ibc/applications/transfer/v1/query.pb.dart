@@ -22,11 +22,11 @@ class QueryDenomTraceRequest extends $pb.GeneratedMessage {
   factory QueryDenomTraceRequest({
     $core.String? hash,
   }) {
-    final result = create();
+    final _result = create();
     if (hash != null) {
-      result.hash = hash;
+      _result.hash = hash;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomTraceRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomTraceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -69,11 +69,11 @@ class QueryDenomTraceResponse extends $pb.GeneratedMessage {
   factory QueryDenomTraceResponse({
     $2.DenomTrace? denomTrace,
   }) {
-    final result = create();
+    final _result = create();
     if (denomTrace != null) {
-      result.denomTrace = denomTrace;
+      _result.denomTrace = denomTrace;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomTraceResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomTraceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -118,11 +118,11 @@ class QueryDenomTracesRequest extends $pb.GeneratedMessage {
   factory QueryDenomTracesRequest({
     $4.PageRequest? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomTracesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomTracesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -169,14 +169,14 @@ class QueryDenomTracesResponse extends $pb.GeneratedMessage {
     $core.Iterable<$2.DenomTrace>? denomTraces,
     $4.PageResponse? pagination,
   }) {
-    final result = create();
+    final _result = create();
     if (denomTraces != null) {
-      result.denomTraces.addAll(denomTraces);
+      _result.denomTraces.addAll(denomTraces);
     }
     if (pagination != null) {
-      result.pagination = pagination;
+      _result.pagination = pagination;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomTracesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomTracesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -253,11 +253,11 @@ class QueryParamsResponse extends $pb.GeneratedMessage {
   factory QueryParamsResponse({
     $2.Params? params,
   }) {
-    final result = create();
+    final _result = create();
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
-    return result;
+    return _result;
   }
   factory QueryParamsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryParamsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -302,11 +302,11 @@ class QueryDenomHashRequest extends $pb.GeneratedMessage {
   factory QueryDenomHashRequest({
     $core.String? trace,
   }) {
-    final result = create();
+    final _result = create();
     if (trace != null) {
-      result.trace = trace;
+      _result.trace = trace;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomHashRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomHashRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -349,11 +349,11 @@ class QueryDenomHashResponse extends $pb.GeneratedMessage {
   factory QueryDenomHashResponse({
     $core.String? hash,
   }) {
-    final result = create();
+    final _result = create();
     if (hash != null) {
-      result.hash = hash;
+      _result.hash = hash;
     }
-    return result;
+    return _result;
   }
   factory QueryDenomHashResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryDenomHashResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -398,14 +398,14 @@ class QueryEscrowAddressRequest extends $pb.GeneratedMessage {
     $core.String? portId,
     $core.String? channelId,
   }) {
-    final result = create();
+    final _result = create();
     if (portId != null) {
-      result.portId = portId;
+      _result.portId = portId;
     }
     if (channelId != null) {
-      result.channelId = channelId;
+      _result.channelId = channelId;
     }
-    return result;
+    return _result;
   }
   factory QueryEscrowAddressRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryEscrowAddressRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -457,11 +457,11 @@ class QueryEscrowAddressResponse extends $pb.GeneratedMessage {
   factory QueryEscrowAddressResponse({
     $core.String? escrowAddress,
   }) {
-    final result = create();
+    final _result = create();
     if (escrowAddress != null) {
-      result.escrowAddress = escrowAddress;
+      _result.escrowAddress = escrowAddress;
     }
-    return result;
+    return _result;
   }
   factory QueryEscrowAddressResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory QueryEscrowAddressResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

@@ -23,14 +23,14 @@ class Params extends $pb.GeneratedMessage {
     $core.Iterable<SendEnabled>? sendEnabled,
     $core.bool? defaultSendEnabled,
   }) {
-    final result = create();
+    final _result = create();
     if (sendEnabled != null) {
-      result.sendEnabled.addAll(sendEnabled);
+      _result.sendEnabled.addAll(sendEnabled);
     }
     if (defaultSendEnabled != null) {
-      result.defaultSendEnabled = defaultSendEnabled;
+      _result.defaultSendEnabled = defaultSendEnabled;
     }
-    return result;
+    return _result;
   }
   factory Params.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Params.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -78,14 +78,14 @@ class SendEnabled extends $pb.GeneratedMessage {
     $core.String? denom,
     $core.bool? enabled,
   }) {
-    final result = create();
+    final _result = create();
     if (denom != null) {
-      result.denom = denom;
+      _result.denom = denom;
     }
     if (enabled != null) {
-      result.enabled = enabled;
+      _result.enabled = enabled;
     }
-    return result;
+    return _result;
   }
   factory SendEnabled.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SendEnabled.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -139,14 +139,14 @@ class Input extends $pb.GeneratedMessage {
     $core.String? address,
     $core.Iterable<$2.Coin>? coins,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (coins != null) {
-      result.coins.addAll(coins);
+      _result.coins.addAll(coins);
     }
-    return result;
+    return _result;
   }
   factory Input.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Input.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -194,14 +194,14 @@ class Output extends $pb.GeneratedMessage {
     $core.String? address,
     $core.Iterable<$2.Coin>? coins,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (coins != null) {
-      result.coins.addAll(coins);
+      _result.coins.addAll(coins);
     }
-    return result;
+    return _result;
   }
   factory Output.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Output.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -247,11 +247,11 @@ class Supply extends $pb.GeneratedMessage {
   factory Supply({
     $core.Iterable<$2.Coin>? total,
   }) {
-    final result = create();
+    final _result = create();
     if (total != null) {
-      result.total.addAll(total);
+      _result.total.addAll(total);
     }
-    return result;
+    return _result;
   }
   factory Supply.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Supply.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -292,17 +292,17 @@ class DenomUnit extends $pb.GeneratedMessage {
     $core.int? exponent,
     $core.Iterable<$core.String>? aliases,
   }) {
-    final result = create();
+    final _result = create();
     if (denom != null) {
-      result.denom = denom;
+      _result.denom = denom;
     }
     if (exponent != null) {
-      result.exponent = exponent;
+      _result.exponent = exponent;
     }
     if (aliases != null) {
-      result.aliases.addAll(aliases);
+      _result.aliases.addAll(aliases);
     }
-    return result;
+    return _result;
   }
   factory DenomUnit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory DenomUnit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -371,32 +371,32 @@ class Metadata extends $pb.GeneratedMessage {
     $core.String? uri,
     $core.String? uriHash,
   }) {
-    final result = create();
+    final _result = create();
     if (description != null) {
-      result.description = description;
+      _result.description = description;
     }
     if (denomUnits != null) {
-      result.denomUnits.addAll(denomUnits);
+      _result.denomUnits.addAll(denomUnits);
     }
     if (base != null) {
-      result.base = base;
+      _result.base = base;
     }
     if (display != null) {
-      result.display = display;
+      _result.display = display;
     }
     if (name != null) {
-      result.name = name;
+      _result.name = name;
     }
     if (symbol != null) {
-      result.symbol = symbol;
+      _result.symbol = symbol;
     }
     if (uri != null) {
-      result.uri = uri;
+      _result.uri = uri;
     }
     if (uriHash != null) {
-      result.uriHash = uriHash;
+      _result.uriHash = uriHash;
     }
-    return result;
+    return _result;
   }
   factory Metadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Metadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

@@ -3,7 +3,7 @@
 //  source: cosmos/tx/signing/v1beta1/signing.proto
 //
 // @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, constant_identifier_names
+// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields
 
 import 'dart:core' as $core;
 
@@ -27,11 +27,11 @@ class SignatureDescriptors extends $pb.GeneratedMessage {
   factory SignatureDescriptors({
     $core.Iterable<SignatureDescriptor>? signatures,
   }) {
-    final result = create();
+    final _result = create();
     if (signatures != null) {
-      result.signatures.addAll(signatures);
+      _result.signatures.addAll(signatures);
     }
-    return result;
+    return _result;
   }
   factory SignatureDescriptors.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SignatureDescriptors.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -70,14 +70,14 @@ class SignatureDescriptor_Data_Single extends $pb.GeneratedMessage {
     SignMode? mode,
     $core.List<$core.int>? signature,
   }) {
-    final result = create();
+    final _result = create();
     if (mode != null) {
-      result.mode = mode;
+      _result.mode = mode;
     }
     if (signature != null) {
-      result.signature = signature;
+      _result.signature = signature;
     }
-    return result;
+    return _result;
   }
   factory SignatureDescriptor_Data_Single.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SignatureDescriptor_Data_Single.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -131,14 +131,14 @@ class SignatureDescriptor_Data_Multi extends $pb.GeneratedMessage {
     $12.CompactBitArray? bitarray,
     $core.Iterable<SignatureDescriptor_Data>? signatures,
   }) {
-    final result = create();
+    final _result = create();
     if (bitarray != null) {
-      result.bitarray = bitarray;
+      _result.bitarray = bitarray;
     }
     if (signatures != null) {
-      result.signatures.addAll(signatures);
+      _result.signatures.addAll(signatures);
     }
-    return result;
+    return _result;
   }
   factory SignatureDescriptor_Data_Multi.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SignatureDescriptor_Data_Multi.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -200,14 +200,14 @@ class SignatureDescriptor_Data extends $pb.GeneratedMessage {
     SignatureDescriptor_Data_Single? single,
     SignatureDescriptor_Data_Multi? multi,
   }) {
-    final result = create();
+    final _result = create();
     if (single != null) {
-      result.single = single;
+      _result.single = single;
     }
     if (multi != null) {
-      result.multi = multi;
+      _result.multi = multi;
     }
-    return result;
+    return _result;
   }
   factory SignatureDescriptor_Data.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SignatureDescriptor_Data.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -270,17 +270,17 @@ class SignatureDescriptor extends $pb.GeneratedMessage {
     SignatureDescriptor_Data? data,
     $fixnum.Int64? sequence,
   }) {
-    final result = create();
+    final _result = create();
     if (publicKey != null) {
-      result.publicKey = publicKey;
+      _result.publicKey = publicKey;
     }
     if (data != null) {
-      result.data = data;
+      _result.data = data;
     }
     if (sequence != null) {
-      result.sequence = sequence;
+      _result.sequence = sequence;
     }
-    return result;
+    return _result;
   }
   factory SignatureDescriptor.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SignatureDescriptor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

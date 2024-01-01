@@ -21,11 +21,11 @@ class SendAuthorization extends $pb.GeneratedMessage {
   factory SendAuthorization({
     $core.Iterable<$2.Coin>? spendLimit,
   }) {
-    final result = create();
+    final _result = create();
     if (spendLimit != null) {
-      result.spendLimit.addAll(spendLimit);
+      _result.spendLimit.addAll(spendLimit);
     }
-    return result;
+    return _result;
   }
   factory SendAuthorization.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SendAuthorization.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

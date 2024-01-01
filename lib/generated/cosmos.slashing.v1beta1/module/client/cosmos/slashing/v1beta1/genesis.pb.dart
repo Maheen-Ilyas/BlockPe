@@ -26,17 +26,17 @@ class GenesisState extends $pb.GeneratedMessage {
     $core.Iterable<SigningInfo>? signingInfos,
     $core.Iterable<ValidatorMissedBlocks>? missedBlocks,
   }) {
-    final result = create();
+    final _result = create();
     if (params != null) {
-      result.params = params;
+      _result.params = params;
     }
     if (signingInfos != null) {
-      result.signingInfos.addAll(signingInfos);
+      _result.signingInfos.addAll(signingInfos);
     }
     if (missedBlocks != null) {
-      result.missedBlocks.addAll(missedBlocks);
+      _result.missedBlocks.addAll(missedBlocks);
     }
-    return result;
+    return _result;
   }
   factory GenesisState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory GenesisState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -89,14 +89,14 @@ class SigningInfo extends $pb.GeneratedMessage {
     $core.String? address,
     $4.ValidatorSigningInfo? validatorSigningInfo,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (validatorSigningInfo != null) {
-      result.validatorSigningInfo = validatorSigningInfo;
+      _result.validatorSigningInfo = validatorSigningInfo;
     }
-    return result;
+    return _result;
   }
   factory SigningInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SigningInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -152,14 +152,14 @@ class ValidatorMissedBlocks extends $pb.GeneratedMessage {
     $core.String? address,
     $core.Iterable<MissedBlock>? missedBlocks,
   }) {
-    final result = create();
+    final _result = create();
     if (address != null) {
-      result.address = address;
+      _result.address = address;
     }
     if (missedBlocks != null) {
-      result.missedBlocks.addAll(missedBlocks);
+      _result.missedBlocks.addAll(missedBlocks);
     }
-    return result;
+    return _result;
   }
   factory ValidatorMissedBlocks.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory ValidatorMissedBlocks.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -207,14 +207,14 @@ class MissedBlock extends $pb.GeneratedMessage {
     $fixnum.Int64? index,
     $core.bool? missed,
   }) {
-    final result = create();
+    final _result = create();
     if (index != null) {
-      result.index = index;
+      _result.index = index;
     }
     if (missed != null) {
-      result.missed = missed;
+      _result.missed = missed;
     }
-    return result;
+    return _result;
   }
   factory MissedBlock.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MissedBlock.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);

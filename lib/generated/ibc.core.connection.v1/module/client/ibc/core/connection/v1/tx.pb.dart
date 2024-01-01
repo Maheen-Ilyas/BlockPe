@@ -32,23 +32,23 @@ class MsgConnectionOpenInit extends $pb.GeneratedMessage {
     $fixnum.Int64? delayPeriod,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (counterparty != null) {
-      result.counterparty = counterparty;
+      _result.counterparty = counterparty;
     }
     if (version != null) {
-      result.version = version;
+      _result.version = version;
     }
     if (delayPeriod != null) {
-      result.delayPeriod = delayPeriod;
+      _result.delayPeriod = delayPeriod;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgConnectionOpenInit.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgConnectionOpenInit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -183,45 +183,45 @@ class MsgConnectionOpenTry extends $pb.GeneratedMessage {
     $9.Height? consensusHeight,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (clientId != null) {
-      result.clientId = clientId;
+      _result.clientId = clientId;
     }
     if (previousConnectionId != null) {
       // ignore: deprecated_member_use_from_same_package
-      result.previousConnectionId = previousConnectionId;
+      _result.previousConnectionId = previousConnectionId;
     }
     if (clientState != null) {
-      result.clientState = clientState;
+      _result.clientState = clientState;
     }
     if (counterparty != null) {
-      result.counterparty = counterparty;
+      _result.counterparty = counterparty;
     }
     if (delayPeriod != null) {
-      result.delayPeriod = delayPeriod;
+      _result.delayPeriod = delayPeriod;
     }
     if (counterpartyVersions != null) {
-      result.counterpartyVersions.addAll(counterpartyVersions);
+      _result.counterpartyVersions.addAll(counterpartyVersions);
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (proofInit != null) {
-      result.proofInit = proofInit;
+      _result.proofInit = proofInit;
     }
     if (proofClient != null) {
-      result.proofClient = proofClient;
+      _result.proofClient = proofClient;
     }
     if (proofConsensus != null) {
-      result.proofConsensus = proofConsensus;
+      _result.proofConsensus = proofConsensus;
     }
     if (consensusHeight != null) {
-      result.consensusHeight = consensusHeight;
+      _result.consensusHeight = consensusHeight;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgConnectionOpenTry.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgConnectionOpenTry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -416,38 +416,38 @@ class MsgConnectionOpenAck extends $pb.GeneratedMessage {
     $9.Height? consensusHeight,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (connectionId != null) {
-      result.connectionId = connectionId;
+      _result.connectionId = connectionId;
     }
     if (counterpartyConnectionId != null) {
-      result.counterpartyConnectionId = counterpartyConnectionId;
+      _result.counterpartyConnectionId = counterpartyConnectionId;
     }
     if (version != null) {
-      result.version = version;
+      _result.version = version;
     }
     if (clientState != null) {
-      result.clientState = clientState;
+      _result.clientState = clientState;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (proofTry != null) {
-      result.proofTry = proofTry;
+      _result.proofTry = proofTry;
     }
     if (proofClient != null) {
-      result.proofClient = proofClient;
+      _result.proofClient = proofClient;
     }
     if (proofConsensus != null) {
-      result.proofConsensus = proofConsensus;
+      _result.proofConsensus = proofConsensus;
     }
     if (consensusHeight != null) {
-      result.consensusHeight = consensusHeight;
+      _result.consensusHeight = consensusHeight;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgConnectionOpenAck.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgConnectionOpenAck.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
@@ -614,20 +614,20 @@ class MsgConnectionOpenConfirm extends $pb.GeneratedMessage {
     $9.Height? proofHeight,
     $core.String? signer,
   }) {
-    final result = create();
+    final _result = create();
     if (connectionId != null) {
-      result.connectionId = connectionId;
+      _result.connectionId = connectionId;
     }
     if (proofAck != null) {
-      result.proofAck = proofAck;
+      _result.proofAck = proofAck;
     }
     if (proofHeight != null) {
-      result.proofHeight = proofHeight;
+      _result.proofHeight = proofHeight;
     }
     if (signer != null) {
-      result.signer = signer;
+      _result.signer = signer;
     }
-    return result;
+    return _result;
   }
   factory MsgConnectionOpenConfirm.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory MsgConnectionOpenConfirm.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
