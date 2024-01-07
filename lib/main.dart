@@ -19,7 +19,6 @@ Future<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  // await FirebaseAppCheck.instance.activate();
   runApp(
     ChangeNotifierProvider(
       create: (context) => ThemeProvider(),
